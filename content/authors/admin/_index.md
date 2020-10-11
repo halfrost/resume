@@ -1,6 +1,6 @@
 ---
 title: Dezhi Yu
-role: Professor of Artificial Intelligence
+role: Senior Back End Engineer at Alibaba Group
 avatar_filename: 0.jpeg
 organizations:
   - name: Stanford University
