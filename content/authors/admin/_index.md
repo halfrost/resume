@@ -15,7 +15,6 @@ interests:
   - Artificial Intelligence
   - Mobile Development
   - Computational Linguistics
-  - Open Source Software
 social:
   - icon: envelope
     icon_pack: fas
