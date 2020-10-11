@@ -1,12 +1,13 @@
 ---
+title: Dezhi Yu
+role: Professor of Artificial Intelligence
+avatar_filename: 0.jpeg
 organizations:
   - name: Stanford University
     url: ""
 superuser: true
 authors:
   - admin
-title: Dezhi Yu
-role: Professor of Artificial Intelligence
 bio: My research interests include distributed robotics, mobile computing and
   programmable matter.
 interests:
