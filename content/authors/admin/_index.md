@@ -35,15 +35,9 @@ social:
     icon: phoenix-squadron
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: Bachelor of Engineering - Computer Science and Technology, Grade 3.75/4.0
+      institution: Huzhou University, Zhejiang, China
+      year: 2013
 user_groups:
   - Researchers
   - Visitors
