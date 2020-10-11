@@ -35,7 +35,7 @@ social:
     icon: phoenix-squadron
 education:
   courses:
-    - course: BE in Computer Science and Technology
+    - course: B.Eng in Computer Science and Technology
       institution: Huzhou University, Zhejiang, China
       year: 2013
 user_groups:
