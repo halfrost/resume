@@ -1,7 +1,7 @@
 ---
 title: Dezhi Yu
 role: Senior Back End Engineer at Alibaba Group
-avatar_filename: 0.jpeg
+avatar_filename: avatar.jpg
 organizations:
   - name: Stanford University
     url: ""
