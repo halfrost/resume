@@ -14,24 +14,134 @@ subtitle = ""
 # 
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
+
 [[feature]]
-  icon = "r-project"
+  icon = "golang"
+  icon_pack = "custom"
+  name = "golang"
+  description = "80%" 
+  
+[[feature]]
+  icon = "Docker"
+  icon_pack = "custom"
+  name = "Docker"
+  description = "60%"
+  
+[[feature]]
+  icon = "MySQL"
+  icon_pack = "custom"
+  name = "MySQL"
+  description = "80%"
+
+[[feature]]
+  icon = "PostgreSQL"
+  icon_pack = "custom"
+  name = "PostgreSQL"
+  description = "70%"
+  
+[[feature]]
+  icon = "Nginx"
+  icon_pack = "custom"
+  name = "Nginx"
+  description = "70%"
+  
+[[feature]]
+  icon = "RabbitMQ"
+  icon_pack = "custom"
+  name = "RabbitMQ"
+  description = "70%"
+  
+[[feature]]
+  icon = "Redis"
+  icon_pack = "custom"
+  name = "Redis"
+  description = "70%" 
+  
+[[feature]]
+  icon = "jenkins"
+  icon_pack = "custom"
+  name = "jenkins"
+  description = "60%" 
+
+[[feature]]
+  icon = "JS"
+  icon_pack = "custom"
+  name = "JS"
+  description = "60%" 
+
+[[feature]]
+  icon = "H5"
+  icon_pack = "custom"
+  name = "H5"
+  description = "60%" 
+
+[[feature]]
+  icon = "css3"
+  icon_pack = "custom"
+  name = "css3"
+  description = "60%" 
+  
+[[feature]]
+  icon = "vue"
+  icon_pack = "custom"
+  name = "vue"
+  description = "60%" 
+  
+[[feature]]
+  icon = "weex"
+  icon_pack = "custom"
+  name = "weex"
+  description = "60%"
+  
+[[feature]]
+  icon = "electron"
+  icon_pack = "custom"
+  name = "electron"
+  description = "60%" 
+  
+[[feature]]
+  icon = "apple"
   icon_pack = "fab"
-  name = "R"
+  name = "apple"
   description = "90%"
   
 [[feature]]
-  icon = "chart-line"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
+  icon = "AI"
+  icon_pack = "custom"
+  name = "AI"
+  description = "90%"
+
+[[feature]]
+  icon = "PS"
+  icon_pack = "custom"
+  name = "PS"
+  description = "90%"
   
 [[feature]]
-  icon = "camera-retro"
-  icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  icon = "sketch"
+  icon_pack = "custom"
+  name = "sketch"
+  description = "90%"
 
+[[feature]]
+  icon = "git"
+  icon_pack = "custom"
+  name = "git"
+  description = "80%"  
+  
+  
+[[feature]]
+  icon = "gitlab"
+  icon_pack = "custom"
+  name = "gitlab"
+  description = "80%"       
+
+[[feature]]
+  icon = "phabricator"
+  icon_pack = "custom"
+  name = "phabricator"
+  description = "80%" 
+        
 # Uncomment to use emoji icons.
 # [[feature]]
 #  icon = ":smile:"
