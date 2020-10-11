@@ -35,7 +35,7 @@ social:
     icon: phoenix-squadron
 education:
   courses:
-    - course: Bachelor of Engineering - Computer Science and Technology, Grade 3.75/4.0
+    - course: BE in Computer Science and Technology
       institution: Huzhou University, Zhejiang, China
       year: 2013
 user_groups:
