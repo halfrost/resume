@@ -28,7 +28,7 @@
   url = "#contact"
   weight = 60
 
-[[main]]
+[[main_right]]
   name = "github"
   post = "<span></span>"
   pre = "<i class='fab fa-github-alt' style='font-size:1rem;line-height:1.25'></i>"
