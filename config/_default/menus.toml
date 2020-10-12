@@ -28,6 +28,13 @@
   url = "#contact"
   weight = 60
 
+[[main]]
+  name = "github"
+  post = "<span></span>"
+  pre = "<i class="fab fa-github-alt" style="font-size:1rem;line-height:1.25"></i>"
+  url = "/getting-started/"
+  weight = 100
+    
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # [[main]]
