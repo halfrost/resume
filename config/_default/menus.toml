@@ -31,22 +31,22 @@
 [[main_right]]
   pre = "<i class='ai ai-coursera' style='font-size:1rem;line-height:1.25'></i>"
   url = "https://www.coursera.org/user/94d1260a778d0a3918ef95b4c1063486"
-  weight = 10
+  weight = 70
     
 [[main_right]]
   pre = "<i class='ai ai-acm' style='font-size:1rem;line-height:1.25'></i>"
   url = "https://img.halfrost.com/certificate/ACM_memcert0104000A02030A_00.pdf"
-  weight = 20
+  weight = 80
   
 [[main_right]]
   pre = "<i class='ai ai-ieee' style='font-size:1rem;line-height:1.25'></i>"
   url = "https://img.halfrost.com/certificate/IEEE_MEM500_97002879.pdf"
-  weight = 30
+  weight = 90
 
 [[main_right]]
   pre = "<i class='ai ai-cv' style='font-size:1rem;line-height:1.25'></i>"
   url = "cv.pdf"
-  weight = 40
+  weight = 100
   
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
