@@ -29,22 +29,22 @@
   weight = 60
 
 [[main_right]]
-  pre = "<i class='ai ai-coursera' style='font-size:1rem;line-height:1.25'></i>"
+  name = "<i class='ai ai-coursera' style='font-size:1rem;line-height:1.25'></i>"
   url = "https://www.coursera.org/user/94d1260a778d0a3918ef95b4c1063486"
   weight = 70
     
 [[main_right]]
-  pre = "<i class='ai ai-acm' style='font-size:1rem;line-height:1.25'></i>"
+  name = "<i class='ai ai-acm' style='font-size:1rem;line-height:1.25'></i>"
   url = "https://img.halfrost.com/certificate/ACM_memcert0104000A02030A_00.pdf"
   weight = 80
   
 [[main_right]]
-  pre = "<i class='ai ai-ieee' style='font-size:1rem;line-height:1.25'></i>"
+  name = "<i class='ai ai-ieee' style='font-size:1rem;line-height:1.25'></i>"
   url = "https://img.halfrost.com/certificate/IEEE_MEM500_97002879.pdf"
   weight = 90
 
 [[main_right]]
-  pre = "<i class='ai ai-cv' style='font-size:1rem;line-height:1.25'></i>"
+  name = "<i class='ai ai-cv' style='font-size:1rem;line-height:1.25'></i>"
   url = "cv.pdf"
   weight = 100
   
