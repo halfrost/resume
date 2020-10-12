@@ -31,7 +31,7 @@
 [[main]]
   name = "github"
   post = "<span></span>"
-  pre = "<i class="fab fa-github-alt" style="font-size:1rem;line-height:1.25"></i>"
+  pre = "<i class='fab fa-github-alt' style='font-size:1rem;line-height:1.25'></i>"
   url = "/getting-started/"
   weight = 100
     
