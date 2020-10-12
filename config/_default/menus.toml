@@ -9,45 +9,65 @@
   weight = 10
 
 [[main]]
+  name = "Experience"
+  url = "#experience"
+  weight = 20
+
+[[main]]
+  name = "Accomplishments"
+  url = "#accomplishments"
+  weight = 30
+
+[[main]]
   name = "Posts"
   url = "#posts"
-  weight = 20
+  weight = 40
 
 [[main]]
   name = "Projects"
   url = "#projects"
-  weight = 30
+  weight = 50
+
+[[main]]
+  name = "Talks"
+  url = "#talks"
+  weight = 60
 
 [[main]]
   name = "Publications"
   url = "#featured"
-  weight = 40
+  weight = 70
+
+[[main]]
+  name = "Skills"
+  url = "#skills"
+  weight = 90
 
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 60
-
-[[main_right]]
-  name = "<i class='ai ai-coursera' style='font-size:1rem;line-height:1.25'></i>"
-  url = "https://www.coursera.org/user/94d1260a778d0a3918ef95b4c1063486"
-  weight = 70
-    
-[[main_right]]
-  name = "<i class='ai ai-acm' style='font-size:1rem;line-height:1.25'></i>"
-  url = "https://img.halfrost.com/certificate/ACM_memcert0104000A02030A_00.pdf"
-  weight = 80
-  
-[[main_right]]
-  name = "<i class='ai ai-ieee' style='font-size:1rem;line-height:1.25'></i>"
-  url = "https://img.halfrost.com/certificate/IEEE_MEM500_97002879.pdf"
-  weight = 90
-
-[[main_right]]
-  name = "<i class='ai ai-cv' style='font-size:1rem;line-height:1.25'></i>"
-  url = "cv.pdf"
   weight = 100
-  
+
+[[main_right]]
+  name = "<i class='ai ai-coursera' style='font-size:1.5rem;line-height:1.25'></i>"
+  url = "https://www.coursera.org/user/94d1260a778d0a3918ef95b4c1063486"
+  weight = 10
+
+[[main_right]]
+  name = "<i class='ai ai-acm' style='font-size:1.5rem;line-height:1.25'></i>"
+  url = "https://img.halfrost.com/certificate/ACM_memcert0104000A02030A_00.pdf"
+  weight = 20
+
+[[main_right]]
+  name = "<i class='ai ai-ieee' style='font-size:1.5rem;line-height:1.25'></i>"
+  url = "https://img.halfrost.com/certificate/IEEE_MEM500_97002879.pdf"
+  weight = 30
+
+[[main_right]]
+  name = "<i class='ai ai-cv' style='font-size:1.5rem;line-height:1.25'></i>"
+  url = "cv.pdf"
+  weight = 40
+
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # [[main]]
