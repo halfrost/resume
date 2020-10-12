@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
 title = "Projects"
-subtitle = ""
+subtitle = "<a class='btn btn-outline-primary' href='https://github.com/halfrost'><i class='fab fa-github'></i>&nbsp; See All Projects</a>"
 
 [content]
   # Page type to display. E.g. project.
@@ -79,3 +79,4 @@ subtitle = ""
  css_class = ""
 +++
 
+<h3 style="text-align:right;margin-bottom: 36px;"><a href='#' class='back-to-top'><i class='fas fa-chevron-up fa-lg' style='color:rgba(0, 0, 0, 0.54)'></i></a></h3>

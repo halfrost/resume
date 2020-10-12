@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
 
 title = "Recent Posts"
-subtitle = ""
+subtitle = "<a class='btn btn-outline-primary' href='https://halfrost.com/'><i class='far fa-newspaper fa-fw'></i>&nbsp; See All Posts &amp; Media </a>"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
@@ -66,3 +66,5 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
+
+<h3 style="text-align:right;margin-bottom: 36px;"><a href='#' class='back-to-top'><i class='fas fa-chevron-up fa-lg' style='color:rgba(0, 0, 0, 0.54)'></i></a></h3>

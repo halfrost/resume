@@ -24,7 +24,7 @@ date_format = "Jan 2006"
   title = "ACM Professional Membership"
   url = ""
   certificate_url = "https://img.halfrost.com/certificate/ACM_memcert0104000A02030A_00.pdf"
-  date_start = "2020-07-01"
+  date_start = "2020-07-20"
   date_end = ""
   description = """
 <img src="/media/ACM.png" alt="ACM" style="height: 60px;">
@@ -36,7 +36,7 @@ date_format = "Jan 2006"
   title = "IEEE Professional Membership"
   url = ""
   certificate_url = "https://img.halfrost.com/certificate/IEEE_MEM500_97002879.pdf"
-  date_start = "2020-07-01"
+  date_start = "2020-07-15"
   date_end = ""
   description = """
 <img src="/media/IEEE.png" alt="IEEE" style="height: 60px;">
@@ -48,7 +48,7 @@ date_format = "Jan 2006"
   title = "IEEE-CS Professional Membership"
   url = ""
   certificate_url = "https://img.halfrost.com/certificate/IEEE_CS_MEMC016_97002879.pdf"
-  date_start = "2020-07-01"
+  date_start = "2020-07-10"
   date_end = ""
   description = """
 <img src="/media/IEEE-CS.png" alt="IEEE-CS" style="height: 60px;">
@@ -60,7 +60,7 @@ date_format = "Jan 2006"
   title = "CCF Professional Membership"
   url = ""
   certificate_url = ""
-  date_start = "2020-07-01"
+  date_start = "2020-07-05"
   date_end = ""
   description = """
 <img src="/media/CCF.png" alt="CCF" style="height: 60px;">
@@ -84,7 +84,7 @@ date_format = "Jan 2006"
   title = "Apple Teacher"
   url = "https://appleteacher.apple.com/"
   certificate_url = "https://img.halfrost.com/certificate/AppleTeacher.pdf"
-  date_start = "2020-07-01"
+  date_start = "2020-06-15"
   date_end = ""
   description = """
 <img src="/media/Apple-teacher.png" alt="Apple Teacher" style="height: 60px;">
@@ -188,17 +188,17 @@ date_format = "Jan 2006"
 <img src="/media/jianshu.png" alt="jianshu" style="height: 60px;">
 """
 
-[[item]]
-  organization = "Huzhou University"
-  organization_url = "http://www.zjhu.edu.cn/"
-  title = "The 10th Advanced Mathematics (calculus) competition Engineering Group - First prize"
-  url = ""
-  certificate_url = ""
-  date_start = "2012-04-01"
-  date_end = ""
-  description = """
-<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
-"""
+#[[item]]
+#  organization = "Huzhou University"
+#  organization_url = "http://www.zjhu.edu.cn/"
+#  title = "The 10th Advanced Mathematics (calculus) competition Engineering Group - First prize"
+#  url = ""
+#  certificate_url = ""
+#  date_start = "2012-04-01"
+#  date_end = ""
+#  description = """
+#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#"""
 
 [[item]]
   organization = "Ministry of Education"
@@ -212,76 +212,77 @@ date_format = "Jan 2006"
 <img src="/media/ACM-ICPC.png" alt="ACM-ICPC" style="height: 60px;">
 """
 
-[[item]]
-  organization = "Huzhou University"
-  organization_url = "http://www.zjhu.edu.cn/"
-  title = "The 8th College Students Programming Contest - Gold Medal"
-  url = ""
-  certificate_url = ""
-  date_start = "2011-03-01"
-  date_end = ""
-  description = """
-<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
-"""
+#[[item]]
+#  organization = "Huzhou University"
+#  organization_url = "http://www.zjhu.edu.cn/"
+#  title = "The 8th College Students Programming Contest - Gold Medal"
+#  url = ""
+#  certificate_url = ""
+#  date_start = "2011-03-01"
+#  date_end = ""
+#  description = """
+#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#"""
 
-[[item]]
-  organization = "Huzhou University"
-  organization_url = "http://www.zjhu.edu.cn/"
-  title = "The Danei Cup 4th College Student Programming Competition - Gold Medal"
-  url = ""
-  certificate_url = ""
-  date_start = "2010-03-01"
-  date_end = ""
-  description = """
-<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
-"""
 
-[[item]]
-  organization = "Huzhou University"
-  organization_url = "http://www.zjhu.edu.cn/"
-  title = "The 7th College Students Programming Contest - Newcomer Award"
-  url = ""
-  certificate_url = ""
-  date_start = "2009-12-01"
-  date_end = ""
-  description = """
-<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
-"""
+#[[item]]
+#  organization = "Huzhou University"
+#  organization_url = "http://www.zjhu.edu.cn/"
+#  title = "The Danei Cup 4th College Student Programming Competition - Gold Medal"
+#  url = ""
+#  certificate_url = ""
+#  date_start = "2010-03-01"
+#  date_end = ""
+#  description = """
+#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#"""
 
-[[item]]
-  organization = "Huzhou University"
-  organization_url = "http://www.zjhu.edu.cn/"
-  title = "The First Prize Scholarship"
-  url = ""
-  certificate_url = ""
-  date_start = "2012-06-01"
-  date_end = ""
-  description = """
-<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
-"""
+#[[item]]
+#  organization = "Huzhou University"
+#  organization_url = "http://www.zjhu.edu.cn/"
+#  title = "The 7th College Students Programming Contest - Newcomer Award"
+#  url = ""
+#  certificate_url = ""
+#  date_start = "2009-12-01"
+#  date_end = ""
+#  description = """
+#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#"""
 
-[[item]]
-  organization = "Huzhou University"
-  organization_url = "http://www.zjhu.edu.cn/"
-  title = "Excellent League Cadres"
-  url = ""
-  certificate_url = ""
-  date_start = "2012-06-01"
-  date_end = ""
-  description = """
-<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
-"""
+#[[item]]
+#  organization = "Huzhou University"
+#  organization_url = "http://www.zjhu.edu.cn/"
+#  title = "The First Prize Scholarship"
+#  url = ""
+#  certificate_url = ""
+#  date_start = "2012-06-01"
+#  date_end = ""
+#  description = """
+#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#"""
 
-[[item]]
-  organization = "Huzhou University"
-  organization_url = "http://www.zjhu.edu.cn/"
-  title = "Outstanding Student"
-  url = ""
-  certificate_url = ""
-  date_start = "2011-12-01"
-  date_end = ""
-  description = """
-<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
-"""
+#[[item]]
+#  organization = "Huzhou University"
+#  organization_url = "http://www.zjhu.edu.cn/"
+#  title = "Excellent League Cadres"
+#  url = ""
+#  certificate_url = ""
+#  date_start = "2012-06-01"
+#  date_end = ""
+#  description = """
+#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#"""
+
+#[[item]]
+#  organization = "Huzhou University"
+#  organization_url = "http://www.zjhu.edu.cn/"
+#  title = "Outstanding Student"
+#  url = ""
+#  certificate_url = ""
+#  date_start = "2011-12-01"
+#  date_end = ""
+#  description = """
+#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#"""
 
 +++

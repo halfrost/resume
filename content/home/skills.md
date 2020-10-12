@@ -101,7 +101,7 @@ subtitle = ""
   
 [[feature]]
   icon = "apple"
-  icon_pack = "fab"
+  icon_pack = "custom"
   name = "apple"
   description = "90%"
   

@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 90  # Order that this section will appear.
 
 title = "Recent Publications"
-subtitle = ""
+subtitle = "<a class='btn btn-outline-primary' href='http://books.halfrost.com/'><i class='fas fa-journal-whills'></i>&nbsp; See All Publications</a>"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
@@ -67,6 +67,4 @@ subtitle = ""
  css_class = ""
 +++
 
-{{% callout note %}}
-Quickly discover relevant content by [filtering publications](./publication/).
-{{% /callout %}}
+<h3 style="text-align:right;margin-bottom: 36px;"><a href='#' class='back-to-top'><i class='fas fa-chevron-up fa-lg' style='color:rgba(0, 0, 0, 0.54)'></i></a></h3>
