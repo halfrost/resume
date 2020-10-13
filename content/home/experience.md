@@ -42,7 +42,19 @@ date_format = "Jan 2006"
   description = """
 <img src="/media/eleme.jpg" alt="eleme" style="padding-bottom: 30px;">
 
-Taught electronic engineering and researched semiconductor physics.
+Front-End Engineer
+- Designed backend architecture with implementation in Golang, leveraging SOA-based microservices. RabbitMQ is used as the messaging queue and Apache Thrift as the communication protocol for Android, iOS and Web clients.
+- As a project manager, successfully delivered multiple functionalities across different feature teams with high customer satisfaction.
+- Using Google S2 algorithm and Drove the efforts of building better scalability and performance across both PostgreSQL and application layers to achieve low latency with millions of requests per day on tens of millions of records.
+- Worked on various small full stack projects with high proficiency in Golang, JavaScript and Objective-C.
+
+Senior iOS Engineer
+- Talaris is an takeaway delivery staffs' enterprise digital execution platform with a focus on mobile workflow.
+- Responsible for project MVVM architecture design, routing design, API convergence management. Control Crash rate below 3/10000. Overcome all kinds of intractable problems. Optimize the Network, power, fluency performance of apps.
+- Dealt with all phases of software engineering, including requirement engineering, design, coding, testing and deployment.
+- Training new engineers on MVVM architecture expertise, communicating with external deliveryman on technical difficulties, working with Objective-C team to resolve issues and fix bugs, and sharing multiple-time technical topic within the team.
+- Drove the efforts of building better scalability and performance across both Weex and Native application layers.
+- Worked on various small full stack projects with high proficiency in JavaScript, Objective-C and Ruby.
 """
 
 [[experience]]
@@ -55,7 +67,12 @@ Taught electronic engineering and researched semiconductor physics.
   description = """
 <img src="/media/fangchuang.jpg" alt="fangchuang" style="padding-bottom: 30px;">
 
-Taught electronic engineering and researched semiconductor physics.
+- Led the effort of hiring and managing 2 other technical team members to construct a web app and an iOS app.
+- Worked closely with other members in investment bank, investors, client, and legal industries to solve unique technical challenges.
+- Fangke 2.0, responsible for project architecture design, migration iOS IM module, MVVM architecture
+reconstruction, replace Realm database, All UI rewriting, training functional programming thought in group, using Bugtags to track user feedback, statistics on user behavior, optimize user experience of app.
+- FunC, responsible for the research and development of client forums and "Friends Circle" related functional modules. Integrate overseas SDKs for sharing platforms such as Facebook, Twitter, and Google.
+- Fangke 1.0, responsible for the research and development of IM chat system based on Socket in the company. Fix stubborn bugs such as blank messages and duplicate messages. Develop buried point statistics system. Develop patch packages to clean and repair dirty databases. Improve the usability time of the IM system and optimize the user experience of the app client.
 """
 
 [[experience]]
@@ -68,7 +85,11 @@ Taught electronic engineering and researched semiconductor physics.
   description = """
 <img src="/media/yqb.jpg" alt="yqb" style="padding-bottom: 30px;">
 
-Taught electronic engineering and researched semiconductor physics.
+- The affiliated team supports the Native Development Group of the Payment Plug-in R&D Department of the Technical Center.
+- Mainly responsible for the development of the 1QB Wallet hybird plug-in, using the Cordova framework to develop a payment plug-in for the 1QB Wallet app client, and burying points to count user behavior.
+- Building the Code Review platform in the team, H5 webpack package deployment and remote backup distribution platform development, Jenkins integrated static code scanning on a daily basis and something about CI/CD.
+- Developed an exception protection module, completed a common exception crash protection function module, and issued some operations to protect exceptions through a configuration file on the CMS under some known crash conditions on the line.
+
 """
 
 [[experience]]
@@ -81,7 +102,14 @@ Taught electronic engineering and researched semiconductor physics.
   description = """
 <img src="/media/quatanium.jpg" alt="quatanium" style="padding-bottom: 30px;">
 
-Taught electronic engineering and researched semiconductor physics.
+- Responsible for iOS client, a smart home client, which provide complete and easy-to-use home automation solutions for both businesses and consumers. Specially responsible for the research and development of cameras such as Foscam, Haikang, WRT access control, real-time viewing, intercom, playback, and data interaction with the server.
+- Using self-developed integration tools、automated building and testing infrastructure release iOS / Android every version.
+- Using Instrument、Reveal、Charles debug various difficult problems: droping frame, confused UIView hierarchy, Network connection problem.
+- Manually parse the dSYM file and use Symbolicatecrash to analyze the user's Crashlog, finding out the actual cause of the bug
+- Using Instrument (Core Animation、Time Profiler、Energy Diagnostics、Network) Optimization, fluency promote 30%, power consumption reduced 20%, network disconnect reduced 40%.
+- Optimize code structure and compress pictures, finally the total size of the app installation package reduced 50%.
+- Using the third-party crash logging tool Crashlytics and the official TestFlight to process the user's Crashlog. Using statistics management tool Flurry to count user behavior and collect data for background data mining
+- Join open source technologies in Objective-C to build quality products and contributed FFmpeg of foscam iOS SDK back to the community, ffmpeg built with 0.7.16 for armv7: https://github.com/quatanium/foscam-ios-sdk.
 """
 
 +++

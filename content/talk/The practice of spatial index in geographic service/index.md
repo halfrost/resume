@@ -38,6 +38,10 @@ links:
     icon: weibo
     name: Follow
     url: 'https://weibo.com/halfrost'
+  - icon: weixin
+    icon_pack: fab
+    name: Follow
+    url: https://img.halfrost.com/wechat-qr-code.png
   - icon_pack: fas
     icon: link
     name: Link
@@ -52,7 +56,7 @@ url_pdf: "https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/T_S
 url_code: "https://github.com/halfrost/S2"
 url_video: "https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/T_Salon_share.pdf"
 projects:
-  - internal-project
+  - Halfrost-Field
 
 draft: false
 view: 2

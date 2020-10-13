@@ -34,6 +34,10 @@ subtitle = "<a class='btn btn-outline-primary' href='https://github.com/halfrost
     tag = "Algorithm"
   
   [[content.filter_button]]
+    name = "Mobile"
+    tag = "Mobile"
+
+  [[content.filter_button]]
     name = "Other"
     tag = "Other"
 

@@ -1,41 +1,97 @@
 ---
-title: Internal Project
-summary: An example of using the in-built project page.
+title: Halfrost-Field
+summary: This repo concludes my technology blog、speech slides、electronic publication.
 tags:
-- Deep Learning
-date: "2016-04-27T00:00:00Z"
+- Blog
+- Other
+date: "2017-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
 
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption:
   focal_point: Smart
 
 links:
-- icon: twitter
-  icon_pack: fab
+- icon_pack: fab
+  icon: github
   name: Follow
-  url: https://twitter.com/georgecushen
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
+  url: 'https://github.com/halfrost/'
+- icon_pack: fab
+  icon: twitter
+  name: Follow
+  url: 'https://twitter.com/halffrost'
+- icon_pack: fab
+  icon: weibo
+  name: Follow
+  url: 'https://weibo.com/halfrost'
+- icon_pack: fab
+  icon: weixin
+  name: Follow
+  url: https://img.halfrost.com/wechat-qr-code.png
+
+url_code: "https://github.com/halfrost/Halfrost-Field"
+url_pdf: "https://github.com/halfrost/Halfrost-Field"
+url_slides: "https://github.com/halfrost/Halfrost-Field"
+url_video: "https://github.com/halfrost/Halfrost-Field"
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+slides: ""
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+《HTTP/2 Protocol Analysis》This series article detailed analysis the RFC 7540, which is the Hypertext Transfer Protocol Version 2 (HTTP/2).
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+• [RFC 7540] Hypertext Transfer Protocol Version 2 (HTTP/2)
+• Unveiling the veil of HTTP/2: How does HTTP/2 establish a connection?
+• Multiplexing of HTTP frames and streams in HTTP/2
+• Frame definition in HTTP/2
+• HTTP semantics in HTTP/2
+• Considerations in HTTP/2
+• Frequently asked questions in HTTP/2
+• [RFC 7541] HPACK: Header Compression for HTTP/2
+• Detailed HTTP/2 header compression algorithm-HPACK
+• HTTP/2 HPACK practical application examples
+• [RFC 7301] TLS Application-Layer Protocol Negotiation Extension
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+《TLS 1.3 Protocol Analysis》This series article detailed analysis the RFC 8846, which is the Transport Layer Security (TLS) Protocol Version 1.3.
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+• How to deploy TLS 1.3 ？
+• [RFC 6520] TLS & DTLS Heartbeat Extension
+• [RFC 8446] The Transport Layer Security (TLS) Protocol Version 1.3
+• TLS 1.3 Introduction
+• TLS 1.3 Handshake Protocol
+• TLS 1.3 Record Protocol
+• TLS 1.3 Alert Protocol
+• TLS 1.3 Cryptographic Computations
+• TLS 1.3 0-RTT and Anti-Replay
+• TLS 1.3 Compliance Requirements
+• TLS 1.3 Implementation Notes
+• TLS 1.3 Backward Compatibility
+• TLS 1.3 Overview of Security Properties
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+《Study Notes of Machine Learning》This study notes is the machine learning course in the coursera, which it's instructor is Andrew Ng in the Stanford University.
+
+• Week1 —— What is Machine Learning
+• Week1 —— Linear Regression with One Variable (Gradient Descent)
+• Week2 —— Multivariate Linear Regression
+• Week2 —— Computing Parameters Analytically
+• Week2 —— Octave Matlab Tutorial
+• Week3 —— Logistic Regression
+• Week3 —— Regularization
+• Week4 —— Neural Networks Representation
+• Week5 —— Neural Networks Learning
+• Week5 —— Backpropagation in Practice
+• Week6 —— Advice for Applying Machine Learning
+• Week6 —— Machine Learning System Design
+• Week7 —— Support Vector Machines
+• Week8 —— Unsupervised Learning
+• Week8 —— Dimensionality Reduction
+• Week9 —— Anomaly Detection
+• Week9 —— Recommender Systems
+• Week10 —— Large Scale Machine Learning
+• Week11 —— Application Example: Photo OCR
