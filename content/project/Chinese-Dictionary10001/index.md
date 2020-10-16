@@ -1,5 +1,5 @@
 ---
-title: Chinese Dictionary
+title: Chinese Dictionary 10001
 summary: A Chinese dictionary with more than 20,000 Chinese characters and detailed explanations, a collection of phonetic transcription, pinyin, stroke count, extra-part strokes, and interpretation. It also supports powerful search methods such as Chinese characters, pinyin, radicals, and stroke counts.
 tags:
 - Mobile

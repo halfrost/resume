@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   date_start = "2017-08-01"
   date_end = ""
   description = """
-<img src="/media/alibaba.jpg" alt="alibaba" style="padding-bottom: 30px;">
+<img src="/media/alibaba_.jpg" alt="alibaba" style="padding-bottom: 30px;">
   
 -	Lead a team of 5 engineers to build Taco ecosystem, including Taco (a scalable notification system), taco-cli (a deployment tool), taco-console (a cost calculation and analytics service), and taco-SDK (a suite of templates for iOS/Android/H5 developers). 
 -	Enrich the Taco ecosystem by implementing Taco v2,  an Infura-like, API gateway on top of Golang backend services, using  MySQL and Redis as the high-performance database, RabbitMQ and Kafka as the messaging queue, Hive, Blink and Elasticsearch as data statistics and message pipeline query, gRPC, Apache Thrift and HTTP as the communication protocol.
@@ -40,7 +40,7 @@ date_format = "Jan 2006"
   date_start = "2017-02-01"
   date_end = "2017-07-01"
   description = """
-<img src="/media/eleme.jpg" alt="eleme" style="padding-bottom: 30px;">
+<img src="/media/eleme_.jpg" alt="eleme" style="padding-bottom: 30px;">
 
 Front-End Engineer
 - Designed backend architecture with implementation in Golang, leveraging SOA-based microservices. RabbitMQ is used as the messaging queue and Apache Thrift as the communication protocol for Android, iOS and Web clients.
@@ -65,7 +65,7 @@ Senior iOS Engineer
   date_start = "2016-05-01"
   date_end = "2017-02-01"
   description = """
-<img src="/media/fangchuang.jpg" alt="fangchuang" style="padding-bottom: 30px;">
+<img src="/media/fangchuang_.jpg" alt="fangchuang" style="padding-bottom: 30px;">
 
 - Led the effort of hiring and managing 2 other technical team members to construct a web app and an iOS app.
 - Worked closely with other members in investment bank, investors, client, and legal industries to solve unique technical challenges.
@@ -83,7 +83,7 @@ reconstruction, replace Realm database, All UI rewriting, training functional pr
   date_start = "2015-11-01"
   date_end = "2016-04-30"
   description = """
-<img src="/media/yqb.jpg" alt="yqb" style="padding-bottom: 30px;">
+<img src="/media/yqb_.jpg" alt="yqb" style="padding-bottom: 30px;">
 
 - The affiliated team supports the Native Development Group of the Payment Plug-in R&D Department of the Technical Center.
 - Mainly responsible for the development of the 1QB Wallet hybird plug-in, using the Cordova framework to develop a payment plug-in for the 1QB Wallet app client, and burying points to count user behavior.
@@ -100,7 +100,7 @@ reconstruction, replace Realm database, All UI rewriting, training functional pr
   date_start = "2013-06-01"
   date_end = "2015-11-01"
   description = """
-<img src="/media/quatanium.jpg" alt="quatanium" style="padding-bottom: 30px;">
+<img src="/media/quatanium_.jpg" alt="quatanium" style="padding-bottom: 30px;">
 
 - Responsible for iOS client, a smart home client, which provide complete and easy-to-use home automation solutions for both businesses and consumers. Specially responsible for the research and development of cameras such as Foscam, Haikang, WRT access control, real-time viewing, intercom, playback, and data interaction with the server.
 - Using self-developed integration tools、automated building and testing infrastructure release iOS / Android every version.
