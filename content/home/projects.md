@@ -53,7 +53,7 @@ subtitle = "<a class='btn btn-outline-primary' href='https://github.com/halfrost
   view = 3
 
   # For Showcase view, flip alternate rows?
-  flip_alt_rows = false
+  flip_alt_rows = true
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -69,7 +69,7 @@ subtitle = "<a class='btn btn-outline-primary' href='https://github.com/halfrost
   # gradient_end = "SkyBlue"
   
   # Background image.
-  # image = "background.jpg"  # Name of image in `static/media/`.
+  # image = "alibaba.jpg"  # Name of image in `static/media/`.
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
@@ -83,4 +83,15 @@ subtitle = "<a class='btn btn-outline-primary' href='https://github.com/halfrost
  css_class = ""
 +++
 
-<h3 style="text-align:right;margin-bottom: 36px;"><a href='#' class='back-to-top'><i class='fas fa-chevron-up fa-lg' style='color:rgba(0, 0, 0, 0.54)'></i></a></h3>
+<!-- <h3 style="text-align:right;margin-bottom: 36px;"><a href='#' class='back-to-top'><i class='fas fa-chevron-up fa-lg' style='color:rgba(0, 0, 0, 0.54);font-size: 1.8rem;'></i></a></h3> -->
+
+
+<div style="text-align:right;margin-bottom: 60px;">
+  <span class="float-right" aria-hidden="true">
+    <a href="#" class="back-to-top">
+      <span class="button_icon">
+        <i class="fas fa-chevron-up fa-2x site-footer" style='font-size: 1.8rem;'></i>
+      </span>
+    </a>
+  </span>
+</div>

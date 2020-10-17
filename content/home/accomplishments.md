@@ -27,7 +27,7 @@ date_format = "Jan 2006"
   date_start = "2020-07-20"
   date_end = ""
   description = """
-<img src="/media/ACM.png" alt="ACM" style="height: 60px;">
+<img src="/media/ACM_.png" alt="ACM" style="height: 60px;">
 """
 
 [[item]]
@@ -39,7 +39,7 @@ date_format = "Jan 2006"
   date_start = "2020-07-15"
   date_end = ""
   description = """
-<img src="/media/IEEE.png" alt="IEEE" style="height: 60px;">
+<img src="/media/IEEE_.png" alt="IEEE" style="height: 60px;">
 """
 
 [[item]]
@@ -51,7 +51,7 @@ date_format = "Jan 2006"
   date_start = "2020-07-10"
   date_end = ""
   description = """
-<img src="/media/IEEE-CS.png" alt="IEEE-CS" style="height: 60px;">
+<img src="/media/IEEE-CS_.png" alt="IEEE-CS" style="height: 60px;">
 """
 
 [[item]]
@@ -63,7 +63,7 @@ date_format = "Jan 2006"
   date_start = "2020-07-05"
   date_end = ""
   description = """
-<img src="/media/CCF.png" alt="CCF" style="height: 60px;">
+<img src="/media/CCF_.png" alt="CCF" style="height: 60px;">
 """
 
 [[item]]
@@ -75,7 +75,7 @@ date_format = "Jan 2006"
   date_start = "2020-07-01"
   date_end = ""
   description = """
-<img src="/media/Coursera.png" alt="Coursera" style="height: 60px;">
+<img src="/media/Coursera_.png" alt="Coursera" style="height: 60px;">
 """
 
 [[item]]
@@ -87,7 +87,7 @@ date_format = "Jan 2006"
   date_start = "2020-06-15"
   date_end = ""
   description = """
-<img src="/media/Apple-teacher.png" alt="Apple Teacher" style="height: 60px;">
+<img src="/media/Apple-teacher_.png" alt="Apple Teacher" style="height: 60px;">
 """
 
 [[item]]
@@ -99,7 +99,7 @@ date_format = "Jan 2006"
   date_start = "2018-03-26"
   date_end = ""
   description = """
-<img src="/media/Coursera.png" alt="Coursera" style="height: 60px;">
+<img src="/media/Coursera_.png" alt="Coursera" style="height: 60px;">
 """
 
 
@@ -112,7 +112,7 @@ date_format = "Jan 2006"
   date_start = "2011-10-01"
   date_end = ""
   description = """
-<img src="/media/ACM-ICPC.png" alt="ACM-ICPC" style="height: 60px;">
+<img src="/media/ACM-ICPC_.png" alt="ACM-ICPC" style="height: 60px;">
 """
 
 [[item]]
@@ -124,7 +124,7 @@ date_format = "Jan 2006"
   date_start = "2011-05-01"
   date_end = ""
   description = """
-<img src="/media/ACM-ICPC.png" alt="ACM-ICPC" style="height: 60px;">
+<img src="/media/ACM-ICPC_.png" alt="ACM-ICPC" style="height: 60px;">
 """
 
 [[item]]
@@ -136,7 +136,7 @@ date_format = "Jan 2006"
   date_start = "2012-05-01"
   date_end = "2014-05-01"
   description = """
-<img src="/media/CQC.png" alt="CQC" style="height: 60px;">
+<img src="/media/CQC_.png" alt="CQC" style="height: 60px;">
 """
 
 [[item]]
@@ -148,7 +148,7 @@ date_format = "Jan 2006"
   date_start = "2011-11-01"
   date_end = "2013-11-01"
   description = """
-<img src="/media/CQC.png" alt="CQC" style="height: 60px;">
+<img src="/media/CQC_.png" alt="CQC" style="height: 60px;">
 """
 
 
@@ -161,7 +161,7 @@ date_format = "Jan 2006"
   date_start = "2012-03-01"
   date_end = "2017-03-01"
   description = """
-<img src="/media/NCRE.png" alt="NCRE" style="height: 60px;">
+<img src="/media/NCRE_.png" alt="NCRE" style="height: 60px;">
 """
 
 [[item]]
@@ -173,7 +173,7 @@ date_format = "Jan 2006"
   date_start = "2016-12-01"
   date_end = ""
   description = """
-<img src="/media/juejin.png" alt="juejin" style="height: 60px;">
+<img src="/media/juejin_.png" alt="juejin" style="height: 60px;">
 """
 
 [[item]]
@@ -185,7 +185,7 @@ date_format = "Jan 2006"
   date_start = "2016-12-01"
   date_end = ""
   description = """
-<img src="/media/jianshu.png" alt="jianshu" style="height: 60px;">
+<img src="/media/jianshu_.png" alt="jianshu" style="height: 60px;">
 """
 
 #[[item]]
@@ -197,7 +197,7 @@ date_format = "Jan 2006"
 #  date_start = "2012-04-01"
 #  date_end = ""
 #  description = """
-#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#<img src="/media/HUZU_.png" alt="HUZU" style="height: 60px;">
 #"""
 
 [[item]]
@@ -209,7 +209,7 @@ date_format = "Jan 2006"
   date_start = "2011-06-01"
   date_end = ""
   description = """
-<img src="/media/ACM-ICPC.png" alt="ACM-ICPC" style="height: 60px;">
+<img src="/media/ACM-ICPC_.png" alt="ACM-ICPC" style="height: 60px;">
 """
 
 #[[item]]
@@ -221,7 +221,7 @@ date_format = "Jan 2006"
 #  date_start = "2011-03-01"
 #  date_end = ""
 #  description = """
-#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#<img src="/media/HUZU_.png" alt="HUZU" style="height: 60px;">
 #"""
 
 
@@ -234,7 +234,7 @@ date_format = "Jan 2006"
 #  date_start = "2010-03-01"
 #  date_end = ""
 #  description = """
-#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#<img src="/media/HUZU_.png" alt="HUZU" style="height: 60px;">
 #"""
 
 #[[item]]
@@ -246,7 +246,7 @@ date_format = "Jan 2006"
 #  date_start = "2009-12-01"
 #  date_end = ""
 #  description = """
-#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#<img src="/media/HUZU_.png" alt="HUZU" style="height: 60px;">
 #"""
 
 #[[item]]
@@ -258,7 +258,7 @@ date_format = "Jan 2006"
 #  date_start = "2012-06-01"
 #  date_end = ""
 #  description = """
-#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#<img src="/media/HUZU_.png" alt="HUZU" style="height: 60px;">
 #"""
 
 #[[item]]
@@ -270,7 +270,7 @@ date_format = "Jan 2006"
 #  date_start = "2012-06-01"
 #  date_end = ""
 #  description = """
-#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#<img src="/media/HUZU_.png" alt="HUZU" style="height: 60px;">
 #"""
 
 #[[item]]
@@ -282,7 +282,7 @@ date_format = "Jan 2006"
 #  date_start = "2011-12-01"
 #  date_end = ""
 #  description = """
-#<img src="/media/HUZU.png" alt="HUZU" style="height: 60px;">
+#<img src="/media/HUZU_.png" alt="HUZU" style="height: 60px;">
 #"""
 
 +++
