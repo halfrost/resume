@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   date_start = "2017-08-01"
   date_end = ""
   description = """
-<img src="/media/alibaba_.jpg" alt="alibaba" style="padding-bottom: 30px;">
+<img data-src="/media/alibaba.jpg" alt="alibaba" style="padding-bottom: 30px;" class="lazyload">
   
 - Lead a team of 5 engineers to build Taco ecosystem, including Taco (a distributed golang-based message streaming platform, serving more than 300 million users and  20 third party partners), taco-cli (a deployment tool), taco-console (a cost calculation and analytics service), and taco-SDK (a suite of templates for iOS/Android/H5 developers). 
 -	Enrich the Taco ecosystem by implementing Taco v2,  an Infura-like, API gateway on top of Golang backend services, using  MySQL and Redis as the high-performance database, RabbitMQ and Kafka as the messaging queue, Hive, Blink and Elasticsearch as data statistics and message pipeline query, gRPC, Apache Thrift and HTTP as the communication protocol.
@@ -41,7 +41,7 @@ date_format = "Jan 2006"
   date_start = "2017-02-01"
   date_end = "2017-07-01"
   description = """
-<img src="/media/eleme_.jpg" alt="eleme" style="padding-bottom: 30px;">
+<img data-src="/media/eleme.jpg" alt="eleme" style="padding-bottom: 30px;" class="lazyload">
 
 Front-End Engineer
 -	Development and maintenance of the company's basic services, StormEye, a weather service that will affect the company’s daily revenue. Different weathers have different revenue for each takeaway order. Worked on various small full stack projects with high proficiency in Golang, JavaScript and Objective-C.
@@ -64,7 +64,7 @@ Senior iOS Engineer
   date_start = "2016-05-01"
   date_end = "2017-02-01"
   description = """
-<img src="/media/fangchuang_.jpg" alt="fangchuang" style="padding-bottom: 30px;">
+<img data-src="/media/fangchuang.jpg" alt="fangchuang" style="padding-bottom: 30px;" class="lazyload">
 
 -	Led the engineer team to develop the second version of the iOS application, Func, a product that helps investors find and fund the most potential start-ups. Was mainly responsible for the technology architecture design, MVVM architecture reconstruction, Realm database replacement, instant messaging module migration and all UI rewriting,
 -	Worked closely with our clients in investment bank and legal industries to collect  user feedbacks and provide new features. Also actively used Bugtags to track statistics on user behavior and optimize the user experience.
@@ -79,7 +79,7 @@ Senior iOS Engineer
   date_start = "2015-11-01"
   date_end = "2016-04-30"
   description = """
-<img src="/media/yqb_.jpg" alt="yqb" style="padding-bottom: 30px;">
+<img data-src="/media/yqb.jpg" alt="yqb" style="padding-bottom: 30px;" class="lazyload">
 
 -	Was mainly responsible for the development of the 1QB Wallet hybird plug-in, using the Cordova framework to develop a payment plug-in for the 1QB Wallet app client, and burying points to count user behavior.
 -	Building the Code Review platform in the team. Developed H5 webpack package deployment and remote backup distribution platform, including Jenkins integrated static code scanning on a daily basis and the CI/CD pipeline.
@@ -95,7 +95,7 @@ Senior iOS Engineer
   date_start = "2013-06-01"
   date_end = "2015-11-01"
   description = """
-<img src="/media/quatanium_.jpg" alt="quatanium" style="padding-bottom: 30px;">
+<img data-src="/media/quatanium.jpg" alt="quatanium" style="padding-bottom: 30px;" class="lazyload">
 
 -	Implemented and launched the very first iOS application, Qhome,  a smart home client, which provided an easy-to-use home automation solutions for both businesses and consumers. Was in charge of the camera research and development (Foscam, Haikang, WRT access control plug-in), real-time viewing, intercom, playback, and interaction with the server.
 -	Improved the fluency by 30%, reduced the power consumption by 20% and network disconnect by 40% using Instrument (Core Animation, Time Profiler, Energy Diagnostics, Network) Optimization method.  Also optimized the code structure and compress pictures and finally reduced the total size of the app installation package by 50%.
