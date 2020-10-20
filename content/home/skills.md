@@ -18,7 +18,7 @@ subtitle = ""
 [[feature]]
   icon = "golang"
   icon_pack = "custom"
-  name = "golang"
+  name = "Golang"
   description = "80%" 
   
 [[feature]]
@@ -60,86 +60,86 @@ subtitle = ""
 [[feature]]
   icon = "jenkins"
   icon_pack = "custom"
-  name = "jenkins"
+  name = "Jenkins"
   description = "60%" 
 
 [[feature]]
   icon = "JS"
   icon_pack = "custom"
-  name = "JS"
+  name = "JavaScript"
   description = "60%" 
 
 [[feature]]
   icon = "H5"
   icon_pack = "custom"
-  name = "H5"
+  name = "HTML5"
   description = "60%" 
 
 [[feature]]
   icon = "css3"
   icon_pack = "custom"
-  name = "css3"
+  name = "CSS3"
   description = "60%" 
   
 [[feature]]
   icon = "vue"
   icon_pack = "custom"
-  name = "vue"
+  name = "Vue"
   description = "60%" 
   
 [[feature]]
   icon = "weex"
   icon_pack = "custom"
-  name = "weex"
+  name = "Weex"
   description = "60%"
   
 [[feature]]
   icon = "electron"
   icon_pack = "custom"
-  name = "electron"
+  name = "Electron"
   description = "60%" 
   
 [[feature]]
   icon = "apple"
   icon_pack = "custom"
-  name = "apple"
+  name = "Apple"
   description = "90%"
   
 [[feature]]
   icon = "AI"
   icon_pack = "custom"
-  name = "AI"
+  name = "Adobe Illustrator"
   description = "90%"
 
 [[feature]]
   icon = "PS"
   icon_pack = "custom"
-  name = "PS"
+  name = "Adobe Photoshop"
   description = "90%"
   
 [[feature]]
   icon = "sketch"
   icon_pack = "custom"
-  name = "sketch"
+  name = "Sketch"
   description = "90%"
 
 [[feature]]
   icon = "git"
   icon_pack = "custom"
-  name = "git"
+  name = "Git"
   description = "80%"  
   
   
 [[feature]]
   icon = "gitlab"
   icon_pack = "custom"
-  name = "gitlab"
+  name = "Gitlab"
   description = "80%"       
 
 [[feature]]
   icon = "phabricator"
   icon_pack = "custom"
-  name = "phabricator"
+  name = "Phabricator"
   description = "80%" 
         
 # Uncomment to use emoji icons.
