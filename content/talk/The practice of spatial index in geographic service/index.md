@@ -1,5 +1,5 @@
 ---
-title: The practice of spatial index in geographic service
+title: The Practice of Spatial Index in Geographic Service
 abstract: "
   I share my practice 《Application of spatial index in geographic service》. The contents are as follows:
 <br>
@@ -20,12 +20,12 @@ abstract: "
   Slide: https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/T_Salon_share.pdf
 "
 location: Bank of East Asia Financial Tower 2nd Floor, Shanghai
-date: 2018-05-09T13:30:00.000Z
-date_end: 2018-05-09T19:00:00.000Z
+date: 2018-01-14T13:30:00.000Z
+date_end: 2018-01-14T19:00:00.000Z
 all_day: false
 links:
   - name: Slides
-    url: 'https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/T_Salon_share.pdf'
+    url: 'https://speakerdeck.com/halfrost/the-practice-of-spatial-index-in-geographic-service'
   - icon_pack: fab
     icon: github
     name: Follow
@@ -46,15 +46,13 @@ links:
     icon: link
     name: Link
     url: 'http://t.swift.gg/d/89-t-9-ai'
-event: Code<T> 2018 S2 Share
+event: Code<T> 2018 S1 Share
 event_url: "http://t.swift.gg/d/89-t-9-ai"
-publishDate: 2020-10-12T11:41:56.752Z
+publishDate: 2018-01-15T11:41:56.752Z
 
-slides: "T_Salon_share"
-url_slides: "/slides/T_Salon_share.pdf"
 url_pdf: "https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/T_Salon_share.pdf"
 url_code: "https://github.com/halfrost/S2"
-url_video: "https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/T_Salon_share.pdf"
+url_video: "https://speakerdeck.com/halfrost/the-practice-of-spatial-index-in-geographic-service"
 projects:
   - Halfrost-Field
 
