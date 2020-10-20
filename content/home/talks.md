@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 100  # Order that this section will appear.
 
 title = "My Recent Talks"
-subtitle = ""
+subtitle = "<a class='btn btn-outline-primary' href='https://speakerdeck.com/halfrost/'><i class='fas fa-video'></i>&nbsp; See All Talks</a>"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
@@ -68,3 +68,13 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
+
+<div style="text-align:right;margin-bottom: 60px;">
+  <span class="float-right" aria-hidden="true">
+    <a href="#" class="back-to-top">
+      <span class="button_icon">
+        <i class="fas fa-chevron-up fa-2x site-footer" style='font-size: 1.8rem;'></i>
+      </span>
+    </a>
+  </span>
+</div>
