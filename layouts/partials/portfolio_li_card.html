@@ -21,7 +21,7 @@
   <div class="card">
     {{ with $resource }}
     {{ $image := .Resize (printf "550x q90 %s") }}
-    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay project-card-image-auto">
       <img data-src="{{ $image.RelPermalink }}" alt="" class="img-responsive lazyload">
     </a>
     {{ end }}
