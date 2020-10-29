@@ -42,7 +42,7 @@
         {{ end }}
       </div>
 
-      <ul class="network-icon" aria-hidden="true">
+      <ul class="network-icon">
         {{ range $person.social }}
         {{ $pack := or .icon_pack "fas" }}
         {{ $pack_prefix := $pack }}

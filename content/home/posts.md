@@ -70,7 +70,7 @@ subtitle = "<a class='btn btn-outline-primary' href='https://halfrost.com/'><i c
 <!-- <h3 style="text-align:right;margin-bottom: 36px;"><a href='#' class='back-to-top'><i class='fas fa-chevron-up fa-lg' style='color:rgba(0, 0, 0, 0.54);font-size: 1.8rem;'></i></a></h3> -->
 
 <div style="text-align:right;margin-bottom: 60px;">
-  <span class="float-right" aria-hidden="true">
+  <span class="float-right">
     <a href="#" class="back-to-top">
       <span class="button_icon">
         <i class="fas fa-chevron-up fa-2x site-footer" style='font-size: 1.8rem;'></i>

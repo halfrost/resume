@@ -70,7 +70,7 @@ subtitle = "<a class='btn btn-outline-primary' href='https://speakerdeck.com/hal
 +++
 
 <div style="text-align:right;margin-bottom: 60px;">
-  <span class="float-right" aria-hidden="true">
+  <span class="float-right">
     <a href="#" class="back-to-top">
       <span class="button_icon">
         <i class="fas fa-chevron-up fa-2x site-footer" style='font-size: 1.8rem;'></i>

@@ -9,7 +9,7 @@ authors:
 tags:
   - Go
 categories:
-  - Go
+  - Golang
 image:
   filename: featured.png
   focal_point: Smart
