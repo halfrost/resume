@@ -93,7 +93,7 @@
         <ul class="ul-edu fa-ul">
           {{ range .courses }}
           <li>
-            <img data-src="favicon.png" alt="" style="height: 1.5em; width: 1.5em; position: absolute; margin-left: -2.0em;" class="lazyload">
+            <img data-src="{{ .schoolbadge }}" alt="" style="height: 1.5em; width: 1.5em; position: absolute; margin-left: -2.0em; margin-top: 0.2em;" class="lazyload">
             <!-- <i class="fa-li fas fa-graduation-cap"></i> -->
             <div class="description">
               <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>

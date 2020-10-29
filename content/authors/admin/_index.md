@@ -39,6 +39,7 @@ education:
     - course: B.Eng in Computer Science, GPA 3.75/4.0
       institution: Huzhou University, Zhejiang, China
       year: 2013
+      schoolbadge: '/HUZU.svg'
 user_groups:
   - Researchers
   - Visitors
