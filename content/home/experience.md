@@ -22,7 +22,7 @@ date_format = "Jan 2006"
   company = "Alibaba Group"
   company_url = ""
   location = "Shanghai, China"
-  date_start = "2017-08-01"
+  date_start = "2018-04-01"
   date_end = ""
   description = """
 <img data-src="/media/alibaba.jpg" alt="alibaba" style="padding-bottom: 30px;" class="lazyload">
@@ -39,7 +39,7 @@ date_format = "Jan 2006"
   company_url = "https://www.ele.me/"
   location = "Shanghai, China"
   date_start = "2017-02-01"
-  date_end = "2017-07-01"
+  date_end = "2018-04-01"
   description = """
 <img data-src="/media/eleme.jpg" alt="eleme" style="padding-bottom: 30px;" class="lazyload">
 
