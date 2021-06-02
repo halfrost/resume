@@ -19,6 +19,30 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
+  organization = "Google Cloud"
+  organization_url = "https://www.coursera.org/specializations/architecting-google-kubernetes-engine"
+  title = "Architecting with Google Kubernetes Engine Specialization"
+  url = ""
+  certificate_url = "https://www.coursera.org/account/accomplishments/specialization/certificate/YA7MNBZRPVWG"
+  date_start = "2021-05-30"
+  date_end = ""
+  description = """
+<img data-src="/media/Google-Cloud.png" alt="Google-Cloud" style="height: 60px;" class="lazyload">
+"""
+
+[[item]]
+  organization = "University of California, Irvine"
+  organization_url = "https://www.coursera.org/specializations/google-golang"
+  title = "Programming with Google Go"
+  url = ""
+  certificate_url = "https://www.coursera.org/account/accomplishments/specialization/certificate/VUP64SWLSK3V"
+  date_start = "2021-05-20"
+  date_end = ""
+  description = """
+<img data-src="/media/UCI.png" alt="UCI" style="height: 60px;" class="lazyload">
+"""
+
+[[item]]
   organization = "ACM, Association for Computing Machinery"
   organization_url = "https://www.acm.org/"
   title = "ACM Professional Membership"
@@ -67,15 +91,15 @@ date_format = "Jan 2006"
 """
 
 [[item]]
-  organization = "coursera"
-  organization_url = "https://www.coursera.org"
+  organization = "DeepLearning AI"
+  organization_url = "https://www.coursera.org/learn/ai-for-everyone"
   title = "AI For Everyone"
   url = "https://www.coursera.org/learn/ai-for-everyone"
   certificate_url = "https://www.coursera.org/account/accomplishments/certificate/N6L98MC4JW8T"
   date_start = "2020-07-01"
   date_end = ""
   description = """
-<img data-src="/media/Coursera.png" alt="Coursera" style="height: 60px;" class="lazyload">
+<img data-src="/media/DeepLearning-AI.png" alt="Coursera" style="height: 60px;" class="lazyload">
 """
 
 [[item]]
@@ -91,15 +115,15 @@ date_format = "Jan 2006"
 """
 
 [[item]]
-  organization = "coursera"
-  organization_url = "https://www.coursera.org"
+  organization = "Stanford Online"
+  organization_url = "https://www.coursera.org/learn/machine-learning"
   title = "Machine Learning"
   url = "https://www.coursera.org/learn/machine-learning"
   certificate_url = "https://www.coursera.org/account/accomplishments/certificate/KQP78XV66AEP"
   date_start = "2018-03-26"
   date_end = ""
   description = """
-<img data-src="/media/Coursera.png" alt="Coursera" style="height: 60px;" class="lazyload">
+<img data-src="/media/stanford-online.png" alt="Coursera" style="height: 60px;" class="lazyload">
 """
 
 
