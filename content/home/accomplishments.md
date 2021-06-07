@@ -18,6 +18,43 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+
+[[item]]
+  organization = "DeepLearning AI"
+  organization_url = "https://www.coursera.org/specializations/deep-learning"
+  title = "Deep Learning"
+  url = "https://www.coursera.org/specializations/deep-learning"
+  certificate_url = "https://www.coursera.org/account/accomplishments/certificate/N6L98MC4JW8T"
+  date_start = "2021-06-15"
+  date_end = ""
+  description = """
+<img data-src="/media/DeepLearning-AI.png" alt="Coursera" style="height: 60px;" class="lazyload">
+"""
+
+[[item]]
+  organization = "Google Cloud"
+  organization_url = "https://www.coursera.org/professional-certificates/gcp-cloud-architect"
+  title = "Preparing for Google Cloud Certification: Cloud Architect Specialization"
+  url = ""
+  certificate_url = "https://www.coursera.org/account/accomplishments/specialization/certificate/X4DPCNBW48MF"
+  date_start = "2021-06-03"
+  date_end = ""
+  description = """
+<img data-src="/media/Google-Cloud.png" alt="Google-Cloud" style="height: 60px;" class="lazyload">
+"""
+
+[[item]]
+  organization = "Google Cloud"
+  organization_url = "https://www.coursera.org/specializations/gcp-architecture"
+  title = "Architecting with Google Compute Engine Specialization"
+  url = ""
+  certificate_url = "https://www.coursera.org/account/accomplishments/specialization/certificate/3GU32E3PNTSU"
+  date_start = "2021-06-01"
+  date_end = ""
+  description = """
+<img data-src="/media/Google-Cloud.png" alt="Google-Cloud" style="height: 60px;" class="lazyload">
+"""
+
 [[item]]
   organization = "Google Cloud"
   organization_url = "https://www.coursera.org/specializations/architecting-google-kubernetes-engine"
