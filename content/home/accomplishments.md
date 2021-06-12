@@ -18,6 +18,18 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+[[item]]
+  organization = "DeepLearning AI"
+  organization_url = "https://www.coursera.org/professional-certificates/tensorflow-in-practice"
+  title = "DeepLearning.AI TensorFlow Developer Specialization"
+  url = "https://www.coursera.org/professional-certificates/tensorflow-in-practice"
+  certificate_url = "https://www.coursera.org/account/accomplishments/specialization/certificate/SCP8JNZDRDCN"
+  date_start = "2019-06-30"
+  date_end = ""
+  description = """
+<img data-src="/media/DeepLearning-AI.png" alt="Coursera" style="height: 60px;" class="lazyload">
+"""
+
 
 [[item]]
   organization = "DeepLearning AI"
@@ -25,7 +37,7 @@ date_format = "Jan 2006"
   title = "Deep Learning Specialization"
   url = "https://www.coursera.org/specializations/deep-learning"
   certificate_url = "https://www.coursera.org/account/accomplishments/specialization/certificate/JBTR2VL5LKXU"
-  date_start = "2021-06-15"
+  date_start = "2019-06-15"
   date_end = ""
   description = """
 <img data-src="/media/DeepLearning-AI.png" alt="Coursera" style="height: 60px;" class="lazyload">
@@ -133,7 +145,7 @@ date_format = "Jan 2006"
   title = "AI For Everyone"
   url = "https://www.coursera.org/learn/ai-for-everyone"
   certificate_url = "https://www.coursera.org/account/accomplishments/certificate/N6L98MC4JW8T"
-  date_start = "2020-07-01"
+  date_start = "2020-06-10"
   date_end = ""
   description = """
 <img data-src="/media/DeepLearning-AI.png" alt="Coursera" style="height: 60px;" class="lazyload">
@@ -145,7 +157,7 @@ date_format = "Jan 2006"
   title = "Apple Teacher"
   url = "https://appleteacher.apple.com/"
   certificate_url = "https://img.halfrost.com/certificate/AppleTeacher.pdf"
-  date_start = "2020-06-15"
+  date_start = "2020-06-30"
   date_end = ""
   description = """
 <img data-src="/media/Apple-teacher.png" alt="Apple Teacher" style="height: 60px;" class="lazyload">
