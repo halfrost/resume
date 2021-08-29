@@ -1,10 +1,10 @@
 ---
 title: Dezhi Yu
-role: Senior Back End Engineer
+role: Staff Engineer
 avatar_filename: avatar.jpg
 organizations:
-  - name: Alibaba Group
-    url: "https://www.alibaba.com/"
+  - name: Binance.com
+    url: "https://www.binance.com/"
 superuser: true
 authors:
   - admin
