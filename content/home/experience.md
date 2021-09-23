@@ -18,18 +18,34 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "Staff Engineer"
+  company = "Binance.com"
+  company_url = ""
+  location = "Singapore City, Singapore"
+  date_start = "2021-05-01"
+  date_end = ""
+  description = """
+<img data-src="/media/binance.jpg" alt="alibaba" style="padding-bottom: 30px;" class="lazyload">
+
+- Led a team consisting of 7 engineers to implement from scratch and successfully launch the firm’s first Strategy Distribution Engine – Themis, a smart strategy engine based on traffic flow and predicate conditions’ strategy, which provides handy service for vendors and consumers; Build strategy ecosystem, including Themis backend service, Themis-cli (deployment tool), Themis-admin(management configuration system), and Themis-SDK (developers suite of integrated for iOS/Android/H5). 
+- Designed architecture of native service mesh cloud app on top of Golang backend services, using MySQL and Redis as high-performance database, Prow, Bazel as CI/CD, Hive, ClickHouse as data statistics and AWS by K8s + Istio as deployment environment.
+- Themis ecosystem managed to accumulate 200 million users within 10 days of its release to the public, with delivery rate above 97%, daily peak value over  5000k and online connections averaged 10k-15k QPS.
+
+"""
+
+[[experience]]
   title = "Senior Back End Engineer ｜Senior Research And Development Engineer"
   company = "Alibaba Group"
   company_url = ""
   location = "Shanghai, China"
   date_start = "2018-04-01"
-  date_end = ""
+  date_end = "2021-05-01"
   description = """
 <img data-src="/media/alibaba.jpg" alt="alibaba" style="padding-bottom: 30px;" class="lazyload">
-  
-- Lead a team of 5 engineers to build Taco ecosystem, including Taco (a distributed golang-based message streaming platform, serving more than 300 million users and  20 third party partners), taco-cli (a deployment tool), taco-console (a cost calculation and analytics service), and taco-SDK (a suite of templates for iOS/Android/H5 developers). 
--	Enrich the Taco ecosystem by implementing Taco v2,  an Infura-like, API gateway on top of Golang backend services, using  MySQL and Redis as the high-performance database, RabbitMQ and Kafka as the messaging queue, Hive, Blink and Elasticsearch as data statistics and message pipeline query, gRPC, Apache Thrift and HTTP as the communication protocol.
--	Taco ecosystem successfully handles more than 400 million push notifications a day with a delivery rate higher than 90% and a delivery time range from 1.72 to 2.2 seconds. Daily peak value can reach 550k online connections with 20k-30k QPS.
+
+-	Participated in Tmall Double Eleven online shopping promotion for 2 consecutive years; led team consisting of 5 engineers to build Taco ecosystem, including Taco (a distributed Golang-based message streaming platform, which served 300 million users and 20 third-party partners), Taco-cli (deployment tool), Taco-console (cost calculation and analytics service), and Taco-SDK (suite of templates for iOS/Android/H5). 
+-	Enriched Taco ecosystem by implementing Taco V2, an infura-like API gateway on top of Golang backend services, which used MySQL and Redis as high-performance database, RabbitMQ and Kafka as message queue, Hive, Blink and Elasticsearch as data and message pipeline query, and gRPC, Apache Thrift and HTTP as communication protocol.
+-	Taco ecosystem successfully handles 1100 million+ push notifications per day, with delivery rate above 97% and delivery time of 0.72-1.2 seconds; daily peak value can reach 750k online connections with 30k-50k QPS.
 
 """
 
@@ -66,8 +82,9 @@ Senior iOS Engineer
   description = """
 <img data-src="/media/fangchuang.jpg" alt="fangchuang" style="padding-bottom: 30px;" class="lazyload">
 
--	Led the engineer team to develop the second version of the iOS application, Func, a product that helps investors find and fund the most potential start-ups. Was mainly responsible for the technology architecture design, MVVM architecture reconstruction, Realm database replacement, instant messaging module migration and all UI rewriting,
--	Worked closely with our clients in investment bank and legal industries to collect  user feedbacks and provide new features. Also actively used Bugtags to track statistics on user behavior and optimize the user experience.
+- Led engineer team to develop 2nd version of iOS app Func, a product to help investors find and fund the most innovative start-ups; mainly responsible for technology architecture design, MVVM architecture reconstruction, Realm database replacement, instant messaging module migration and UI rewriting; 
+- Worked closely with clients in investment banking and legal industries to collect user feedback and develop new features; actively applied Bugtags to monitor user behavior and optimize user experience. 
+- Successfully decreased crash rate from 5/10000 to 1/10000 and increased network request success rate from 78% to 98%, the application having more than 50k monthly active users.
 
 """
 
