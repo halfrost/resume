@@ -40,7 +40,7 @@ education:
       institution: Carnegie Mellon University, CA, United States of America
       year: 2021
       schoolbadge: '/CMU.svg'
-    - course: B.Eng in Computer Science, GPA 3.75/4.0
+    - course: B.Eng in Computer Science, GPA 3.8/4.0
       institution: Huzhou University, Zhejiang, China
       year: 2013
       schoolbadge: '/HUZU.svg'
