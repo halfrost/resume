@@ -54,4 +54,4 @@ Dezhi Yu is a professional developer who focuses on Cloud Native now. He has str
 
 Dezhi Yu also is a globetrotter, traveled around the world before the age of 28, and his footprints will soon cover seven continents (coming soon). He is extreme sports enthusiasts, like skydiving, skiing, diving, hot air ballooning, helicopters. He is always willing to try new things, and keeping to learn from them.
 
-Now, he works for Alibaba Group as a senior back end engineer.
+Now, he works for Binance.com as a Staff Engineer.
