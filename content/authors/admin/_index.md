@@ -38,11 +38,11 @@ education:
   courses:
     - course: MS in Software Engineering, GPA 4.0/4.0
       institution: Carnegie Mellon University, CA, United States of America
-      year: 2021
+      year: 
       schoolbadge: '/CMU.svg'
     - course: B.Eng in Computer Science, GPA 3.8/4.0
       institution: Huzhou University, Zhejiang, China
-      year: 2013
+      year: 
       schoolbadge: '/HUZU.svg'
 user_groups:
   - Researchers
