@@ -17,42 +17,6 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
-
-[[experience]]
-  title = "Staff Engineer - Cloud Infrastructure"
-  company = "Tiktok Inc"
-  company_url = ""
-  location = "Mountain View, California, United States"
-  date_start = "2023-02-20"
-  date_end = ""
-  description = """
-<img data-src="/media/tiktok.png" alt="tiktok" style="padding-bottom: 30px;" class="lazyload">
-
-- 
-
-"""
-
-
-[[experience]]
-  title = "Quantitative Algo Developer - Smart Contract (DeFi 2.0)"
-  company = "Aperture Finance"
-  company_url = ""
-  location = "Mountain View, California, United States"
-  date_start = "2023-05-01"
-  date_end = ""
-  description = """
-<img data-src="/media/aperture.jpg" alt="tiktok" style="padding-bottom: 30px;" class="lazyload">
-
-- Led Solana Projects as a Tech Owner, designed and implemented Pseudo-Delta Neutral Hedging Strategy which uses Leveraged LP farming protocols in Solana, using Francium, Tulip. 
-- Extracting risk factors conditioned on solana volatile asset characteristics with an autoencoder at daily frequency and create synthetic training data using GANs, using historical data for the past 5 years. 
-- Denoise dataset using wavelets and the Kalman filter and combine e Zipline offline and on Quantopian to test individual and multiple alpha factors using NumPy, pandas, and TA-Lib. Utilized Python libraries backtrader and Zipline to conduct backtesting on ML-driven strategies in historical market environments, reducing the probability of putting financial resources at risk when deploying candidate smart contracts in real-time markets by 30%. 
-- Developed smart contracts using Rust, which employ Alpha factors-generated signals to dynamically adjust long and short positions for optimizing portfolios, accumulated a net income of $2 million in one month on the Solana chain.
-
-
-"""
-
-
-
 [[experience]]
   title = "Staff Engineer"
   company = "Binance.com"

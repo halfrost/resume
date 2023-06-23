@@ -36,6 +36,10 @@ social:
     icon: phoenix-squadron
 education:
   courses:
+    - course: MS in Computer Science, Summer Quarter
+      institution: Stanford University, CA, United States of America
+      year: 
+      schoolbadge: '/stanford.svg'
     - course: MS in Software Engineering, GPA 3.95/4.0
       institution: Carnegie Mellon University, CA, United States of America
       year: 
