@@ -17,7 +17,8 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
-[[experience]]
+
+<!--[[experience]]
   title = "Staff Engineer"
   company = "Binance.com"
   company_url = ""
@@ -119,5 +120,5 @@ Senior iOS Engineer
 -	Processed the user’s Crashlog with the third-party crash logging tool Crashlytics and the official TestFlight. Using statistics management tool Flurry to monitor user behavior and collect data for background data mining
 
 """
-
+-->
 +++
