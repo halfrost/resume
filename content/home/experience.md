@@ -38,7 +38,7 @@ date_format = "Jan 2006"
   company = "Aperture Finance"
   company_url = ""
   location = "Mountain View, California, United States"
-  date_start = "2023-05-01"
+  date_start = "2022-05-01"
   date_end = ""
   description = """
 <img data-src="/media/aperture.jpg" alt="tiktok" style="padding-bottom: 30px;" class="lazyload">
@@ -63,15 +63,16 @@ date_format = "Jan 2006"
   description = """
 <img data-src="/media/binance.jpg" alt="alibaba" style="padding-bottom: 30px;" class="lazyload">
 
-- Led a team consisting of 7 engineers to implement from scratch and successfully launch the firm’s first Strategy Distribution Engine – Themis, a smart strategy engine based on traffic flow and predicate conditions’ strategy, which provides handy service for vendors and consumers; Build strategy ecosystem, including Themis backend service, Themis-cli (deployment tool), Themis-admin(management configuration system), and Themis-SDK (developers suite of integrated for iOS/Android/H5). 
-- Designed architecture of native service mesh cloud app on top of Golang backend services, using MySQL and Redis as high-performance database, Prow, Bazel as CI/CD, Hive, ClickHouse as data statistics and AWS by K8s + Istio as deployment environment.
-- Themis ecosystem managed to accumulate 200 million users within 10 days of its release to the public, with delivery rate above 97%, daily peak value over  5000k and online connections averaged 10k-15k QPS.
+- Led a team consisting of 8 engineers to implement from scratch and successfully launch the firm’s first Strategy Distribution Engine – Themis, a global smart strategy engine based on traffic flow and predicate conditions’ strategy.
+- Simulated ads data on the Strategy Distribution Engine to do offline data analysis and queried and fed production data to the system and preformed maximum 1K online A/B experiments simultaneously and release a maximum of 20K Strategy per day. 
+- Themis ecosystem combines and compares online and offline data for enhanced resource allocation strategy with accumulated 200 million users, facilitating transaction volumes reaching $1000 million per week.
+
 
 """
 
 [[experience]]
   title = "Senior Back End Engineer ｜Senior Research And Development Engineer"
-  company = "Alibaba Group"
+  company = "AliCloud"
   company_url = ""
   location = "Shanghai, China"
   date_start = "2018-04-01"
@@ -79,9 +80,11 @@ date_format = "Jan 2006"
   description = """
 <img data-src="/media/alibaba.jpg" alt="alibaba" style="padding-bottom: 30px;" class="lazyload">
 
--	Participated in Tmall Double Eleven online shopping promotion for 2 consecutive years; led team consisting of 5 engineers to build Taco ecosystem, including Taco (a distributed Golang-based message streaming platform, which served 300 million users and 20 third-party partners), Taco-cli (deployment tool), Taco-console (cost calculation and analytics service), and Taco-SDK (suite of templates for iOS/Android/H5). 
--	Enriched Taco ecosystem by implementing Taco V2, an infura-like API gateway on top of Golang backend services, which used MySQL and Redis as high-performance database, RabbitMQ and Kafka as message queue, Hive, Blink and Elasticsearch as data and message pipeline query, and gRPC, Apache Thrift and HTTP as communication protocol.
--	Taco ecosystem successfully handles 1100 million+ push notifications per day, with delivery rate above 97% and delivery time of 0.72-1.2 seconds; daily peak value can reach 750k online connections with 30k-50k QPS.
+- Participated in Tmall Double Eleven online shopping promotion for 2 consecutive years; Led team consisting of 5 engineers.
+- Designed and implemented a ads targeting system, which utilizes user's historical purchase records and recent search history to recommend promotional deals based on customer profiling behavior data, dynamically adjusting the intensity of discounts in deals based on users' recent engagement levels data, resulting in an annual revenue growth exceeding 48% and an overall purchase rate improvement of 8%, helped company create a new transaction record of 268.4 billion RMB a day in 2019.
+- Optimized on-line and off-line recommendation model for advertisements, improved advertisement push, banners, and SMS performance by 25%; Wrote HiveQL and SQL to gather original data, preprocessed data set by data cleaning, categorical feature transformation and normalization; Enriched user-profile features and optimized user-profile update strategies to provide reliable features for machine learning models; Trained XGboost and LR model, increased AUC from 0.59 to 0.77. Did data resampling and undersampleing for imbalanced data, imputed missing values, evaluated model by recall and precision.
+- Taco ecosystem successfully handles 1100 million+ push notifications per day, with delivery rate above 97% and delivery time of 0.72-1.2 seconds; daily peak value can reach 750k online connections with 30k-50k QPS.
+
 
 """
 
@@ -95,21 +98,11 @@ date_format = "Jan 2006"
   description = """
 <img data-src="/media/eleme.jpg" alt="eleme" style="padding-bottom: 30px;" class="lazyload">
 
-Front-End Engineer
--	Development and maintenance of the company's basic services, StormEye, a weather service that will affect the company’s daily revenue. Different weathers have different revenue for each takeaway order. Worked on various small full stack projects with high proficiency in Golang, JavaScript and Objective-C.
--	Was responsible for Designed backend architecture with implementation in Golang, leveraging SOA-based microservices. RabbitMQ is used as the messaging queue and Apache Thrift as the communication protocol for Android, iOS and Web clients. In severe weather conditions, within China, it can help the company save 3 million per month on average.
--	Using Google S2 algorithm and Drove the efforts of building better scalability and performance across both PostgreSQL and application layers to achieve low latency with millions of requests per day on tens of millions of records. Service’s performance improved by 120%. Machine resources were reduced from 200 to 4, saving 98% of server resource.
-
-
-Senior iOS Engineer
--	Developed the iOS application, Talaris, which was an aggregated same-day delivery platform for internal and third-party retailer using JavaScript, Objective-C and Ruby. Was in charge of building better scalability and performance across both Weex and Native application layers. The application’s monthly active users reached 90,000.
--	Was responsible for MVVM architecture design, routing design and API convergence management. Successfully decreased the crash rate from 7/10000 to 3/10000. Optimized the network layer, power and application fluency performance to help the team saving 15% power consumption and 7% network traffic consumption.
--	Training new engineers on MVVM architecture expertise, communicating with external deliveryman on technical difficulties, and sharing multiple-time technical topic within the team.
 
 """
 
 [[experience]]
-  title = "iOS Team Leader"
+  title = "Infrastructure Team Leader"
   company = "Shanghai Fangchuang Financial Information Service Co., Ltd."
   company_url = "https://www.fangchuang.com/"
   location = "Shanghai, China"
@@ -118,14 +111,15 @@ Senior iOS Engineer
   description = """
 <img data-src="/media/fangchuang.jpg" alt="fangchuang" style="padding-bottom: 30px;" class="lazyload">
 
-- Led engineer team to develop 2nd version of iOS app Func, a product to help investors find and fund the most innovative start-ups; mainly responsible for technology architecture design, MVVM architecture reconstruction, Realm database replacement, instant messaging module migration and UI rewriting; 
-- Worked closely with clients in investment banking and legal industries to collect user feedback and develop new features; actively applied Bugtags to monitor user behavior and optimize user experience. 
-- Successfully decreased crash rate from 5/10000 to 1/10000 and increased network request success rate from 78% to 98%, the application having more than 50k monthly active users.
+- Led engineer team to designed and implement a FaaS infrastructure snapshot system using Java. Speed up the average response time by 65% and improved the service robustness by 81% via parallelization and local caching techniques for read-heavy operations with PB level daily caching volume.
+- Migrate 12 backend docker service to AliCloud, a cloud kubernetes platform and refactored the infrastructure by using redis and mysql in AliCloud, which increased the stability of the company's entire back-end infrastructure by 65%.
+- Designed and implemented a internal system to intelligently match projects for investors, utilizing a recommendation system model, text abstraction model, and Text-to-Speech model, increasing the success rate of project bidding by 40%.
+
 
 """
 
 [[experience]]
-  title = "Senior iOS Engineer"
+  title = "Infrastructure Team Leader"
   company = "Shanghai Ping An Smart Technology Co., Ltd."
   company_url = "https://www.yqb.com/"
   location = "Shanghai, China"
@@ -134,14 +128,17 @@ Senior iOS Engineer
   description = """
 <img data-src="/media/yqb.jpg" alt="yqb" style="padding-bottom: 30px;" class="lazyload">
 
--	Was mainly responsible for the development of the 1QB Wallet hybird plug-in, using the Cordova framework to develop a payment plug-in for the 1QB Wallet app client, and burying points to count user behavior.
--	Building the Code Review platform in the team. Developed H5 webpack package deployment and remote backup distribution platform, including Jenkins integrated static code scanning on a daily basis and the CI/CD pipeline.
+-	Designed and implemented the 1QB Wallet recommendation system, matching clients and products based on the keywords of previously searched items to boost sales, using RPC and HTTP framework in Java, improving the accuracy by 30%.
+-	Building new Code Review platform from scratch; developed Java package deployment and remote backup distribution platform, including Jenkins integrated static code scanning on daily basis and CI/CD pipeline, increasing efficiency by 5 times..
+-	Developed a trading system in Go, leveraging the Kafka Messaging System, to enable users' participation in flash deal ordering events, enabling millions of users to engage in millisecond-level promotional activities. In the first year since the release and launch of this system, it has contributed an incremental revenue of 10 Billion RMB in GMV to the company.
+-	Refactored the task queue and task manager using Celery, RabbitMQ and MySQL to support larger-scale, distributed tasks; Queue latency reduced by 20%, Consume rate increased by 4x and Memory used decreased by 40%.
+
 
 
 """
 
 [[experience]]
-  title = "Junior iOS Engineer"
+  title = "Software Engineer"
   company = "Quatanium Technology Co., Ltd."
   company_url = "https://github.com/quatanium"
   location = "Shanghai, China"
@@ -150,9 +147,9 @@ Senior iOS Engineer
   description = """
 <img data-src="/media/quatanium.jpg" alt="quatanium" style="padding-bottom: 30px;" class="lazyload">
 
--	Implemented and launched the very first iOS application, Qhome,  a smart home client, which provided an easy-to-use home automation solutions for both businesses and consumers. Was in charge of the camera research and development (Foscam, Haikang, WRT access control plug-in), real-time viewing, intercom, playback, and interaction with the server.
--	Improved the fluency by 30%, reduced the power consumption by 20% and network disconnect by 40% using Instrument (Core Animation, Time Profiler, Energy Diagnostics, Network) Optimization method.  Also optimized the code structure and compress pictures and finally reduced the total size of the app installation package by 50%.
--	Processed the user’s Crashlog with the third-party crash logging tool Crashlytics and the official TestFlight. Using statistics management tool Flurry to monitor user behavior and collect data for background data mining
+-  Designed and implemented firm’s first Cluster Observability Platform from scratch. Built a log service based on logstash, reformat, and transfer logs from grouping system to Kibana log platform, handing million logs per day with very high stability and availability which annual availability rate reaches 99.999%; Created Grafana dashboards to report the counters of logs.
+-	Designed and implemented CI/CD pipelines with YAML and deployed Docker containers to AWS, making them automatically build, pack, and deploy the log service to production, serving an average of 200 integrations per day.
+-	Designed and implemented an alert service for error logs, which can report the errors and create fix tickets for DevOps engineers automatically, reducing fix waiting time by 80%.
 
 """
 
