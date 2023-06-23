@@ -89,7 +89,7 @@ date_format = "Jan 2006"
 """
 
 [[experience]]
-  title = "Senior iOS Engineer | Front-End Engineer"
+  title = "Senior Software Engineer"
   company = "ele.me"
   company_url = "https://www.ele.me/"
   location = "Shanghai, China"
