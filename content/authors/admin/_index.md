@@ -36,7 +36,7 @@ social:
     icon: phoenix-squadron
 education:
   courses:
-    - course: MS in Computer Science, Summer Quarter
+    - course: MS in Computer Science, GPA 4.0/4.0
       institution: Stanford University, CA, United States of America
       year: 
       schoolbadge: '/stanford.svg'
