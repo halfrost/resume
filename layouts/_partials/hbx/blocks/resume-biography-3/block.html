@@ -1,0 +1,93 @@
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content | default dict }}
+{{ $profile := partial "functions/get_author_profile" (index $content "username" | default "me") }}
+{{ $headings := index $content "headings" | default dict }}
+
+<div class="legacy-home-section legacy-about">
+  <div class="legacy-container">
+    <div class="legacy-grid legacy-about-grid">
+      <aside class="legacy-profile">
+        {{ with $profile.avatar }}
+          {{ $avatar := .Fill "540x540 Center" }}
+          <img class="legacy-avatar" src="{{ $avatar.RelPermalink }}" alt="{{ $profile.title }}" width="270" height="270">
+        {{ end }}
+
+        <div class="legacy-portrait-title">
+          <h1>{{ $profile.title }}</h1>
+          {{ with $profile.role }}<p>{{ . | markdownify }}</p>{{ end }}
+          {{ range $profile.affiliations }}
+            {{ if reflect.IsMap . }}
+              {{ $name := index . "name" | default (index . "title") }}
+              {{ $url := index . "url" }}
+              <p>
+                {{ if $url }}<a href="{{ $url }}" target="_blank" rel="noopener">{{ $name }}</a>{{ else }}{{ $name }}{{ end }}
+              </p>
+            {{ end }}
+          {{ end }}
+        </div>
+
+        {{ with $profile.links }}
+          <ul class="legacy-network" aria-label="Social links">
+            {{ range . }}
+              {{ if reflect.IsMap . }}
+                {{ $url := index . "url" | default (index . "link") }}
+                {{ $icon := index . "icon" | default "hero/link" }}
+                {{ if $url }}
+                  <li>
+                    <a href="{{ $url | safeURL }}" {{ if or (hasPrefix $url "http://") (hasPrefix $url "https://") }}target="_blank" rel="noopener"{{ end }} aria-label="{{ index . "label" | default $icon }}">
+                      {{ partial "functions/get_icon" (dict "name" $icon "attributes" "class='legacy-social-icon'") }}
+                    </a>
+                  </li>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </ul>
+        {{ end }}
+      </aside>
+
+      <div class="legacy-biography">
+        <h2>{{ index $headings "about" | default "Summary" }}</h2>
+        {{ $bio := $profile.bio }}
+        {{ with index $content "text" }}{{ if . }}{{ $bio = . }}{{ end }}{{ end }}
+        <div class="legacy-bio-text">{{ $bio | emojify | $page.RenderString }}</div>
+
+        <div class="legacy-details-grid">
+          {{ with $profile.interests }}
+            <div>
+              <h3>{{ index $headings "interests" | default "Interests" }}</h3>
+              <ul class="legacy-interests">
+                {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+              </ul>
+            </div>
+          {{ end }}
+
+          {{ with $profile.education }}
+            <div>
+              <h3>{{ index $headings "education" | default "Education" }}</h3>
+              <ul class="legacy-education">
+                {{ range . }}
+                  {{ if reflect.IsMap . }}
+                    <li>
+                      {{ with index . "badge" }}
+                        <img src="{{ . | safeURL }}" alt="" aria-hidden="true">
+                      {{ else }}
+                        <span class="legacy-education-icon">
+                          {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "class='legacy-education-svg'") }}
+                        </span>
+                      {{ end }}
+                      <div>
+                        <p class="legacy-course">{{ index . "degree" | default (index . "area") }}</p>
+                        <p class="legacy-institution">{{ index . "institution" }}</p>
+                      </div>
+                    </li>
+                  {{ end }}
+                {{ end }}
+              </ul>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

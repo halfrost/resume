@@ -1,0 +1,48 @@
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content | default dict }}
+{{ $design := $block.design | default dict }}
+{{ $profile := partial "functions/get_author_profile" (index $content "username" | default "me") }}
+{{ $dateFormat := index $design "date_format" | default "Jan 2006" }}
+
+<div class="legacy-home-section">
+  <div class="legacy-container">
+    <div class="legacy-section-grid">
+      <header class="legacy-section-heading">
+        <h2>{{ index $content "title" | default "Experience" }}</h2>
+      </header>
+      <div class="legacy-section-content legacy-timeline">
+        {{ range $profile.experience }}
+          {{ if reflect.IsMap . }}
+            {{ $experience := . }}
+            {{ $start := index . "start" }}
+            {{ $end := index . "end" }}
+            <article class="legacy-timeline-item">
+              <span class="legacy-timeline-dot {{ if not $end }}is-current{{ end }}"></span>
+              <div class="legacy-card legacy-experience-card">
+                {{ with index . "image" }}
+                  <img class="legacy-experience-image" src="{{ . | relURL }}" alt="{{ index $experience "org" }}">
+                {{ end }}
+                <h3>{{ index . "role" | markdownify }}</h3>
+                <p class="legacy-company">
+                  {{ $url := index . "url" }}
+                  {{ if $url }}<a href="{{ $url }}" target="_blank" rel="noopener">{{ index . "org" }}</a>{{ else }}{{ index . "org" }}{{ end }}
+                </p>
+                <p class="legacy-meta">
+                  {{ with $start }}{{ (time.AsTime .) | time.Format $dateFormat }}{{ end }} -
+                  {{ if $end }}{{ (time.AsTime $end) | time.Format $dateFormat }}{{ else }}Present{{ end }}
+                  {{ with index . "location" }}<span class="legacy-divider"></span>{{ . }}{{ end }}
+                </p>
+                {{ with index . "summary" }}
+                  {{ if ne (strings.TrimSpace (printf "%v" .)) "-" }}
+                    <div class="legacy-card-text">{{ printf "%v" . | emojify | $page.RenderString }}</div>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,7 +7,6 @@ tags:
 date: "2018-02-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
 
 image:
   caption:
@@ -31,16 +30,19 @@ links:
   name: Follow
   url: https://img.halfrost.com/wechat-qr-code.png
 
-url_code: "https://github.com/halfrost/threes-ai"
-url_pdf: "https://github.com/halfrost/threes-ai"
-url_slides: "https://github.com/halfrost/threes-ai"
-url_video: "https://v.qq.com/x/page/e0559nle7dh.html"
-
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
+- type: pdf
+  url: 'https://github.com/halfrost/threes-ai'
+- type: code
+  url: 'https://github.com/halfrost/threes-ai'
+- type: slides
+  url: 'https://github.com/halfrost/threes-ai'
+- type: video
+  url: 'https://v.qq.com/x/page/e0559nle7dh.html'
 slides: ""
 ---
 

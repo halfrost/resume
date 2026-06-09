@@ -7,7 +7,6 @@ tags:
 date: "2017-11-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: 
 
 image:
   caption: 

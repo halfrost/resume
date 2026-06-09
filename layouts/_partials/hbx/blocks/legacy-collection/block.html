@@ -1,0 +1,68 @@
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content | default dict }}
+{{ $filters := index $content "filters" | default dict }}
+{{ $folders := index $filters "folders" | default (slice "post") }}
+{{ if eq (printf "%T" $folders) "string" }}{{ $folders = slice $folders }}{{ end }}
+{{ $count := int (index $content "count" | default 5) }}
+{{ $order := index $content "order" | default "desc" }}
+{{ $query := where site.RegularPages "Section" "in" $folders }}
+{{ $query = sort $query "Date" $order }}
+{{ if gt $count 0 }}{{ $query = first $count $query }}{{ end }}
+
+<div class="legacy-home-section">
+  <div class="legacy-container">
+    <div class="legacy-section-grid">
+      <header class="legacy-section-heading">
+        <h2>{{ index $content "title" }}</h2>
+        {{ with index $content "cta" }}
+          {{ if reflect.IsMap . }}
+            <p><a class="legacy-outline-button" href="{{ index . "url" }}">{{ index . "text" }}</a></p>
+          {{ end }}
+        {{ end }}
+      </header>
+      <div class="legacy-section-content legacy-stream">
+        {{ range $query }}
+          {{ $item := . }}
+          {{ $linkScratch := newScratch }}
+          {{ $linkScratch.Set "url" .RelPermalink }}
+          {{ range .Params.links }}
+            {{ if and (eq (.type | default "") "site") .url }}
+              {{ $linkScratch.Set "url" .url }}
+            {{ end }}
+          {{ end }}
+          {{ $link := $linkScratch.Get "url" }}
+          <article class="legacy-stream-item">
+            <div class="legacy-stream-copy">
+              <h3><a href="{{ $link }}">{{ .Title }}</a></h3>
+              <div class="legacy-stream-summary">{{ .Summary | plainify | truncate 190 }}</div>
+              <p class="legacy-meta">{{ .Date | time.Format "Jan 2, 2006" }}</p>
+              <div class="legacy-item-links">
+                {{ range .Params.links }}
+                  {{ $type := .type | default "" }}
+                  {{ if in (slice "pdf" "code" "slides" "video") $type }}
+                    {{ $url := .url }}
+                    {{ with ($item.Resources.GetMatch $url) }}
+                      {{ $url = .RelPermalink }}
+                    {{ else }}
+                      {{ $url = $url | relURL }}
+                    {{ end }}
+                    <a href="{{ $url }}" target="_blank" rel="noopener">{{ $type | humanize }}</a>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+            {{ with .Resources.GetMatch "{featured,cover,thumbnail}*" }}
+              {{ if reflect.IsImageResourceProcessable . }}
+                {{ $thumb := .Fill "300x170 Center webp" }}
+                <a class="legacy-stream-image" href="{{ $link }}" tabindex="-1" aria-hidden="true">
+                  <img src="{{ $thumb.RelPermalink }}" alt="">
+                </a>
+              {{ end }}
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

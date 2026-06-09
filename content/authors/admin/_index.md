@@ -8,6 +8,10 @@ organizations:
 superuser: true
 authors:
   - admin
+build:
+  render: never
+  list: never
+  publishResources: false
 bio: My research interests include distributed robotics, mobile computing and
   programmable matter.
 interests:

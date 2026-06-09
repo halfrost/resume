@@ -1,0 +1,38 @@
+{{ $block := .wcBlock }}
+{{ $content := $block.content | default dict }}
+
+<div class="legacy-home-section">
+  <div class="legacy-container">
+    <div class="legacy-section-grid">
+      <header class="legacy-section-heading">
+        <h2>{{ index $content "title" | default "Contact" }}</h2>
+      </header>
+      <div class="legacy-section-content">
+        <ul class="legacy-contact-list">
+          {{ with index $content "email" }}
+            <li>
+              {{ partial "functions/get_icon" (dict "name" "envelope" "attributes" "class='legacy-contact-icon'") }}
+              <a href="mailto:{{ . }}">{{ . }}</a>
+            </li>
+          {{ end }}
+          {{ with index $content "address" }}
+            <li>
+              {{ partial "functions/get_icon" (dict "name" "map-pin" "attributes" "class='legacy-contact-icon'") }}
+              <span>{{ . }}</span>
+            </li>
+          {{ end }}
+          {{ with index $content "social" }}
+            {{ range . }}
+              {{ if reflect.IsMap . }}
+                <li>
+                  {{ partial "functions/get_icon" (dict "name" (index . "icon") "attributes" "class='legacy-contact-icon'") }}
+                  <a href="{{ index . "url" }}" target="_blank" rel="noopener">{{ index . "label" }}</a>
+                </li>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

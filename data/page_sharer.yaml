@@ -1,0 +1,31 @@
+links:
+  - id: twitter
+    url: "https://twitter.com/intent/tweet?url={url}&text={title}"
+    title: Twitter
+    icon: brands/twitter
+    enable: true
+  - id: facebook
+    url: "https://www.facebook.com/sharer.php?u={url}&t={title}"
+    title: Facebook
+    icon: brands/facebook
+    enable: true
+  - id: email
+    url: "mailto:?subject={title}&body={url}"
+    title: Email
+    icon: hero/at-symbol
+    enable: true
+  - id: linkedin
+    url: "https://www.linkedin.com/shareArticle?url={url}&title={title}"
+    title: LinkedIn
+    icon: brands/linkedin
+    enable: true
+  - id: whatsapp
+    url: "whatsapp://send?text={title}%20{url}"
+    title: WhatsApp
+    icon: brands/whatsapp
+    enable: true
+  - id: weibo
+    url: "https://service.weibo.com/share/share.php?url={url}&title={title}"
+    title: Weibo
+    icon: brands/sinaweibo
+    enable: true

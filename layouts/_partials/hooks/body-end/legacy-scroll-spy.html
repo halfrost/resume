@@ -1,0 +1,53 @@
+{{ if .IsHome }}
+<script>
+  (() => {
+    const links = Array.from(document.querySelectorAll('#nav-menu .nav-link[href*="#"]'));
+    const items = links
+      .map((link) => {
+        const hash = new URL(link.href, window.location.href).hash;
+        return hash ? { link, section: document.querySelector(hash) } : null;
+      })
+      .filter((item) => item && item.section);
+
+    if (!items.length) return;
+
+    let scheduled = false;
+
+    const updateActiveLink = () => {
+      scheduled = false;
+      const headerHeight = document.querySelector('#site-header')?.offsetHeight || 0;
+      const marker = window.scrollY + headerHeight + 1;
+      const atPageBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      let active = items[0];
+
+      for (const item of items) {
+        if (item.section.offsetTop <= marker) active = item;
+      }
+      if (atPageBottom) active = items[items.length - 1];
+
+      for (const item of items) {
+        const isActive = item === active;
+        item.link.classList.toggle('active', isActive);
+        if (isActive) {
+          item.link.setAttribute('aria-current', 'location');
+        } else {
+          item.link.removeAttribute('aria-current');
+        }
+      }
+    };
+
+    const scheduleUpdate = () => {
+      if (scheduled) return;
+      scheduled = true;
+      window.requestAnimationFrame(updateActiveLink);
+    };
+
+    window.addEventListener('scroll', scheduleUpdate, { passive: true });
+    window.addEventListener('resize', scheduleUpdate);
+    window.addEventListener('hashchange', scheduleUpdate);
+    window.addEventListener('load', scheduleUpdate);
+    scheduleUpdate();
+  })();
+</script>
+{{ end }}

@@ -1,0 +1,288 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Dezhi Yu
+  given: Dezhi
+  family: Yu
+role: Staff Engineer
+bio: 'Dezhi Yu is a professional developer who focuses on Cloud Native now. He has strong knowledge of Go, Objective-C and network programming. With these skills, he created quite a few widely used applications and frameworks in the company. He also joins [](https://www.acm.org/)some organizations, becoming professional Membership of [ACM](https://img.halfrost.com/certificate/ACM_memcert0104000A02030A_00.pdf) / [IEEE](https://img.halfrost.com/certificate/IEEE_MEM500_97002879.pdf) / [IEEE-CS](https://img.halfrost.com/certificate/IEEE_CS_MEMC016_97002879.pdf) / CCF. He writes his personal thoughts on programming and tech in his personal [blog](https://halfrost.com) that accumulates 7.93 million PV  and 4.43 million UV. He is active on Github, which Github world stars rank [149](https://gitstar-ranking.com/halfrost) as well as world followers rank [91](https://wangchujiang.com/github-rank/). He loves algorithms and advanced mathematics, winning medals in  ACM-ICPC  and Advanced Mathematics
+  Competition.
+
+
+  Dezhi Yu also is a globetrotter, traveled around the world before the age of 28, and his footprints will soon cover seven continents (coming soon). He is extreme sports enthusiasts, like skydiving, skiing, diving, hot air ballooning, helicopters. He is always willing to try new things, and keeping to learn from them.
+
+
+  Now, he works for TikTok Inc as a Staff Engineer.'
+affiliations:
+- name: Tiktok Inc.
+  url: https://www.tiktok.com/
+links:
+- icon: at-symbol
+  url: /#contact
+  label: Email
+- icon: brands/linkedin
+  url: https://www.linkedin.com/in/halffrost/
+- icon: brands/github
+  url: https://github.com/halfrost
+- icon: brands/twitter
+  url: https://twitter.com/halffrost
+- icon: brands/weixin
+  url: https://img.halfrost.com/wechat-qr-code.png
+- icon: hero/globe-alt
+  url: https://halfrost.com
+interests:
+- Cloud Native
+- Artificial Intelligence
+- Mobile Development
+- Computational Linguistics
+education:
+- degree: MS in Computer Science, GPA 4.0/4.0
+  institution: Stanford University, CA, United States of America
+  badge: /stanford.svg
+- degree: MS in Software Engineering, GPA 3.95/4.0
+  institution: Carnegie Mellon University, CA, United States of America
+  badge: /CMU.svg
+- degree: B.Eng in Computer Science, GPA 3.8/4.0
+  institution: Huzhou University, Zhejiang, China
+  badge: /HUZU.svg
+experience:
+- role: Staff Engineer - Cloud Infrastructure
+  org: Tiktok Inc
+  image: /media/tiktok.png
+  location: Mountain View, California, United States
+  start: '2023-02-20'
+  summary: '-'
+- role: Quantitative Algo Developer - Smart Contract (DeFi 2.0)
+  org: Aperture Finance
+  image: /media/aperture.jpg
+  location: Mountain View, California, United States
+  start: '2022-05-01'
+  summary: "- Led Solana Projects as a Tech Owner, designed and implemented Pseudo-Delta Neutral Hedging Strategy which uses Leveraged LP farming protocols in Solana, using Francium, Tulip. \n- Extracting risk factors conditioned on solana volatile asset characteristics with an autoencoder at daily frequency and create synthetic training data using GANs, using historical data for the past 5 years. \n- Denoise dataset using wavelets and the Kalman filter and combine e Zipline offline and on Quantopian to test individual and multiple alpha factors using NumPy, pandas, and TA-Lib. Utilized Python libraries backtrader and Zipline to conduct backtesting on ML-driven strategies in historical market environments, reducing the probability of putting financial resources at risk when deploying candidate smart contracts in real-time markets by 30%. \n- Developed smart contracts using Rust, which employ Alpha factors-generated signals to dynamically adjust long and short positions for optimizing portfolios,\
+    \ accumulated a net income of $2 million in one month on the Solana chain."
+- role: Staff Engineer
+  org: Binance.com
+  image: /media/binance.jpg
+  location: Singapore City, Singapore
+  start: '2021-05-01'
+  summary: "- Led a team consisting of 8 engineers to implement from scratch and successfully launch the firm’s first Strategy Distribution Engine – Themis, a global smart strategy engine based on traffic flow and predicate conditions’ strategy.\n- Simulated ads data on the Strategy Distribution Engine to do offline data analysis and queried and fed production data to the system and preformed maximum 1K online A/B experiments simultaneously and release a maximum of 20K Strategy per day. \n- Themis ecosystem combines and compares online and offline data for enhanced resource allocation strategy with accumulated 200 million users, facilitating transaction volumes reaching $1000 million per week."
+- role: Senior Back End Engineer ｜Senior Research And Development Engineer
+  org: AliCloud
+  image: /media/alibaba.jpg
+  location: Shanghai, China
+  start: '2018-04-01'
+  end: '2021-05-01'
+  summary: '- Participated in Tmall Double Eleven online shopping promotion for 2 consecutive years; Led team consisting of 5 engineers.
+
+    - Designed and implemented a ads targeting system, which utilizes user''s historical purchase records and recent search history to recommend promotional deals based on customer profiling behavior data, dynamically adjusting the intensity of discounts in deals based on users'' recent engagement levels data, resulting in an annual revenue growth exceeding 48% and an overall purchase rate improvement of 8%, helped company create a new transaction record of 268.4 billion RMB a day in 2019.
+
+    - Optimized on-line and off-line recommendation model for advertisements, improved advertisement push, banners, and SMS performance by 25%; Wrote HiveQL and SQL to gather original data, preprocessed data set by data cleaning, categorical feature transformation and normalization; Enriched user-profile features and optimized user-profile update strategies to provide reliable features for machine learning models; Trained XGboost and LR model, increased AUC from 0.59 to 0.77. Did data resampling and undersampleing for imbalanced data, imputed missing values, evaluated model by recall and precision.
+
+    - Taco ecosystem successfully handles 1100 million+ push notifications per day, with delivery rate above 97% and delivery time of 0.72-1.2 seconds; daily peak value can reach 750k online connections with 30k-50k QPS.'
+- role: Senior Software Engineer
+  org: ele.me
+  image: /media/eleme.jpg
+  url: https://www.ele.me/
+  location: Shanghai, China
+  start: '2017-02-01'
+  end: '2018-04-01'
+- role: Infrastructure Team Leader
+  org: Shanghai Fangchuang Financial Information Service Co., Ltd.
+  image: /media/fangchuang.jpg
+  url: https://www.fangchuang.com/
+  location: Shanghai, China
+  start: '2016-05-01'
+  end: '2017-02-01'
+  summary: '- Led engineer team to designed and implement a FaaS infrastructure snapshot system using Java. Speed up the average response time by 65% and improved the service robustness by 81% via parallelization and local caching techniques for read-heavy operations with PB level daily caching volume.
+
+    - Migrate 12 backend docker service to AliCloud, a cloud kubernetes platform and refactored the infrastructure by using redis and mysql in AliCloud, which increased the stability of the company''s entire back-end infrastructure by 65%.
+
+    - Designed and implemented a internal system to intelligently match projects for investors, utilizing a recommendation system model, text abstraction model, and Text-to-Speech model, increasing the success rate of project bidding by 40%.'
+- role: Infrastructure Team Leader
+  org: Shanghai Ping An Smart Technology Co., Ltd.
+  image: /media/yqb.jpg
+  url: https://www.yqb.com/
+  location: Shanghai, China
+  start: '2015-11-01'
+  end: '2016-04-30'
+  summary: "-\tDesigned and implemented the 1QB Wallet recommendation system, matching clients and products based on the keywords of previously searched items to boost sales, using RPC and HTTP framework in Java, improving the accuracy by 30%.\n-\tBuilding new Code Review platform from scratch; developed Java package deployment and remote backup distribution platform, including Jenkins integrated static code scanning on daily basis and CI/CD pipeline, increasing efficiency by 5 times..\n-\tDeveloped a trading system in Go, leveraging the Kafka Messaging System, to enable users' participation in flash deal ordering events, enabling millions of users to engage in millisecond-level promotional activities. In the first year since the release and launch of this system, it has contributed an incremental revenue of 10 Billion RMB in GMV to the company.\n-\tRefactored the task queue and task manager using Celery, RabbitMQ and MySQL to support larger-scale, distributed tasks; Queue latency reduced\
+    \ by 20%, Consume rate increased by 4x and Memory used decreased by 40%."
+- role: Software Engineer
+  org: Quatanium Technology Co., Ltd.
+  image: /media/quatanium.jpg
+  url: https://github.com/quatanium
+  location: Shanghai, China
+  start: '2013-06-01'
+  end: '2015-11-01'
+  summary: "-  Designed and implemented firm’s first Cluster Observability Platform from scratch. Built a log service based on logstash, reformat, and transfer logs from grouping system to Kibana log platform, handing million logs per day with very high stability and availability which annual availability rate reaches 99.999%; Created Grafana dashboards to report the counters of logs.\n-\tDesigned and implemented CI/CD pipelines with YAML and deployed Docker containers to AWS, making them automatically build, pack, and deploy the log service to production, serving an average of 200 integrations per day.\n-\tDesigned and implemented an alert service for error logs, which can report the errors and create fix tickets for DevOps engineers automatically, reducing fix waiting time by 80%."
+skills:
+- name: Technical Skills
+  items:
+  - label: Golang
+    level: 4
+    icon: golang
+  - label: Docker
+    level: 3
+    icon: Docker
+  - label: MySQL
+    level: 4
+    icon: MySQL
+  - label: PostgreSQL
+    level: 4
+    icon: PostgreSQL
+  - label: Nginx
+    level: 4
+    icon: Nginx
+  - label: RabbitMQ
+    level: 4
+    icon: RabbitMQ
+  - label: Redis
+    level: 4
+    icon: Redis
+  - label: Jenkins
+    level: 3
+    icon: jenkins
+  - label: JavaScript
+    level: 3
+    icon: JS
+  - label: HTML5
+    level: 3
+    icon: H5
+  - label: CSS3
+    level: 3
+    icon: css3
+  - label: Vue
+    level: 3
+    icon: vue
+  - label: Weex
+    level: 3
+    icon: weex
+  - label: Electron
+    level: 3
+    icon: electron
+  - label: Apple
+    level: 4
+    icon: apple
+  - label: Adobe Illustrator
+    level: 4
+    icon: AI
+  - label: Adobe Photoshop
+    level: 4
+    icon: PS
+  - label: Sketch
+    level: 4
+    icon: sketch
+  - label: Git
+    level: 4
+    icon: git
+  - label: Gitlab
+    level: 4
+    icon: gitlab
+  - label: Phabricator
+    level: 4
+    icon: phabricator
+awards:
+- title: DeepLearning.AI TensorFlow Developer Specialization
+  awarder: DeepLearning AI
+  date: '2019-06-30'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/SCP8JNZDRDCN
+  icon: hero/trophy
+- title: Deep Learning Specialization
+  awarder: DeepLearning AI
+  date: '2019-06-15'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/JBTR2VL5LKXU
+  icon: hero/trophy
+- title: 'Preparing for Google Cloud Certification: Cloud Architect Specialization'
+  awarder: Google Cloud
+  date: '2021-06-03'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/X4DPCNBW48MF
+  icon: hero/trophy
+- title: Architecting with Google Compute Engine Specialization
+  awarder: Google Cloud
+  date: '2021-06-01'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/3GU32E3PNTSU
+  icon: hero/trophy
+- title: Architecting with Google Kubernetes Engine Specialization
+  awarder: Google Cloud
+  date: '2021-05-30'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/YA7MNBZRPVWG
+  icon: hero/trophy
+- title: Programming with Google Go
+  awarder: University of California, Irvine
+  date: '2021-05-20'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/VUP64SWLSK3V
+  icon: hero/trophy
+- title: ACM Professional Membership
+  awarder: ACM, Association for Computing Machinery
+  date: '2020-07-20'
+  url: https://img.halfrost.com/certificate/ACM_memcert0104000A02030A_00.pdf
+  icon: hero/trophy
+- title: IEEE Professional Membership
+  awarder: IEEE
+  date: '2020-07-15'
+  url: https://img.halfrost.com/certificate/IEEE_MEM500_97002879.pdf
+  icon: hero/trophy
+- title: IEEE-CS Professional Membership
+  awarder: IEEE Computer Society
+  date: '2020-07-10'
+  url: https://img.halfrost.com/certificate/IEEE_CS_MEMC016_97002879.pdf
+  icon: hero/trophy
+- title: CCF Professional Membership
+  awarder: China Computer Federation
+  date: '2020-07-05'
+  icon: hero/trophy
+- title: AI For Everyone
+  awarder: DeepLearning AI
+  date: '2020-06-10'
+  url: https://www.coursera.org/account/accomplishments/certificate/N6L98MC4JW8T
+  icon: hero/trophy
+- title: Apple Teacher
+  awarder: Apple
+  date: '2020-06-30'
+  url: https://img.halfrost.com/certificate/AppleTeacher.pdf
+  icon: hero/trophy
+- title: Machine Learning
+  awarder: Stanford Online
+  date: '2018-03-26'
+  url: https://www.coursera.org/account/accomplishments/certificate/KQP78XV66AEP
+  icon: hero/trophy
+- title: The 36th ACM-ICPC Asia Regional Contest Shanghai Site 2011 Fudan University - Honorable Mention
+  awarder: ACM-ICPC International Collegiate Programming Contest
+  date: '2011-10-01'
+  url: https://img.halfrost.com/certificate/ACM-ICPC_Honorable_Mention.jpg
+  icon: hero/trophy
+- title: The ACM-ICPC Asia Regional Google Cup 2011 ACM-ICPC China Shanghai Fudan Invitational Programming Contest Fudan University - Bronze Medal
+  awarder: ACM-ICPC International Collegiate Programming Contest
+  date: '2011-05-01'
+  url: https://img.halfrost.com/certificate/ACM-ICPC_Bronze_Medal.jpg
+  icon: hero/trophy
+- title: Network Engineer
+  awarder: Ministry of Human Resources and Social Security Administration
+  date: '2012-05-01'
+  url: https://img.halfrost.com/certificate/11010973.jpg
+  icon: hero/trophy
+- title: Software Designer
+  awarder: Ministry of Human Resources and Social Security Administration
+  date: '2011-11-01'
+  url: https://img.halfrost.com/certificate/11008976.jpg
+  icon: hero/trophy
+- title: National Computer Rank Examination (Level 4 Network Engineer)
+  awarder: Ministry of Education
+  date: '2012-03-01'
+  url: https://img.halfrost.com/certificate/41353301592197.jpg
+  icon: hero/trophy
+- title: The 10 Best Original Authors of 2016 juejin.im
+  awarder: juejin.im
+  date: '2016-12-01'
+  url: https://yearinreview.juejin.im/
+  icon: hero/trophy
+- title: The 2016 Best Recommended Author of jianshu
+  awarder: jianshu.com
+  date: '2016-12-01'
+  url: https://www.jianshu.com/u/12201cdd5d7a
+  icon: hero/trophy
+- title: The 8th Zhejiang Province University Programming Contest - Bronze Medal
+  awarder: Ministry of Education
+  date: '2011-06-01'
+  url: https://img.halfrost.com/certificate/ACM-ICPC_Zhejiang_Bronze_Medal.pdf
+  icon: hero/trophy

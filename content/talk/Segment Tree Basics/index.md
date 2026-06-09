@@ -28,21 +28,24 @@ links:
     icon: link
     name: Link
     url: 'https://speakerdeck.com/halfrost/segment-tree-basics'
+  - type: pdf
+    url: 'https://speakerdeck.com/halfrost/segment-tree-basics'
+  - type: code
+    url: 'https://github.com/halfrost/LeetCode-Go'
+  - type: video
+    url: 'https://speakerdeck.com/halfrost/segment-tree-basics'
 event: Eleme Technology Sharing within the department
 event_url: "https://speakerdeck.com/halfrost/segment-tree-basics"
 publishDate: 2020-01-15T11:41:56.752Z
 
-url_pdf: "https://speakerdeck.com/halfrost/segment-tree-basics"
-url_code: "https://github.com/halfrost/LeetCode-Go"
-url_video: "https://speakerdeck.com/halfrost/segment-tree-basics"
 projects:
   - LeetCode-Go
 
 draft: false
-view: 2
+view: date-title-summary
 featured: false
 authors:
-  - halfrost
+  - me
 header:
   caption: ""
   image: ""

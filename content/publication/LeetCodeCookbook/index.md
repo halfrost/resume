@@ -1,9 +1,8 @@
 ---
 title: "LeetCode Cookbook"
 authors:
-- admin
+- me
 date: "2020-08-13T00:00:00Z"
-doi: ""
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-08-13T00:00:00Z"
@@ -12,11 +11,11 @@ publishDate: "2020-08-13T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["5"]
+publication_types: ['book']
 
 # Publication name and optional abbreviated publication name.
-publication: LeetCode Cookbook
-publication_short:
+publication:
+  name: 'LeetCode Cookbook'
 
 abstract: '
 This book is for the programming enthusiasts who want to improve algorithm capabilities through LeetCode. The algorithms in this book are all implemented in Go language. The code is placed in the github repo, and the topic can be searched by the question number. The code for the leetcode problems in this book has beats 100%. Without the beats 100% solution, it would not be included in this book. The author will continue to optimize those topics to 100% before putting them in.
@@ -34,17 +33,25 @@ featured: true
 links:
 - name: Chinese Version
   url: https://books.halfrost.com/leetcode
-url_pdf: 'cookbookV1.5.20.pdf'
-url_code: 'https://github.com/halfrost/LeetCode-Go'
-url_dataset: 'https://github.com/halfrost/LeetCode-Go'
-url_poster: 'https://books.halfrost.com/leetcode/logo.png'
-url_project: 'https://github.com/halfrost/LeetCode-Go'
-url_slides: 'https://github.com/halfrost/LeetCode-Go'
-url_source: 'https://github.com/halfrost/LeetCode-Go'
-url_video: 'https://github.com/halfrost/LeetCode-Go'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
+- type: pdf
+  url: 'cookbookV1.5.20.pdf'
+- type: code
+  url: 'https://github.com/halfrost/LeetCode-Go'
+- type: dataset
+  url: 'https://github.com/halfrost/LeetCode-Go'
+- type: poster
+  url: 'https://books.halfrost.com/leetcode/logo.png'
+- type: project
+  url: 'https://github.com/halfrost/LeetCode-Go'
+- type: slides
+  url: 'https://github.com/halfrost/LeetCode-Go'
+- type: source
+  url: 'https://github.com/halfrost/LeetCode-Go'
+- type: video
+  url: 'https://github.com/halfrost/LeetCode-Go'
 image:
   caption: ''
   focal_point: ""

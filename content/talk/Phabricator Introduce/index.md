@@ -28,21 +28,24 @@ links:
     icon: link
     name: Link
     url: 'https://speakerdeck.com/halfrost/phabricator-introduce'
+  - type: pdf
+    url: 'https://speakerdeck.com/halfrost/phabricator-introduce'
+  - type: code
+    url: 'https://github.com/halfrost/Halfrost-Field'
+  - type: video
+    url: 'https://speakerdeck.com/halfrost/phabricator-introduce'
 event: PingAn Technology Sharing within the department
 event_url: "https://speakerdeck.com/halfrost/phabricator-introduce"
 publishDate: 2016-01-20T11:41:56.752Z
 
-url_pdf: "https://speakerdeck.com/halfrost/phabricator-introduce"
-url_code: "https://github.com/halfrost/Halfrost-Field"
-url_video: "https://speakerdeck.com/halfrost/phabricator-introduce"
 projects:
   - Halfrost-Field
 
 draft: false
-view: 2
+view: date-title-summary
 featured: false
 authors:
-  - halfrost
+  - me
 header:
   caption: ""
   image: ""

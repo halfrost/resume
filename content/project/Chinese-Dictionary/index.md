@@ -6,9 +6,12 @@ tags:
 date: "2013-05-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: https://apps.apple.com/cn/app/han-yu-zi-dian-xian-dai-han/id670851317
 
 image:
   caption: 
   focal_point: Smart
+
+links:
+- type: site
+  url: 'https://apps.apple.com/cn/app/han-yu-zi-dian-xian-dai-han/id670851317'
 ---
