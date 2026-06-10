@@ -1,0 +1,33 @@
+{{ if not .IsHome }}
+<script>
+  (() => {
+    const applyTaskListFixes = () => {
+      const inputs = document.querySelectorAll("li input[type='checkbox'][disabled]");
+      if (!inputs.length) return;
+
+      inputs.forEach((input) => {
+        input.parentElement?.parentElement?.classList.add("task-list");
+      });
+
+      document.querySelectorAll(".task-list li").forEach((item) => {
+        const textNode = Array.from(item.childNodes).find(
+          (node) => node.nodeType === Node.TEXT_NODE && node.textContent?.trim().length > 1,
+        );
+        if (!textNode) return;
+
+        const label = document.createElement("label");
+        textNode.after(label);
+        const input = item.querySelector("input[type='checkbox']");
+        if (input) label.appendChild(input);
+        label.appendChild(textNode);
+      });
+    };
+
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(applyTaskListFixes, { timeout: 2000 });
+    } else {
+      setTimeout(applyTaskListFixes, 0);
+    }
+  })();
+</script>
+{{ end }}

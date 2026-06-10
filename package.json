@@ -5,7 +5,8 @@
   "packageManager": "pnpm@10.14.0",
   "scripts": {
     "dev": "hugo server --disableFastRender",
-    "build": "hugo --gc --minify --cleanDestinationDir"
+    "build": "hugo --gc --minify --cleanDestinationDir",
+    "preview": "hugo --gc --minify --cleanDestinationDir -b http://127.0.0.1:1313/ && node scripts/serve-production.mjs"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",

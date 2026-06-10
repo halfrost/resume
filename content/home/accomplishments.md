@@ -262,7 +262,7 @@ date_format = "Jan 2006"
 """
 
 #[[item]]
-#  organization = "Huzhou University"
+#  organization = "Huzhou Normal University"
 #  organization_url = "http://www.zjhu.edu.cn/"
 #  title = "The 10th Advanced Mathematics (calculus) competition Engineering Group - First prize"
 #  url = ""
@@ -286,7 +286,7 @@ date_format = "Jan 2006"
 """
 
 #[[item]]
-#  organization = "Huzhou University"
+#  organization = "Huzhou Normal University"
 #  organization_url = "http://www.zjhu.edu.cn/"
 #  title = "The 8th College Students Programming Contest - Gold Medal"
 #  url = ""
@@ -299,7 +299,7 @@ date_format = "Jan 2006"
 
 
 #[[item]]
-#  organization = "Huzhou University"
+#  organization = "Huzhou Normal University"
 #  organization_url = "http://www.zjhu.edu.cn/"
 #  title = "The Danei Cup 4th College Student Programming Competition - Gold Medal"
 #  url = ""
@@ -311,7 +311,7 @@ date_format = "Jan 2006"
 #"""
 
 #[[item]]
-#  organization = "Huzhou University"
+#  organization = "Huzhou Normal University"
 #  organization_url = "http://www.zjhu.edu.cn/"
 #  title = "The 7th College Students Programming Contest - Newcomer Award"
 #  url = ""
@@ -323,7 +323,7 @@ date_format = "Jan 2006"
 #"""
 
 #[[item]]
-#  organization = "Huzhou University"
+#  organization = "Huzhou Normal University"
 #  organization_url = "http://www.zjhu.edu.cn/"
 #  title = "The First Prize Scholarship"
 #  url = ""
@@ -335,7 +335,7 @@ date_format = "Jan 2006"
 #"""
 
 #[[item]]
-#  organization = "Huzhou University"
+#  organization = "Huzhou Normal University"
 #  organization_url = "http://www.zjhu.edu.cn/"
 #  title = "Excellent League Cadres"
 #  url = ""
@@ -347,7 +347,7 @@ date_format = "Jan 2006"
 #"""
 
 #[[item]]
-#  organization = "Huzhou University"
+#  organization = "Huzhou Normal University"
 #  organization_url = "http://www.zjhu.edu.cn/"
 #  title = "Outstanding Student"
 #  url = ""

@@ -1,12 +1,17 @@
 :root {
   --legacy-primary: #2962ff;
   --legacy-text: #34495e;
-  --legacy-muted: rgba(0, 0, 0, 0.54);
+  --legacy-muted: rgba(0, 0, 0, 0.58);
   --legacy-even: rgb(247, 247, 247);
 }
 
 html {
   scroll-padding-top: 70px;
+}
+
+.hbb-section:not(:first-of-type) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1200px;
 }
 
 body {
@@ -302,29 +307,35 @@ main {
 
 .legacy-education li {
   display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 0 0 8px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 10px;
 }
 
 .legacy-education img,
 .legacy-education-icon {
   display: flex;
-  flex: 0 0 24px;
-  width: 24px;
-  height: 24px;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   object-fit: contain;
 }
 
 .legacy-education-svg {
-  width: 20px;
-  height: 20px;
+  width: 36px;
+  height: 36px;
+}
+
+.legacy-education-copy {
+  min-width: 0;
 }
 
 .legacy-education p {
   margin: 0;
+  line-height: 20px;
+  white-space: nowrap;
 }
 
 .legacy-course {
@@ -333,7 +344,7 @@ main {
 
 .legacy-institution {
   color: rgba(0, 0, 0, 0.6);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 }
 
 .legacy-section-heading p {
@@ -871,6 +882,10 @@ main {
 
   .legacy-details-grid {
     grid-template-columns: 1fr;
+  }
+
+  .legacy-education p {
+    white-space: normal;
   }
 
   .legacy-project-grid {

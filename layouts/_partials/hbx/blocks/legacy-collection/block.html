@@ -56,7 +56,7 @@
               {{ if reflect.IsImageResourceProcessable . }}
                 {{ $thumb := .Fill "300x170 Center webp" }}
                 <a class="legacy-stream-image" href="{{ $link }}" tabindex="-1" aria-hidden="true">
-                  <img src="{{ $thumb.RelPermalink }}" alt="">
+                  <img src="{{ $thumb.RelPermalink }}" alt="" width="300" height="170" loading="lazy" decoding="async">
                 </a>
               {{ end }}
             {{ end }}

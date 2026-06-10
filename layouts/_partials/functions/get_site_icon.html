@@ -1,0 +1,7 @@
+{{ $size := . | default 32 }}
+{{ $result := dict "resource" nil "type" "" "is_svg" false }}
+{{ with resources.Get "media/favicon.webp" }}
+  {{ $icon := .Fill (printf "%dx%d Center png" $size $size) }}
+  {{ $result = dict "resource" $icon "type" "image/png" "is_svg" false }}
+{{ end }}
+{{ return $result }}

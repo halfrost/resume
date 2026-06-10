@@ -1,0 +1,49 @@
+{{ if .IsHome }}
+<script>
+  (() => {
+    const themeToggle = document.querySelector('.theme-toggle');
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const syncThemeToggle = () => {
+      if (themeToggle) {
+        themeToggle.dataset.theme = document.documentElement.classList.contains('dark')
+          ? 'dark'
+          : 'light';
+      }
+    };
+
+    themeToggle?.addEventListener('click', () => {
+      const useDarkTheme = !document.documentElement.classList.contains('dark');
+      if (useDarkTheme) {
+        window.hbb.setDarkTheme();
+      } else {
+        window.hbb.setLightTheme();
+      }
+      localStorage.setItem('wc-color-theme', useDarkTheme ? 'dark' : 'light');
+      syncThemeToggle();
+      document.dispatchEvent(
+        new CustomEvent('hbThemeChange', {
+          detail: {
+            isDarkTheme: () => document.documentElement.classList.contains('dark'),
+          },
+        }),
+      );
+    });
+
+    media.addEventListener('change', (event) => {
+      if (window.hbb.defaultTheme !== 'system' || localStorage.getItem('wc-color-theme')) return;
+      event.matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      syncThemeToggle();
+    });
+
+    const navToggle = document.querySelector('#nav-toggle');
+    document.querySelectorAll('#nav-menu a').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (navToggle) navToggle.checked = false;
+      });
+    });
+
+    syncThemeToggle();
+  })();
+</script>
+{{ end }}

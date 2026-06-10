@@ -11,6 +11,21 @@
 
     if (!items.length) return;
 
+    const initialHash = window.location.hash;
+    const initialActive =
+      items.find((item) => new URL(item.link.href, window.location.href).hash === initialHash) ||
+      items[0];
+
+    for (const item of items) {
+      const isActive = item === initialActive;
+      item.link.classList.toggle('active', isActive);
+      if (isActive) {
+        item.link.setAttribute('aria-current', 'location');
+      } else {
+        item.link.removeAttribute('aria-current');
+      }
+    }
+
     let scheduled = false;
 
     const updateActiveLink = () => {
@@ -46,8 +61,6 @@
     window.addEventListener('scroll', scheduleUpdate, { passive: true });
     window.addEventListener('resize', scheduleUpdate);
     window.addEventListener('hashchange', scheduleUpdate);
-    window.addEventListener('load', scheduleUpdate);
-    scheduleUpdate();
   })();
 </script>
 {{ end }}

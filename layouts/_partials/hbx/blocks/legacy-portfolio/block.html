@@ -55,9 +55,9 @@
                 <a class="legacy-project-image" href="{{ $link }}">
                   {{ if reflect.IsImageResourceProcessable . }}
                     {{ $image := .Fill "720x405 Center webp" }}
-                    <img src="{{ $image.RelPermalink }}" alt="{{ $title }}">
+                    <img src="{{ $image.RelPermalink }}" alt="{{ $title }}" width="720" height="405" loading="lazy" decoding="async">
                   {{ else }}
-                    <img src="{{ .RelPermalink }}" alt="{{ $title }}">
+                    <img src="{{ .RelPermalink }}" alt="{{ $title }}" loading="lazy" decoding="async">
                   {{ end }}
                 </a>
               {{ end }}

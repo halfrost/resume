@@ -6,14 +6,12 @@ name:
   given: Dezhi
   family: Yu
 role: Staff Engineer
-bio: 'Dezhi Yu is a professional developer who focuses on Cloud Native now. He has strong knowledge of Go, Objective-C and network programming. With these skills, he created quite a few widely used applications and frameworks in the company. He also joins [](https://www.acm.org/)some organizations, becoming professional Membership of [ACM](https://img.halfrost.com/certificate/ACM_memcert0104000A02030A_00.pdf) / [IEEE](https://img.halfrost.com/certificate/IEEE_MEM500_97002879.pdf) / [IEEE-CS](https://img.halfrost.com/certificate/IEEE_CS_MEMC016_97002879.pdf) / CCF. He writes his personal thoughts on programming and tech in his personal [blog](https://halfrost.com) that accumulates 7.93 million PV  and 4.43 million UV. He is active on Github, which Github world stars rank [149](https://gitstar-ranking.com/halfrost) as well as world followers rank [91](https://wangchujiang.com/github-rank/). He loves algorithms and advanced mathematics, winning medals in  ACM-ICPC  and Advanced Mathematics
-  Competition.
+bio: |
+  I am a machine learning systems engineer working at the boundary between AI research and production infrastructure. My focus is the efficient and reliable serving of foundation models: turning rapidly evolving model architectures and inference techniques into systems that can be evaluated rigorously, deployed safely, and operated at scale.
 
+  At TikTok, my recent work centers on Model-as-a-Service platforms and high-performance inference for large language models. I develop serving infrastructure with vLLM and SGLang across model runtime integration, scheduling and continuous batching, KV-cache and memory management, distributed execution, observability, and reliability. I approach these problems through workload characterization, profiling, controlled benchmarking, and system-level evaluation under latency, throughput, and cost constraints.
 
-  Dezhi Yu also is a globetrotter, traveled around the world before the age of 28, and his footprints will soon cover seven continents (coming soon). He is extreme sports enthusiasts, like skydiving, skiing, diving, hot air ballooning, helicopters. He is always willing to try new things, and keeping to learn from them.
-
-
-  Now, he works for TikTok Inc as a Staff Engineer.'
+  My broader experience includes recommendation and targeting models, online experimentation, data-driven decision systems, and high-throughput distributed platforms serving large user populations. My research interests lie in model-system co-design: understanding how model architecture, inference algorithms, hardware utilization, scheduling, and distributed runtimes interact. My goal is to advance the efficiency and dependability of AI systems while making frontier models faster to experiment with, deploy, and serve.
 affiliations:
 - name: Tiktok Inc.
   url: https://www.tiktok.com/
@@ -32,20 +30,24 @@ links:
 - icon: hero/globe-alt
   url: https://halfrost.com
 interests:
-- Cloud Native
-- Artificial Intelligence
-- Mobile Development
-- Computational Linguistics
+- Machine Learning Systems for Foundation Models
+- Large Language Model Inference
+- Model-System Co-design
+- Distributed Runtimes and Scheduling
+- Evaluation, Reliability, and Observability
 education:
-- degree: MS in Computer Science, GPA 4.0/4.0
+- degree: Master of Information and Data Science, GPA 3.966/4.0
+  institution: University of California, Berkeley, CA, United States of America
+  badge: /media/education/berkeley.webp
+- degree: Master of Science in Computer Science, GPA 4.0/4.0
   institution: Stanford University, CA, United States of America
-  badge: /stanford.svg
-- degree: MS in Software Engineering, GPA 3.95/4.0
+  badge: /media/education/stanford.webp
+- degree: Master of Science in Software Engineering, GPA 3.95/4.0
   institution: Carnegie Mellon University, CA, United States of America
-  badge: /CMU.svg
-- degree: B.Eng in Computer Science, GPA 3.8/4.0
-  institution: Huzhou University, Zhejiang, China
-  badge: /HUZU.svg
+  badge: /media/education/cmu.webp
+- degree: Bachelor of Engineering in Computer Science, GPA 3.8/4.0
+  institution: Huzhou Normal University, Zhejiang, China
+  badge: /media/education/huzu.webp
 experience:
 - role: Staff Engineer - Cloud Infrastructure
   org: Tiktok Inc

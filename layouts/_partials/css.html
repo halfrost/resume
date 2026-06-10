@@ -1,0 +1,31 @@
+{{ if .page.IsHome }}
+  {{ $parts := slice (resources.Get "css/home-base.css") }}
+  {{ range resources.Match "css/hbx/blocks/shared/legacy/*.css" }}
+    {{ $parts = $parts | append . }}
+  {{ end }}
+  {{ with $parts | resources.Concat "css/home.css" | minify }}
+    <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
+{{ else }}
+{{ with resources.Get "css/main.css" }}
+  {{ $dynamicSources := partial "tailwind_sources.html" . }}
+  {{ $dynamicSourcesResource := resources.FromString "css/_dynamic_sources.css" $dynamicSources }}
+  {{ $parts := slice $dynamicSourcesResource . }}
+
+  {{ range resources.Match "css/hbx/blocks/shared/**/*.css" }}
+    {{ $parts = $parts | append . }}
+  {{ end }}
+  {{ range resources.Match "css/hbx/blocks/**/style.css" }}
+    {{ $parts = $parts | append . }}
+  {{ end }}
+  {{ range resources.Match "dist/community/blox/**/*.css" }}
+    {{ $parts = $parts | append . }}
+  {{ end }}
+
+  {{ $entry := $parts | resources.Concat "css/_entry.css" }}
+  {{ $options := dict "minify" (not hugo.IsDevelopment) }}
+  {{ with $entry | css.TailwindCSS $options }}
+    <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
+{{ end }}
+{{ end }}

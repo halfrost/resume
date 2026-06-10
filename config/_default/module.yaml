@@ -20,3 +20,9 @@ mounts:
     target: layouts
   - source: assets
     target: assets
+  - source: static
+    target: static
+  - source: static/favicon.webp
+    target: assets/media/favicon.webp
+  - source: static/media
+    target: assets/legacy-media

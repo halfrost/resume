@@ -17,7 +17,7 @@
               <div class="legacy-skill">
                 {{ if $icon }}
                   {{ $resource := resources.Get (printf "images/icon-pack/%s.svg" $icon) }}
-                  {{ if $resource }}<img src="{{ $resource.RelPermalink }}" alt="" aria-hidden="true">{{ end }}
+                  {{ if $resource }}<img src="{{ $resource.RelPermalink }}" alt="" aria-hidden="true" width="48" height="48" loading="lazy" decoding="async">{{ end }}
                 {{ end }}
                 <h3>{{ $label }}</h3>
                 {{ with index . "level" }}<p>{{ mul (int .) 20 }}%</p>{{ end }}

@@ -1,0 +1,195 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  font-family: var(--hb-font-body, ui-sans-serif, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--hb-color-background, #fff);
+  font-family: var(--hb-font-body, ui-sans-serif, system-ui, sans-serif);
+  line-height: var(--hb-font-leading-body, 1.6);
+}
+
+main,
+section,
+header,
+footer,
+nav,
+aside {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-block-start: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.isolate {
+  isolation: isolate;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-\[9999\] {
+  z-index: 9999;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.px-3 {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.fill-current {
+  fill: currentColor;
+}
+
+.order-0 {
+  order: 0;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  background: var(--hb-color-background, #fff);
+  color: var(--hb-color-foreground, #111);
+}
+
+.page-header {
+  width: 100%;
+}
+
+.dark .dark\:hidden {
+  display: none;
+}
+
+.dark .dark\:block {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .md\:order-2 {
+    order: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:ml-0 {
+    margin-left: 0;
+  }
+}

@@ -9,8 +9,18 @@
     <div class="legacy-grid legacy-about-grid">
       <aside class="legacy-profile">
         {{ with $profile.avatar }}
-          {{ $avatar := .Fill "540x540 Center" }}
-          <img class="legacy-avatar" src="{{ $avatar.RelPermalink }}" alt="{{ $profile.title }}" width="270" height="270">
+          {{ $avatar := .Fill "270x270 Center webp q85" }}
+          {{ $avatarRetina := .Fill "540x540 Center webp q85" }}
+          <img
+            class="legacy-avatar"
+            src="{{ $avatar.RelPermalink }}"
+            srcset="{{ $avatar.RelPermalink }} 270w, {{ $avatarRetina.RelPermalink }} 540w"
+            sizes="(max-width: 767px) 200px, 270px"
+            alt="{{ $profile.title }}"
+            width="270"
+            height="270"
+            decoding="async"
+            fetchpriority="high">
         {{ end }}
 
         <div class="legacy-portrait-title">
@@ -70,13 +80,13 @@
                   {{ if reflect.IsMap . }}
                     <li>
                       {{ with index . "badge" }}
-                        <img src="{{ . | safeURL }}" alt="" aria-hidden="true">
+                        <img src="{{ . | safeURL }}" alt="" aria-hidden="true" width="40" height="40" loading="lazy" decoding="async">
                       {{ else }}
                         <span class="legacy-education-icon">
                           {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "class='legacy-education-svg'") }}
                         </span>
                       {{ end }}
-                      <div>
+                      <div class="legacy-education-copy">
                         <p class="legacy-course">{{ index . "degree" | default (index . "area") }}</p>
                         <p class="legacy-institution">{{ index . "institution" }}</p>
                       </div>
