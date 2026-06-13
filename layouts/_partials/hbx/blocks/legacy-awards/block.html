@@ -1,0 +1,35 @@
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content | default dict }}
+{{ $design := $block.design | default dict }}
+{{ $profile := partial "functions/get_author_profile" (index $content "username" | default "me") }}
+{{ $dateFormat := index $design "date_format" | default "Jan 2006" }}
+
+<div class="legacy-home-section">
+  <div class="legacy-container">
+    <div class="legacy-section-grid">
+      <header class="legacy-section-heading">
+        <h2>{{ index $content "title" | default "Accomplishments" }}</h2>
+      </header>
+      <div class="legacy-section-content legacy-awards">
+        {{ range sort $profile.awards "date" "desc" }}
+          {{ if reflect.IsMap . }}
+            {{ $url := index . "url" }}
+            {{ $certificate := index . "certificate_url" | default $url }}
+            <article class="legacy-card legacy-award-card">
+              <h3>
+                {{ if $url }}<a href="{{ $url }}" target="_blank" rel="noopener">{{ index . "title" }}</a>{{ else }}{{ index . "title" }}{{ end }}
+              </h3>
+              <p class="legacy-meta">
+                {{ index . "awarder" }}
+                {{ with index . "date" }}<span class="legacy-divider"></span>{{ (time.AsTime .) | time.Format $dateFormat }}{{ end }}
+              </p>
+              {{ with index . "summary" }}<div class="legacy-card-text">{{ printf "%v" . | $page.RenderString }}</div>{{ end }}
+              {{ with $certificate }}<a class="legacy-card-link" href="{{ . }}" target="_blank" rel="noopener">See certificate</a>{{ end }}
+            </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

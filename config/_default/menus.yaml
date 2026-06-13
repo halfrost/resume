@@ -1,0 +1,23 @@
+main:
+  - name: Home
+    url: /#about
+    weight: 10
+  - name: Publications
+    url: /#publications
+    weight: 20
+  - name: Service
+    url: /#service
+    weight: 30
+  - name: Experience
+    url: /#experience
+    weight: 40
+  - name: Contact
+    url: /#contact
+    weight: 50
+
+main_right:
+  - name: CV
+    url: /CV.pdf
+    weight: 10
+    params:
+      icon: academicons/cv

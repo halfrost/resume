@@ -1,0 +1,34 @@
+<script>
+  (() => {
+    const statistics = document.querySelector(".legacy-statistics");
+    if (!statistics) return;
+
+    let loaded = false;
+    const loadStatistics = () => {
+      if (loaded) return;
+      loaded = true;
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js";
+      document.head.appendChild(script);
+    };
+
+    const observeStatistics = () => {
+      if (!("IntersectionObserver" in window)) return;
+      const observer = new IntersectionObserver((entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        observer.disconnect();
+        loadStatistics();
+      }, { rootMargin: "200px 0px" });
+      observer.observe(statistics);
+    };
+
+    window.addEventListener("load", () => {
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(observeStatistics, { timeout: 10000 });
+      } else {
+        setTimeout(observeStatistics, 5000);
+      }
+    }, { once: true });
+  })();
+</script>

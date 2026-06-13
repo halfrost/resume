@@ -1,0 +1,17 @@
+{
+  "name": "halfrost-resume",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.14.0",
+  "scripts": {
+    "dev": "hugo server --disableFastRender",
+    "build": "hugo --gc --minify --cleanDestinationDir",
+    "preview": "hugo --gc --minify --cleanDestinationDir -b http://127.0.0.1:1313/ && node scripts/serve-production.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "@tailwindcss/typography": "^0.5.10",
+    "preact": "^10.27.2",
+    "tailwindcss": "^4.1.12"
+  }
+}

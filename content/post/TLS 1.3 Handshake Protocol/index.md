@@ -5,7 +5,7 @@ summary: The handshake protocol is used to negotiate the security parameters of 
 draft: false
 featured: false
 authors:
-  - halfrost
+  - me
 tags:
   - HTTPS
   - PROTOCOL
@@ -18,7 +18,6 @@ image:
 links:
   - name: Read More
     url: 'https://halfrost.com/tls_1-3_handshake_protocol/'
-
 ---
 
 握手协议用于协商连接的安全参数。握手消息被提供给 TLS 记录层，在记录层它们被封装到一个或多个 TLSPlaintext 或 TLSCiphertext 中，它们按照当前活动连接状态进行处理和传输。

@@ -1,0 +1,294 @@
+{{ $scr := .Scratch }}
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Kit {{ hugo.Data.hugoblox.version }}" />
+
+  {{/* EXTENSIBILITY HOOK: HEAD-START */}}
+  {{ partial "functions/get_hook" (dict "hook" "head-start" "context" .) }}
+
+  {{ if .Params.private }}
+    <meta name="robots" content="noindex" />
+  {{- end -}}
+
+{{/* Attempt to load superuser/person from data. */}}
+{{ $superuser_name := "" }}
+{{ $superuser_slug := "" }}
+{{ $superuser_role := "" }}
+
+{{/* Prefer is_owner flag, fallback to slug 'me' */}}
+{{ $authors := partialCached "functions/get_authors_data" . site.Language.Lang }}
+{{ range $slug, $data := $authors }}
+  {{ if and (not $superuser_slug) ($data.is_owner) }}
+    {{ $superuser_slug = $slug }}
+  {{ end }}
+{{ end }}
+{{ if and (eq $superuser_slug "") (index $authors "me") }}
+  {{ $superuser_slug = "me" }}
+{{ end }}
+
+{{ if $superuser_slug }}
+  {{ $profile := partial "functions/get_author_profile" (dict "slug" $superuser_slug) }}
+  {{ $superuser_name = $profile.title }}
+  {{ $superuser_role = $profile.role }}
+{{ end }}
+
+{{ $scr.Set "superuser_slug" $superuser_slug }}{{/* Set superuser globally for author rendering. */}}
+
+{{ with $superuser_name }}<meta name="author" content="{{ . }}" />{{ end }}
+
+  {{/* Generate page description. */}}
+  {{ $desc := "" }}
+  {{ $desc = partial "functions/get_summary" . }}
+  {{ if site.Params.hugoblox.identity.description | and (not $desc) }}
+    {{ $desc = site.Params.hugoblox.identity.description }}
+  {{ end }}
+  {{ if not $desc }}
+    {{ $desc = $superuser_role }}
+  {{ end }}
+  <meta name="description" content="{{ $desc | plainify }}" />
+
+  {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+  {{ end }}
+  <link rel="alternate" hreflang="{{ site.Language.Locale | default "en-us" }}" href="{{ .Permalink }}" />
+
+  {{/* Hugo Blox Theme Engine Initialization */}}
+  {{/* Uses get_theme_config helper for backward-compatible config resolution */}}
+  {{ $theme_config := partialCached "functions/get_theme_config" . "theme_config" }}
+  {{ partial "functions/theme_generator.html" $theme_config }}
+
+  {{/* Demo Theme Pack Styles (if enabled) */}}
+  {{ if site.Params.hugoblox.header.theme_picker }}
+    {{ partial "functions/demo_theme_styles.html" (dict "typography" $theme_config.typography "layout" $theme_config.layout) }}
+  {{ end }}
+
+  {{/* Tailwind CSS v4 Processing */}}
+  {{/* Use templates.Defer to process CSS after all content is analyzed */}}
+  {{ $deferData := dict "page" . }}
+  {{ $cssKey := cond .IsHome "home-css" "site-css" }}
+  {{ with (templates.Defer (dict "key" $cssKey "data" $deferData)) }}
+    {{ partial "css.html" . }}
+  {{ end }}
+
+  {{ if fileExists "assets/css/custom.css" }}
+    {{ $styles := resources.Get "css/custom.css" | minify | fingerprint "sha256" }}
+    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+  {{ end }}
+
+  {{/* Apply the saved theme before first paint without a network round trip. */}}
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const defaultTheme = root.dataset.wcThemeDefault || "system";
+      const relBase = root.dataset.hbbRelurl || "/";
+      const normalizedRelBase = relBase.endsWith("/") ? relBase : `${relBase}/`;
+      const setDarkTheme = () => {
+        root.classList.add("dark");
+        root.style.colorScheme = "dark";
+      };
+      const setLightTheme = () => {
+        root.classList.remove("dark");
+        root.style.colorScheme = "light";
+      };
+      const savedTheme = localStorage.getItem("wc-color-theme");
+      const useDarkTheme = savedTheme
+        ? savedTheme === "dark"
+        : defaultTheme === "dark" ||
+          (defaultTheme === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
+
+      useDarkTheme ? setDarkTheme() : setLightTheme();
+      window.hbb = {
+        defaultTheme,
+        relBase: normalizedRelBase,
+        assetPaths: {
+          pagefind: `${normalizedRelBase}pagefind/pagefind.js`,
+        },
+        setDarkTheme,
+        setLightTheme,
+      };
+    })();
+  </script>
+
+  {{/* Analytics & Verification */}}
+  {{/* !CACHED! All analytics and verification code is at site level */}}
+  {{ partialCached "blox-analytics/index" . }}
+
+  {{/* RSS Feed */}}
+  {{ $branding := partialCached "functions/get_branding" . "branding" }}
+  {{ with .OutputFormats.Get "RSS" }}
+    <link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $branding.site_title }}" />
+  {{ end }}
+
+  {{/* Progressive Web App (PWA) Icon - SVG preferred */}}
+  {{ $icon := partial "functions/get_site_icon" 32 }}
+  {{ with $icon.resource }}
+    <link rel="icon" type="{{ $icon.type }}" href="{{ .RelPermalink }}" />
+  {{ end }}
+  {{/* Apple Touch Icon - requires PNG */}}
+  {{ $icon_apple := partial "functions/get_site_icon" 180 }}
+  {{ if not $icon_apple.is_svg }}
+    {{ with $icon_apple.resource }}
+      <link rel="apple-touch-icon" type="image/png" href="{{ .RelPermalink }}" />
+    {{ end }}
+  {{ else }}
+    {{/* SVG icon - need PNG fallback for Apple */}}
+    {{ $icon_png := resources.Get "media/icon.png" }}
+    {{ with $icon_png }}
+      {{ $apple_icon := .Fill "180x180 Center" }}
+      <link rel="apple-touch-icon" type="image/png" href="{{ $apple_icon.RelPermalink }}" />
+    {{ end }}
+  {{ end }}
+
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  {{/* Get page image for sharing. */}}
+  {{ $sharing_image := resources.GetMatch (path.Join "media" "sharing.*") }}
+  {{ $featured_image := partial "functions/get_featured_image" . }}
+{{ $avatar_image := (.Resources.ByType "image").GetMatch "avatar*" }}
+  {{ $has_logo := fileExists "assets/media/logo.png" | or (fileExists "assets/media/logo.svg") }}
+  {{ $og_image := "" }}
+  {{ $twitter_card := "summary_large_image" }}
+{{ if and (eq .Kind "term") (eq .Data.Singular "author") }}
+  {{/* Try data-driven avatar for author term pages */}}
+  {{ $termSlug := .Data.Term | urlize }}
+  {{ $profile := partial "functions/get_author_profile" (dict "slug" $termSlug) }}
+  {{ with $profile.avatar }}
+    {{ $og_image = (.Fill "540x540 Center").Permalink }}
+    {{ $twitter_card = "summary" }}
+  {{ end }}
+{{ else if (and (eq .Kind "term") $avatar_image) }}
+  {{ $og_image = ($avatar_image.Fill "540x540 Center").Permalink }}
+  {{ $twitter_card = "summary" }}
+{{ else if $featured_image }}
+    {{ $og_image = $featured_image.Permalink }}
+  {{ else if $sharing_image }}
+    {{ $og_image = $sharing_image.Permalink }}
+  {{ else if $has_logo }}
+    {{/* !CACHED! Can safely cache this site logo variant */}}
+    {{ $logo_data := partialCached "functions/get_logo" (dict "constraint" "fit" "size" 300) "logo_og" }}
+    {{ with $logo_data.resource }}
+      {{ $og_image = .Permalink }}
+    {{ end }}
+    {{ $twitter_card = "summary" }}
+  {{ else }}
+    {{ $icon_og := partial "functions/get_site_icon" 512 }}
+    {{ with $icon_og.resource }}
+      {{ $og_image = .Permalink }}
+    {{ end }}
+    {{ $twitter_card = "summary" }}
+  {{ end }}
+  {{ $scr.Set "og_image" $og_image }}{{/* Set `og_image` globally for `rss.xml`. */}}
+
+  {{ $title := "" }}
+  {{ with .Params.seo.title }}
+    {{ $title = replace . "{brand}" $branding.site_title }}
+  {{ else }}
+    {{ $title = .Title | default $branding.site_title }}
+    {{ if ne $title $branding.site_title }}{{ $title = printf "%s | %s" $title $branding.site_title }}{{ end }}
+  {{ end }}
+  <meta property="twitter:card" content="{{ $twitter_card }}" />
+  {{ with site.Params.hugoblox.identity.social.twitter }}
+    <meta property="twitter:site" content="@{{ . }}" />
+    <meta property="twitter:creator" content="@{{ . }}" />
+  {{ end }}
+  <meta property="og:site_name" content="{{ $branding.site_title }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:title" content="{{ $title }}" />
+  <meta property="og:description" content="{{ $desc }}" />
+  {{- with $og_image -}}
+    <meta property="og:image" content="{{ . }}" />
+    <meta property="twitter:image" content="{{ . }}" />
+  {{- end -}}
+  <meta property="og:locale" content="{{ site.Language.Locale | default "en-us" }}" />
+  {{ if .IsPage }}
+    {{ if not .PublishDate.IsZero }}
+      <meta
+        property="article:published_time"
+        content="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"
+      />
+    {{ else if not .Date.IsZero }}
+      <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" />
+    {{ end }}
+    {{ if not .Lastmod.IsZero }}<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">{{ end }}
+  {{ else }}
+    {{ if not .Date.IsZero }}
+      <meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" />
+    {{ end }}
+  {{ end }}
+
+  {{ partial "jsonld/main" (dict "page" . "summary" $desc) }}
+
+  <title>{{$title}}</title>
+
+  {{/* Typography: font loading, font families, and sizes */}}
+  {{ partial "functions/typography.html" $theme_config }}
+  {{/* Layout tokens: radius and spacing */}}
+  {{ partial "functions/layout_tokens.html" $theme_config }}
+
+  {{ if .Params.design.background.image.filename }}
+    {{/* See Hugo note on linking assets in styles: https://github.com/gohugoio/hugoThemes#common-permalink-issues */}}
+    {{ $bg_img := resources.Get (printf "media/%s" .Params.design.background.image.filename) }}
+    {{ if $bg_img }}
+      {{ if reflect.IsImageResourceProcessable $bg_img }}
+        {{ $bg_img = $bg_img.Fit "1920x1920 webp" }}
+      {{ end }}
+      <style>
+        #page-bg {
+         background-image: url('{{$bg_img.Permalink}}');
+         background-position: center;
+         background-size: cover;
+        }
+      </style>
+      {{ else }}
+        {{ errorf "Couldn't find page background `%s` in the `assets/media/` folder - please add it." .Params.design.background.image.filename }}
+      {{ end }}
+  {{ end }}
+
+  {{/* Init prior to auto-chunking/bundling scripts due to Hugo concurrency issues */}}
+  {{/* !CACHED! Initialized once at site level and then cached for each page */}}
+  {{- partialCached "init.html" . "hb_init_once" -}}
+
+  {{ $js_license := printf "/*! Hugo Blox Kit Tailwind UI v%s | https://hugoblox.com/ */\n" hugo.Data.hugoblox.version }}
+  {{ $js_license := $js_license | printf "%s/*! Copyright 2016-present George Cushen (https://georgecushen.com/) */\n" }}
+  {{ $js_license := $js_license | printf "%s/*! License: https://github.com/HugoBlox/kit/blob/main/LICENSE.md */\n" }}
+  {{ $js_bundle_head := $js_license | resources.FromString "js/bundle-head.js" }}
+  {{ $i18n := dict "copy" (i18n "btn_copy") "copied" (i18n "btn_copied" | default "Copied") }}
+  {{ $js_params := dict "hugoEnvironment" hugo.Environment "i18n" $i18n }}
+  {{ $js_hugoblox := resources.Get "js/hb-code-copy.js" | js.Build (dict "targetPath" (printf "js/hugoblox-core-%s.js" .Lang ) "params" $js_params) }}
+  {{ $js_hugoblox := $js_hugoblox | resources.Minify }}
+  {{- $js_theme := resources.Get "js/hb-theme.js" | resources.Minify -}}
+  {{- $js_lang := resources.Get "js/hb-i18n.js" | resources.Minify -}}
+  {{- $js_nav := resources.Get "js/hb-nav.js" | resources.Minify -}}
+  {{- $js_sidebar := resources.Get "js/hb-sidebar.js" | resources.Minify -}}
+  {{- $js_notifier := resources.Get "js/hb-notifier.js" | js.Build (dict "targetPath" (printf "js/hb-notifier-%s.js" .Lang ) "params" $js_params) | resources.Minify -}}
+  {{- $js_clipboard := resources.Get "js/hb-clipboard.js" | js.Build (dict "targetPath" (printf "js/hb-clipboard-%s.js" .Lang ) "params" $js_params) | resources.Minify -}}
+  {{- $js_citation := resources.Get "js/hb-citation.js" | js.Build (dict "targetPath" (printf "js/hb-citation-%s.js" .Lang ) "params" $js_params) | resources.Minify -}}
+
+  {{/* Start with the core scripts */}}
+  {{ $js_bundle_contents := slice $js_bundle_head $js_hugoblox $js_theme $js_lang $js_nav $js_sidebar $js_notifier $js_clipboard $js_citation }}
+
+  {{/* Discover and include block-specific JavaScript */}}
+  {{- with partial "functions/get-block-scripts.html" . -}}
+    {{ $js_bundle_contents = $js_bundle_contents | append . }}
+  {{- end -}}
+
+  {{ $js_bundle := $js_bundle_contents | resources.Concat (printf "js/hugo-blox-%s.min.js" .Lang) }}
+  {{- if hugo.IsProduction -}}
+    {{ $js_bundle = $js_bundle | fingerprint "sha256" }}
+  {{- end -}}
+  {{ if not .IsHome }}
+    <script
+      defer
+      src="{{ $js_bundle.RelPermalink }}"
+      integrity="{{ $js_bundle.Data.Integrity }}"
+    ></script>
+  {{ end }}
+
+  {{/* Load Third-Party Libraries */}}
+  {{ partial "libraries.html" . }}
+
+  {{/* EXTENSIBILITY HOOK: HEAD-END */}}
+  {{ partial "functions/get_hook" (dict "hook" "head-end" "context" .) }}
+</head>

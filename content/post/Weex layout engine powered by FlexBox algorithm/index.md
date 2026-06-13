@@ -5,7 +5,7 @@ summary: In the last article, we talked about the basic process of Weex working 
 draft: false
 featured: false
 authors:
-  - halfrost
+  - me
 tags:
   - Weex
 categories:
@@ -17,7 +17,6 @@ image:
 links:
   - name: Read More
     url: 'https://halfrost.com/weex_flexbox/'
-
 ---
 
 在上篇文章里面谈了Weex在iOS客户端工作的基本流程。这篇文章将会详细的分析Weex是如何高性能的布局原生界面的，之后还会与现有的布局方法进行对比，看看Weex的布局性能究竟如何。

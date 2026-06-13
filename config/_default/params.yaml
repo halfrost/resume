@@ -1,0 +1,75 @@
+hugoblox:
+  schema: "2.0"
+  identity:
+    name: "Dezhi Yu"
+    organization: ""
+    type: person
+    tagline: "Senior ML Engineer"
+    description: "Dezhi Yu's research profile, publications, and machine learning systems work."
+    social:
+      twitter: "halffrost"
+  theme:
+    mode: system
+    pack: default
+    colors:
+      primary: "blue"
+      secondary: ""
+      neutral: ""
+  typography:
+    pack: legacy-academic
+  layout:
+    radius: md
+    spacing: comfortable
+    avatar_shape: circle
+  header:
+    enable: true
+    style: navbar
+    sticky: true
+    align: left
+    search: false
+    theme_toggle: true
+    theme_picker: false
+    language_switcher: false
+    cta:
+      enable: false
+  footer:
+    style: minimal
+    language_switcher: false
+    text: ""
+  copyright:
+    notice: "© {year} {name}"
+    license:
+      type: custom
+      allow_derivatives: false
+      share_alike: false
+      allow_commercial: false
+  content:
+    math:
+      enable: false
+    toc:
+      enable: true
+    reading_time:
+      enable: true
+    citations:
+      style: apa
+  search:
+    enable: false
+    suggestions: []
+    quick_actions: []
+  comments:
+    enable: false
+    provider: ""
+  repository:
+    enable: true
+    url: "https://github.com/halfrost/resume"
+    branch: master
+    content_dir: content
+  locale:
+    date_format: "Jan 2, 2006"
+    time_format: "3:04 PM"
+    address_format: en-us
+  privacy:
+    enable: false
+    anonymize_analytics: true
+  pro:
+    hide_attribution: false

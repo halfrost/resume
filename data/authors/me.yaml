@@ -1,0 +1,304 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Dezhi Yu
+  given: Dezhi
+  family: Yu
+role: Senior ML Engineer
+bio: |
+  I am a research-oriented machine learning systems engineer working on foundation model infrastructure, alignment, and evaluation. My work focuses on building efficient, reliable systems for large language models while studying the algorithms and data choices that make these models more useful, controllable, and cost-effective in real applications.
+
+  At TikTok, my recent work centers on Model-as-a-Service platforms and high-performance LLM inference. I develop serving infrastructure with vLLM and SGLang across model runtime integration, scheduling and continuous batching, KV-cache and memory management, distributed execution, observability, and reliability. This systems work is closely connected to my research on distributed disaggregated inference, preference optimization, instruction-tuning data selection, multimodal evaluation, and retrieval-augmented biomedical summarization.
+
+  My broader research spans reinforcement learning for robotics, healthcare sequence modeling, privacy-preserving machine learning, and motion planning. I am especially interested in model-system co-design: how model architecture, inference algorithms, data curation, hardware utilization, scheduling, and distributed runtimes interact. My goal is to advance frontier AI systems that are faster to experiment with, more rigorous to evaluate, and dependable enough to serve at scale.
+affiliations:
+- name: TikTok Inc.
+  url: https://www.tiktok.com/
+links:
+- icon: at-symbol
+  url: /#contact
+  label: Email
+- icon: brands/linkedin
+  url: https://www.linkedin.com/in/halffrost/
+- icon: brands/github
+  url: https://github.com/halfrost
+- icon: brands/twitter
+  url: https://twitter.com/halffrost
+- icon: brands/weixin
+  url: https://img.halfrost.com/wechat-qr-code.png
+- icon: hero/globe-alt
+  url: https://halfrost.com
+interests:
+- Efficient LLM Inference and Serving Systems
+- Model-System Co-design for Foundation Models
+- Alignment, Preference Optimization, and Instruction Tuning
+- Multimodal Reasoning and Model Evaluation
+- Retrieval-Augmented and Biomedical NLP
+- Reinforcement Learning for Robotics
+education:
+- degree: Master of Information and Data Science, GPA 3.966/4.0
+  institution: University of California, Berkeley, CA, United States of America
+  badge: /media/education/berkeley.webp
+- degree: Master of Science in Computer Science, GPA 4.0/4.0
+  institution: Stanford University, CA, United States of America
+  badge: /media/education/stanford.webp
+- degree: Master of Science in Software Engineering, GPA 3.95/4.0
+  institution: Carnegie Mellon University, CA, United States of America
+  badge: /media/education/cmu.webp
+- degree: Bachelor of Engineering in Computer Science, GPA 3.8/4.0
+  institution: Huzhou Normal University, Zhejiang, China
+  badge: /media/education/huzu.webp
+experience:
+- role: Senior Machine Learning Engineer - LLMs
+  org: TikTok
+  employment_type: Full-time
+  image: /media/tiktok.png
+  location: Mountain View, California, United States
+  start: '2023-02-01'
+  summary: |
+    - Lead the development of Model-as-a-Service infrastructure and high-performance LLM serving systems, integrating vLLM and SGLang across model runtimes, distributed execution, and production deployment workflows.
+    - Design model-system co-optimizations for scheduling, continuous batching, KV-cache and memory management, observability, fault isolation, and reliability to improve the efficiency and operability of large-scale inference.
+    - Co-authored KVDirect on distributed disaggregated LLM inference and developed CommBridge, a portable cross-GPU communication runtime spanning KV-cache transfer, MoE communication, and heterogeneous RDMA backends.
+    - Work across inference algorithms, runtime design, networking, and hardware utilization to make foundation-model experimentation faster and production serving more dependable.
+- role: Quantitative Algo Developer - Smart Contract (DeFi 2.0)
+  org: Aperture Finance
+  employment_type: Internship
+  image: /media/aperture.jpg
+  location: Mountain View, California, United States
+  start: '2022-05-01'
+  end: '2022-09-30'
+  summary: |
+    - Served as technical owner for Solana quantitative-strategy projects and designed a pseudo-delta-neutral hedging strategy using leveraged liquidity-farming protocols.
+    - Built a research pipeline that combined autoencoder-based risk-factor extraction, GAN-generated synthetic data, wavelet denoising, and Kalman filtering over five years of historical market data.
+    - Evaluated individual and composite alpha factors through offline backtesting with Zipline and Backtrader, reducing estimated deployment risk for candidate strategies by 30%.
+    - Implemented Rust smart contracts that converted model-generated signals into dynamic long-short portfolio adjustments; the deployed strategy generated $2M in net income in one month.
+- role: Staff Engineer - Cloud Infrastructure | Tech Lead
+  org: Binance
+  employment_type: Full-time
+  image: /media/binance.jpg
+  location: Singapore City, Singapore
+  start: '2020-05-01'
+  end: '2022-05-31'
+  summary: |
+    - Led an eight-engineer team to design, build, and launch Themis, Binance's first global strategy-distribution platform for traffic allocation and predicate-based decisioning.
+    - Established the platform's offline simulation, production-data feedback, and experimentation workflows, supporting up to 1,000 concurrent A/B experiments and 20,000 strategy releases per day.
+    - Designed the online-offline evaluation loop used to improve resource-allocation decisions across products serving 200M users and approximately $1B in weekly transaction volume.
+    - Owned technical direction and delivery across the platform, deployment tooling, administration workflows, and client integration.
+- role: Cloud Infrastructure Staff Engineer | Tech Lead
+  org: Alibaba Cloud
+  employment_type: Full-time
+  image: /media/alibaba.jpg
+  location: Shanghai, China
+  start: '2017-01-01'
+  end: '2020-05-31'
+  summary: |
+    - Led a five-engineer team responsible for high-scale personalization and messaging infrastructure during two Tmall Double 11 campaigns, including the 2019 event that processed RMB 268.4B in daily GMV.
+    - Designed a behavior-aware advertising and promotion-ranking system using purchase history, search activity, customer profiles, and engagement signals; the program was associated with 48% annual revenue growth and an 8% increase in purchase rate.
+    - Improved online and offline recommendation pipelines for push, banner, and SMS campaigns by 25%; expanded user-profile features and raised XGBoost/logistic-regression model AUC from 0.59 to 0.77.
+    - Architected the Taco distributed messaging ecosystem to process more than 1.1B notifications per day with over 97% delivery, 0.72-1.2 second latency, 750K peak connections, and 30K-50K QPS.
+- role: Infrastructure Team Lead
+  org: Shanghai Function Internet Finance Information Service Co., Ltd.
+  employment_type: Full-time
+  image: /media/fangchuang.jpg
+  location: Shanghai, China
+  start: '2016-05-01'
+  end: '2017-01-31'
+  summary: |
+    - Led the engineering team that built a Java-based infrastructure snapshot and caching system for read-heavy services, reducing average response time by 65% and improving robustness by 81% at petabyte-scale daily cache volume.
+    - Directed the migration of 12 containerized backend services to Alibaba Cloud Kubernetes and redesigned the Redis/MySQL data layer, improving measured platform stability by 65%.
+    - Designed an intelligent investor-project matching system combining recommendation, text summarization, and text-to-speech components, increasing successful project bids by 40%.
+- role: Infrastructure Team Lead
+  org: PING AN
+  employment_type: Full-time
+  image: /media/yqb.jpg
+  location: Shanghai, China
+  start: '2015-11-01'
+  end: '2016-04-30'
+  summary: |
+    - Designed the 1QB Wallet recommendation system to match customers with financial products using behavioral and search signals, improving recommendation accuracy by 30%.
+    - Built a Go and Kafka event-driven transaction system for millisecond-scale promotional ordering by millions of users; the platform contributed RMB 10B in incremental GMV during its first year.
+    - Re-architected distributed task processing with Celery, RabbitMQ, and MySQL, reducing queue latency by 20%, increasing throughput by 4x, and lowering memory consumption by 40%.
+    - Established code review, static analysis, package deployment, backup distribution, and CI/CD workflows, improving engineering delivery efficiency by 5x.
+- role: Research Engineer
+  org: Quatanium Technology Co., Ltd.
+  employment_type: Full-time
+  image: /media/quatanium.jpg
+  location: Shanghai, China
+  start: '2014-06-01'
+  end: '2015-11-30'
+  summary: |
+    - Designed and built the company's first cluster observability platform, processing millions of logs per day through Logstash, Kibana, and Grafana with 99.999% annual availability.
+    - Developed containerized CI/CD pipelines for AWS that automated build, packaging, and production deployment for an average of 200 integrations per day.
+    - Built an automated error-detection and ticketing service for operations teams, reducing incident-response waiting time by 80%.
+skills:
+- name: Technical Skills
+  items:
+  - label: Golang
+    level: 4
+    icon: golang
+  - label: Docker
+    level: 3
+    icon: Docker
+  - label: MySQL
+    level: 4
+    icon: MySQL
+  - label: PostgreSQL
+    level: 4
+    icon: PostgreSQL
+  - label: Nginx
+    level: 4
+    icon: Nginx
+  - label: RabbitMQ
+    level: 4
+    icon: RabbitMQ
+  - label: Redis
+    level: 4
+    icon: Redis
+  - label: Jenkins
+    level: 3
+    icon: jenkins
+  - label: JavaScript
+    level: 3
+    icon: JS
+  - label: HTML5
+    level: 3
+    icon: H5
+  - label: CSS3
+    level: 3
+    icon: css3
+  - label: Vue
+    level: 3
+    icon: vue
+  - label: Weex
+    level: 3
+    icon: weex
+  - label: Electron
+    level: 3
+    icon: electron
+  - label: Apple
+    level: 4
+    icon: apple
+  - label: Adobe Illustrator
+    level: 4
+    icon: AI
+  - label: Adobe Photoshop
+    level: 4
+    icon: PS
+  - label: Sketch
+    level: 4
+    icon: sketch
+  - label: Git
+    level: 4
+    icon: git
+  - label: Gitlab
+    level: 4
+    icon: gitlab
+  - label: Phabricator
+    level: 4
+    icon: phabricator
+awards:
+- title: DeepLearning.AI TensorFlow Developer Specialization
+  awarder: DeepLearning AI
+  date: '2019-06-30'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/SCP8JNZDRDCN
+  icon: hero/trophy
+- title: Deep Learning Specialization
+  awarder: DeepLearning AI
+  date: '2019-06-15'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/JBTR2VL5LKXU
+  icon: hero/trophy
+- title: 'Preparing for Google Cloud Certification: Cloud Architect Specialization'
+  awarder: Google Cloud
+  date: '2021-06-03'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/X4DPCNBW48MF
+  icon: hero/trophy
+- title: Architecting with Google Compute Engine Specialization
+  awarder: Google Cloud
+  date: '2021-06-01'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/3GU32E3PNTSU
+  icon: hero/trophy
+- title: Architecting with Google Kubernetes Engine Specialization
+  awarder: Google Cloud
+  date: '2021-05-30'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/YA7MNBZRPVWG
+  icon: hero/trophy
+- title: Programming with Google Go
+  awarder: University of California, Irvine
+  date: '2021-05-20'
+  url: https://www.coursera.org/account/accomplishments/specialization/certificate/VUP64SWLSK3V
+  icon: hero/trophy
+- title: ACM Professional Membership
+  awarder: ACM, Association for Computing Machinery
+  date: '2020-07-20'
+  url: https://img.halfrost.com/certificate/ACM_memcert0104000A02030A_00.pdf
+  icon: hero/trophy
+- title: IEEE Professional Membership
+  awarder: IEEE
+  date: '2020-07-15'
+  url: https://img.halfrost.com/certificate/IEEE_MEM500_97002879.pdf
+  icon: hero/trophy
+- title: IEEE-CS Professional Membership
+  awarder: IEEE Computer Society
+  date: '2020-07-10'
+  url: https://img.halfrost.com/certificate/IEEE_CS_MEMC016_97002879.pdf
+  icon: hero/trophy
+- title: CCF Professional Membership
+  awarder: China Computer Federation
+  date: '2020-07-05'
+  icon: hero/trophy
+- title: AI For Everyone
+  awarder: DeepLearning AI
+  date: '2020-06-10'
+  url: https://www.coursera.org/account/accomplishments/certificate/N6L98MC4JW8T
+  icon: hero/trophy
+- title: Apple Teacher
+  awarder: Apple
+  date: '2020-06-30'
+  url: https://img.halfrost.com/certificate/AppleTeacher.pdf
+  icon: hero/trophy
+- title: Machine Learning
+  awarder: Stanford Online
+  date: '2018-03-26'
+  url: https://www.coursera.org/account/accomplishments/certificate/KQP78XV66AEP
+  icon: hero/trophy
+- title: The 36th ACM-ICPC Asia Regional Contest Shanghai Site 2011 Fudan University - Honorable Mention
+  awarder: ACM-ICPC International Collegiate Programming Contest
+  date: '2011-10-01'
+  url: https://img.halfrost.com/certificate/ACM-ICPC_Honorable_Mention.jpg
+  icon: hero/trophy
+- title: The ACM-ICPC Asia Regional Google Cup 2011 ACM-ICPC China Shanghai Fudan Invitational Programming Contest Fudan University - Bronze Medal
+  awarder: ACM-ICPC International Collegiate Programming Contest
+  date: '2011-05-01'
+  url: https://img.halfrost.com/certificate/ACM-ICPC_Bronze_Medal.jpg
+  icon: hero/trophy
+- title: Network Engineer
+  awarder: Ministry of Human Resources and Social Security Administration
+  date: '2012-05-01'
+  url: https://img.halfrost.com/certificate/11010973.jpg
+  icon: hero/trophy
+- title: Software Designer
+  awarder: Ministry of Human Resources and Social Security Administration
+  date: '2011-11-01'
+  url: https://img.halfrost.com/certificate/11008976.jpg
+  icon: hero/trophy
+- title: National Computer Rank Examination (Level 4 Network Engineer)
+  awarder: Ministry of Education
+  date: '2012-03-01'
+  url: https://img.halfrost.com/certificate/41353301592197.jpg
+  icon: hero/trophy
+- title: The 10 Best Original Authors of 2016 juejin.im
+  awarder: juejin.im
+  date: '2016-12-01'
+  url: https://yearinreview.juejin.im/
+  icon: hero/trophy
+- title: The 2016 Best Recommended Author of jianshu
+  awarder: jianshu.com
+  date: '2016-12-01'
+  url: https://www.jianshu.com/u/12201cdd5d7a
+  icon: hero/trophy
+- title: The 8th Zhejiang Province University Programming Contest - Bronze Medal
+  awarder: Ministry of Education
+  date: '2011-06-01'
+  url: https://img.halfrost.com/certificate/ACM-ICPC_Zhejiang_Bronze_Medal.pdf
+  icon: hero/trophy

@@ -28,21 +28,24 @@ links:
     icon: link
     name: Link
     url: 'https://speakerdeck.com/halfrost/eleme-report'
+  - type: pdf
+    url: 'https://speakerdeck.com/halfrost/eleme-report'
+  - type: code
+    url: 'https://github.com/halfrost/Halfrost-Field'
+  - type: video
+    url: 'https://speakerdeck.com/halfrost/eleme-report'
 event: Eleme Technology Sharing within the department
 event_url: "https://speakerdeck.com/halfrost/eleme-report"
 publishDate: 2017-04-18T11:41:56.752Z
 
-url_pdf: "https://speakerdeck.com/halfrost/eleme-report"
-url_code: "https://github.com/halfrost/Halfrost-Field"
-url_video: "https://speakerdeck.com/halfrost/eleme-report"
 projects:
   - Halfrost-Field
 
 draft: false
-view: 2
+view: date-title-summary
 featured: false
 authors:
-  - halfrost
+  - me
 header:
   caption: ""
   image: ""

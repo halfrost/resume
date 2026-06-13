@@ -1,0 +1,49 @@
+title: "Dezhi Yu"
+baseURL: "https://halfrost.me/"
+languageCode: en-us
+defaultContentLanguage: en
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: false
+removePathAccents: true
+
+cascade:
+  - target:
+      path: /slides/**
+      kind: page
+    outputs: [HTML, present]
+
+build:
+  writeStats: true
+enableGitInfo: false
+summaryLength: 30
+pagination:
+  pagerSize: 10
+enableEmoji: true
+enableRobotsTXT: true
+footnotereturnlinkcontents: "^"
+ignoreFiles: [".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+outputs:
+  home: [HTML, RSS, headers, redirects, backlinks]
+  section: [HTML, RSS]
+imaging:
+  resampleFilter: lanczos
+  quality: 90
+  anchor: smart
+  hint: picture
+timeout: 600000
+taxonomies:
+  author: authors
+  tag: tags
+  category: categories
+  publication_type: publication_types
+markup:
+  _merge: deep
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    lineNos: false
+security:
+  _merge: deep
+sitemap:
+  _merge: deep

@@ -7,7 +7,6 @@ tags:
 date: "2013-05-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
 
 image:
   caption:
@@ -30,11 +29,6 @@ links:
   icon: weixin
   name: Follow
   url: https://img.halfrost.com/wechat-qr-code.png
-
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
 
 # Slides (optional).
 #   Associate this project with Markdown slides.

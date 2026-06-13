@@ -1,19 +1,22 @@
 [build]
-  command = "hugo --gc --minify -b $URL"
+  command = "npm install --global pnpm@10.14.0 && pnpm install --no-frozen-lockfile && hugo --gc --minify --cleanDestinationDir -b $URL"
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.75.1"
+  HUGO_VERSION = "0.162.0"
+  GO_VERSION = "1.21.5"
+  NODE_VERSION = "22"
   HUGO_ENABLEGITINFO = "true"
+  PNPM_FLAGS = "--no-frozen-lockfile"
 
 [context.production.environment]
   HUGO_ENV = "production"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+  command = "npm install --global pnpm@10.14.0 && pnpm install --no-frozen-lockfile && hugo --gc --minify --cleanDestinationDir --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "npm install --global pnpm@10.14.0 && pnpm install --no-frozen-lockfile && hugo --gc --minify --cleanDestinationDir -b $DEPLOY_PRIME_URL"
 
 [[headers]]
   for = "*.webmanifest"
@@ -24,3 +27,41 @@
   for = "index.xml"
   [headers.values]
     Content-Type = "application/rss+xml"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/dist/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/legacy-media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cross-Origin-Opener-Policy = "same-origin"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"

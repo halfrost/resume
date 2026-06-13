@@ -1,0 +1,27 @@
+{{ $block := .wcBlock }}
+{{ $content := $block.content | default dict }}
+
+<div class="legacy-home-section">
+  <div class="legacy-container">
+    <div class="legacy-section-grid">
+      <header class="legacy-section-heading">
+        <h2>{{ index $content "title" | default "Academic Service" }}</h2>
+      </header>
+      <div class="legacy-section-content legacy-service-list">
+        {{ range index $content "items" | default slice }}
+          {{ if reflect.IsMap . }}
+            <article class="legacy-service-item">
+              <h3>{{ index . "title" }}</h3>
+              {{ with index . "summary" }}<p>{{ . | markdownify }}</p>{{ end }}
+              {{ with index . "venues" }}
+                <ul class="legacy-service-venues">
+                  {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+                </ul>
+              {{ end }}
+            </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

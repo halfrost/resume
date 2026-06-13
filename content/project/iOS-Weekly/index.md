@@ -7,7 +7,6 @@ tags:
 date: "2017-01-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
 
 image:
   caption:
@@ -31,16 +30,19 @@ links:
   name: Follow
   url: https://img.halfrost.com/wechat-qr-code.png
 
-url_code: "https://github.com/SwiftOldDriver/iOS-Weekly"
-url_pdf: "https://github.com/SwiftOldDriver/iOS-Weekly"
-url_slides: "https://github.com/SwiftOldDriver/iOS-Weekly"
-url_video: "https://github.com/SwiftOldDriver/iOS-Weekly"
-
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
+- type: pdf
+  url: 'https://github.com/SwiftOldDriver/iOS-Weekly'
+- type: code
+  url: 'https://github.com/SwiftOldDriver/iOS-Weekly'
+- type: slides
+  url: 'https://github.com/SwiftOldDriver/iOS-Weekly'
+- type: video
+  url: 'https://github.com/SwiftOldDriver/iOS-Weekly'
 slides: ""
 ---
 

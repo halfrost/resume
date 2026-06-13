@@ -46,21 +46,24 @@ links:
     icon: link
     name: Link
     url: 'http://t.swift.gg/d/89-t-9-ai'
+  - type: pdf
+    url: 'https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/T_Salon_share.pdf'
+  - type: code
+    url: 'https://github.com/halfrost/S2'
+  - type: video
+    url: 'https://speakerdeck.com/halfrost/the-practice-of-spatial-index-in-geographic-service'
 event: Code<T> 2018 S1 Share
 event_url: "http://t.swift.gg/d/89-t-9-ai"
 publishDate: 2018-01-15T11:41:56.752Z
 
-url_pdf: "https://github.com/halfrost/Halfrost-Field/blob/master/contents/Go/T_Salon_share.pdf"
-url_code: "https://github.com/halfrost/S2"
-url_video: "https://speakerdeck.com/halfrost/the-practice-of-spatial-index-in-geographic-service"
 projects:
   - Halfrost-Field
 
 draft: false
-view: 2
+view: date-title-summary
 featured: false
 authors:
-  - halfrost
+  - me
 header:
   caption: ""
   image: ""

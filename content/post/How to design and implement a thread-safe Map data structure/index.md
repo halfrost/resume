@@ -5,7 +5,7 @@ summary: Map is a very common data structure used to store some unordered key-va
 draft: false
 featured: false
 authors:
-  - halfrost
+  - me
 tags:
   - Go
 categories:
@@ -17,7 +17,6 @@ image:
 links:
   - name: Read More
     url: 'https://halfrost.com/go_map_chapter_one/'
-
 ---
 
 Map 是一种很常见的数据结构，用于存储一些无序的键值对。在主流的编程语言中，默认就自带它的实现。C、C++ 中的 STL 就实现了 Map，JavaScript 中也有 Map，Java 中有 HashMap，Swift 和 Python 中有 Dictionary，Go 中有 Map，Objective-C 中有 NSDictionary、NSMutableDictionary。

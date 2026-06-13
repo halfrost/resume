@@ -5,7 +5,7 @@ summary: In HTTP/1.1 (see [RFC7230]), the header field is not compressed. As the
 draft: false
 featured: false
 authors:
-  - halfrost
+  - me
 tags:
   - HTTP/2
   - PROTOCOL
@@ -18,7 +18,6 @@ image:
 links:
   - name: Read More
     url: 'https://halfrost.com/http2-header-compression/'
-
 ---
 
 在 HTTP/1.1（请参阅 [RFC7230](https://tools.ietf.org/html/rfc7230)）中，header 字段未被压缩。随着网页内的请求数增长到需要数十到数百个请求的时候，这些请求中的冗余 header 字段不必要地消耗了带宽，从而显着增加了延迟。

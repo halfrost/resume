@@ -1,0 +1,78 @@
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content | default dict }}
+{{ $filters := index $content "filters" | default dict }}
+{{ $folders := index $filters "folders" | default (slice "post") }}
+{{ if eq (printf "%T" $folders) "string" }}{{ $folders = slice $folders }}{{ end }}
+{{ $count := int (index $content "count" | default 5) }}
+{{ $order := index $content "order" | default "desc" }}
+{{ $manualItems := index $content "items" | default (slice) }}
+{{ $query := slice }}
+{{ if gt (len $manualItems) 0 }}
+  {{ range $manualItems }}
+    {{ with site.GetPage (printf "publication/%s" .) }}
+      {{ $query = $query | append . }}
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ $query = where site.RegularPages "Section" "in" $folders }}
+  {{ $query = sort $query "Date" $order }}
+  {{ if gt $count 0 }}{{ $query = first $count $query }}{{ end }}
+{{ end }}
+
+<div class="legacy-home-section">
+  <div class="legacy-container">
+    <div class="legacy-section-grid">
+      <header class="legacy-section-heading">
+        <h2>{{ index $content "title" }}</h2>
+        {{ with index $content "cta" }}
+          {{ if reflect.IsMap . }}
+            <p><a class="legacy-outline-button" href="{{ index . "url" }}">{{ index . "text" }}</a></p>
+          {{ end }}
+        {{ end }}
+      </header>
+      <div class="legacy-section-content legacy-stream">
+        {{ range $query }}
+          {{ $item := . }}
+          {{ $linkScratch := newScratch }}
+          {{ $linkScratch.Set "url" .RelPermalink }}
+          {{ range .Params.links }}
+            {{ if and (eq (.type | default "") "site") .url }}
+              {{ $linkScratch.Set "url" .url }}
+            {{ end }}
+          {{ end }}
+          {{ $link := $linkScratch.Get "url" }}
+          <article class="legacy-stream-item">
+            <div class="legacy-stream-copy">
+              <h3><a href="{{ $link }}">{{ .Title }}</a></h3>
+              {{ $summary := .Summary }}
+              {{ with .Params.abstract }}{{ $summary = . }}{{ end }}
+              <div class="legacy-stream-summary">{{ $summary | plainify | truncate 340 }}</div>
+              <div class="legacy-item-links legacy-publication-links">
+                {{ with .Resources.GetMatch "cite.bib" }}
+                  <button type="button" class="legacy-cite-button js-cite-modal" data-filename="{{ .RelPermalink }}">
+                    <span>Cite</span>
+                  </button>
+                {{ end }}
+                {{ range .Params.links }}
+                  {{ if .url }}
+                    {{ $label := .name | default (.type | default "Paper") }}
+                    <a href="{{ .url | safeURL }}" target="_blank" rel="noopener">{{ $label }}</a>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+            {{ with .Resources.GetMatch "{featured,cover,thumbnail}*" }}
+              {{ if reflect.IsImageResourceProcessable . }}
+                {{ $thumb := .Fill "300x170 Center webp" }}
+                <div class="legacy-stream-image" aria-hidden="true">
+                  <img src="{{ $thumb.RelPermalink }}" alt="" width="300" height="170" loading="lazy" decoding="async">
+                </div>
+              {{ end }}
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

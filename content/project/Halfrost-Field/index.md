@@ -7,7 +7,6 @@ tags:
 date: "2017-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
 
 image:
   caption:
@@ -31,16 +30,19 @@ links:
   name: Follow
   url: https://img.halfrost.com/wechat-qr-code.png
 
-url_code: "https://github.com/halfrost/Halfrost-Field"
-url_pdf: "https://github.com/halfrost/Halfrost-Field"
-url_slides: "https://github.com/halfrost/Halfrost-Field"
-url_video: "https://github.com/halfrost/Halfrost-Field"
-
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
+- type: pdf
+  url: 'https://github.com/halfrost/Halfrost-Field'
+- type: code
+  url: 'https://github.com/halfrost/Halfrost-Field'
+- type: slides
+  url: 'https://github.com/halfrost/Halfrost-Field'
+- type: video
+  url: 'https://github.com/halfrost/Halfrost-Field'
 slides: ""
 ---
 

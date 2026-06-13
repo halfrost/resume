@@ -1,0 +1,23 @@
+hugoblox:
+  meta:
+    format: "hugoblox-font@1"
+    name: "Legacy Academic"
+    vendor: "local"
+    version: "1.0.0"
+    license: "OFL"
+    description: "The Montserrat and Roboto typography used by the 2020 Academic theme."
+  families:
+    heading: "Montserrat"
+    body: "Roboto"
+    code: "Roboto Mono"
+  weights:
+    heading: [400, 700]
+    body: [300, 400, 700]
+    code: [400]
+  leading:
+    heading: 1.2
+    body: 1.65
+    code: 1.5
+  tracking:
+    heading: "0"
+    body: "0"

@@ -1,3 +1,6 @@
-github.com/wowchemy/wowchemy-hugo-modules/netlify-cms-academic v0.0.0-20201001144923-e58ee0ffc576/go.mod h1:TU3QDPUdBSQnvDP5QVCwjAkBIdVMS/bKFA8jr3eI5AY=
-github.com/wowchemy/wowchemy-hugo-modules/wowchemy v0.0.0-20201001144923-e58ee0ffc576 h1:r97j+QgxENainAzooKFwaHePl7UBBtZ4RFh6+Ks2x3U=
-github.com/wowchemy/wowchemy-hugo-modules/wowchemy v0.0.0-20201001144923-e58ee0ffc576/go.mod h1:H22qfH9qj3FWwsk7+bAZpmT24yRGNQURah2/IRwjbn8=
+github.com/HugoBlox/kit/modules/blox v0.0.0-20260527025321-61f41d3667f1 h1:JBLSLEfVXqErxi9+DO70n4VX++C+rO103d45CDajzmE=
+github.com/HugoBlox/kit/modules/blox v0.0.0-20260527025321-61f41d3667f1/go.mod h1:0F2Ss2NeylmaBP7+qx0U6zFPeMZ9NoLbAQakKXDqygo=
+github.com/HugoBlox/kit/modules/integrations/netlify v0.0.0-20260327032542-ef8ed449c7e8 h1:lPk5L2PGVluHJKHWytWBEaZI4d1x8z9QMYwcYtMhF3w=
+github.com/HugoBlox/kit/modules/integrations/netlify v0.0.0-20260327032542-ef8ed449c7e8/go.mod h1:UuppRGml2K1EmlDkN+HemycohgZLjOy0QPGYOnoPnY4=
+github.com/HugoBlox/kit/modules/slides v0.0.0-20260330182742-6a2f1ba2aeb5 h1:Ko2+qpzJUy8p8frRw7aB0ZEa9XlLa6Vh6VU4lifDR2c=
+github.com/HugoBlox/kit/modules/slides v0.0.0-20260330182742-6a2f1ba2aeb5/go.mod h1:/XTQAtd2KCiwg/GVMAoSzKPf/DYPVbAAEysmBdWgYu4=

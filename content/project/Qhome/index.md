@@ -7,7 +7,6 @@ tags:
 date: "2013-10-20T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
 
 image:
   caption:
@@ -31,16 +30,19 @@ links:
   name: Follow
   url: https://img.halfrost.com/wechat-qr-code.png
 
-url_code: "https://apps.apple.com/app/qhome-smarter-life/id865958152?ign-mpt=uo%3D4"
-url_pdf: "https://apps.apple.com/app/qhome-smarter-life/id865958152?ign-mpt=uo%3D4"
-url_slides: "https://apps.apple.com/app/qhome-smarter-life/id865958152?ign-mpt=uo%3D4"
-url_video: "https://apps.apple.com/app/qhome-smarter-life/id865958152?ign-mpt=uo%3D4"
-
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
+- type: pdf
+  url: 'https://apps.apple.com/app/qhome-smarter-life/id865958152?ign-mpt=uo%3D4'
+- type: code
+  url: 'https://apps.apple.com/app/qhome-smarter-life/id865958152?ign-mpt=uo%3D4'
+- type: slides
+  url: 'https://apps.apple.com/app/qhome-smarter-life/id865958152?ign-mpt=uo%3D4'
+- type: video
+  url: 'https://apps.apple.com/app/qhome-smarter-life/id865958152?ign-mpt=uo%3D4'
 slides: ""
 ---
 

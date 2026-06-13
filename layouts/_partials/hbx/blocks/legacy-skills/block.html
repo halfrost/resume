@@ -1,0 +1,31 @@
+{{ $block := .wcBlock }}
+{{ $content := $block.content | default dict }}
+{{ $profile := partial "functions/get_author_profile" (index $content "username" | default "me") }}
+
+<div class="legacy-home-section">
+  <div class="legacy-container">
+    <header class="legacy-section-heading legacy-skills-heading">
+      <h2>{{ index $content "title" | default "Skills" }}</h2>
+    </header>
+    <div class="legacy-skills-grid">
+      {{ range $profile.skills }}
+        {{ if reflect.IsMap . }}
+          {{ range index . "items" }}
+            {{ if reflect.IsMap . }}
+              {{ $label := index . "label" | default (index . "name") }}
+              {{ $icon := index . "icon" }}
+              <div class="legacy-skill">
+                {{ if $icon }}
+                  {{ $resource := resources.Get (printf "images/icon-pack/%s.svg" $icon) }}
+                  {{ if $resource }}<img src="{{ $resource.RelPermalink }}" alt="" aria-hidden="true" width="48" height="48" loading="lazy" decoding="async">{{ end }}
+                {{ end }}
+                <h3>{{ $label }}</h3>
+                {{ with index . "level" }}<p>{{ mul (int .) 20 }}%</p>{{ end }}
+              </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>

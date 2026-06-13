@@ -8,6 +8,10 @@ organizations:
 superuser: true
 authors:
   - admin
+build:
+  render: never
+  list: never
+  publishResources: false
 bio: My research interests include distributed robotics, mobile computing and
   programmable matter.
 interests:
@@ -36,18 +40,18 @@ social:
     icon: phoenix-squadron
 education:
   courses:
-    - course: MS in Computer Science, GPA 4.0/4.0
+    - course: Master of Science in Computer Science, GPA 4.0/4.0
       institution: Stanford University, CA, United States of America
       year: 
-      schoolbadge: '/stanford.svg'
-    - course: MS in Software Engineering, GPA 3.95/4.0
+      schoolbadge: '/media/education/stanford.webp'
+    - course: Master of Science in Software Engineering, GPA 3.95/4.0
       institution: Carnegie Mellon University, CA, United States of America
       year: 
-      schoolbadge: '/CMU.svg'
-    - course: B.Eng in Computer Science, GPA 3.8/4.0
-      institution: Huzhou University, Zhejiang, China
+      schoolbadge: '/media/education/cmu.webp'
+    - course: Bachelor of Engineering in Computer Science, GPA 3.8/4.0
+      institution: Huzhou Normal University, Zhejiang, China
       year: 
-      schoolbadge: '/HUZU.svg'
+      schoolbadge: '/media/education/huzu.webp'
 user_groups:
   - Researchers
   - Visitors

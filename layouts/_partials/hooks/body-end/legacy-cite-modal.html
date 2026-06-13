@@ -1,0 +1,115 @@
+{{ if .IsHome }}
+<script>
+  (() => {
+    const buttons = document.querySelectorAll(".js-cite-modal[data-filename]");
+    if (!buttons.length) return;
+
+    const cache = new Map();
+
+    const ensureModal = () => {
+      let modal = document.querySelector(".legacy-cite-modal");
+      if (modal) return modal;
+
+      modal = document.createElement("div");
+      modal.className = "legacy-cite-modal";
+      modal.setAttribute("aria-hidden", "true");
+      modal.innerHTML = `
+        <div class="legacy-cite-modal-backdrop" data-cite-close></div>
+        <div class="legacy-cite-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="legacy-cite-modal-title">
+          <div class="legacy-cite-modal-header">
+            <h3 id="legacy-cite-modal-title">Citation</h3>
+            <button type="button" class="legacy-cite-modal-close" data-cite-close aria-label="Close">&times;</button>
+          </div>
+          <pre class="legacy-cite-modal-content"><code></code></pre>
+          <div class="legacy-cite-modal-actions">
+            <button type="button" class="legacy-cite-modal-copy">Copy</button>
+            <button type="button" class="legacy-cite-modal-dismiss" data-cite-close>Close</button>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(modal);
+      return modal;
+    };
+
+    const closeModal = () => {
+      const modal = document.querySelector(".legacy-cite-modal");
+      if (!modal) return;
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("legacy-cite-modal-open");
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.left = "-9999px";
+      document.body.appendChild(textarea);
+      textarea.select();
+      const ok = document.execCommand("copy");
+      textarea.remove();
+      return ok;
+    };
+
+    const getCitation = async (url) => {
+      if (cache.has(url)) return cache.get(url);
+      const response = await fetch(url, { credentials: "same-origin" });
+      if (!response.ok) throw new Error(`Failed to load citation: ${response.status}`);
+      const text = await response.text();
+      cache.set(url, text);
+      return text;
+    };
+
+    const openModal = async (button) => {
+      const url = button.getAttribute("data-filename");
+      if (!url) return;
+      const modal = ensureModal();
+      const code = modal.querySelector("code");
+      const copy = modal.querySelector(".legacy-cite-modal-copy");
+
+      code.textContent = "Loading citation...";
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("legacy-cite-modal-open");
+
+      try {
+        const citation = await getCitation(url);
+        code.textContent = citation.trim();
+        copy.textContent = "Copy";
+        copy.onclick = async () => {
+          const ok = await copyText(citation.trim());
+          copy.textContent = ok ? "Copied" : "Copy failed";
+          setTimeout(() => {
+            copy.textContent = "Copy";
+          }, 1600);
+        };
+      } catch (error) {
+        code.textContent = "Failed to load citation.";
+      }
+    };
+
+    document.addEventListener("click", (event) => {
+      const close = event.target.closest("[data-cite-close]");
+      if (close) {
+        event.preventDefault();
+        closeModal();
+        return;
+      }
+
+      const button = event.target.closest(".js-cite-modal[data-filename]");
+      if (!button) return;
+      event.preventDefault();
+      openModal(button);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeModal();
+    });
+  })();
+</script>
+{{ end }}

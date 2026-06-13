@@ -1,0 +1,97 @@
+{{ $block := .wcBlock }}
+{{ $content := $block.content | default dict }}
+{{ $filters := index $content "filters" | default dict }}
+{{ $folders := index $filters "folders" | default (slice "project") }}
+{{ if eq (printf "%T" $folders) "string" }}{{ $folders = slice $folders }}{{ end }}
+{{ $query := where site.RegularPages "Section" "in" $folders }}
+{{ $query = sort $query "Date" "desc" }}
+{{ $buttons := index $content "buttons" | default (slice (dict "name" "All" "tag" "*")) }}
+{{ $uid := .wcIdentifier | default "projects" }}
+
+<div class="legacy-home-section">
+  <div class="legacy-container">
+    <div class="legacy-section-grid">
+      <header class="legacy-section-heading">
+        <h2>{{ index $content "title" | default "Projects" }}</h2>
+        {{ with index $content "cta" }}
+          {{ if reflect.IsMap . }}
+            <p><a class="legacy-outline-button" href="{{ index . "url" }}">{{ index . "text" }}</a></p>
+          {{ end }}
+        {{ end }}
+      </header>
+      <div class="legacy-section-content">
+        {{ range $idx, $button := $buttons }}
+          {{ if reflect.IsMap $button }}
+            {{ $tag := index $button "tag" | default "*" }}
+            {{ $filterID := printf "%s-filter-%s" $uid (urlize $tag) }}
+            <input class="legacy-project-filter-input" type="radio" name="{{ $uid }}-filter" id="{{ $filterID }}" {{ if eq $idx 0 }}checked{{ end }}>
+          {{ end }}
+        {{ end }}
+
+        <div class="legacy-project-filters">
+          {{ range $buttons }}
+            {{ if reflect.IsMap . }}
+              {{ $tag := index . "tag" | default "*" }}
+              {{ $filterID := printf "%s-filter-%s" $uid (urlize $tag) }}
+              <label for="{{ $filterID }}">{{ index . "name" }}</label>
+            {{ end }}
+          {{ end }}
+        </div>
+
+        <div class="legacy-project-grid">
+          {{ range $query }}
+            {{ $tags := .Params.tags | default (slice) }}
+            {{ $linkScratch := newScratch }}
+            {{ $linkScratch.Set "url" .RelPermalink }}
+            {{ $title := .Title }}
+            {{ range .Params.links }}
+              {{ if and (eq (.type | default "") "site") .url }}
+                {{ $linkScratch.Set "url" .url }}
+              {{ end }}
+            {{ end }}
+            {{ $link := $linkScratch.Get "url" }}
+            <article class="legacy-project-card{{ range $tags }} legacy-tag-{{ . | urlize }}{{ end }}">
+              {{ with .Resources.GetMatch "{featured,cover,thumbnail}*" }}
+                <a class="legacy-project-image" href="{{ $link }}">
+                  {{ if reflect.IsImageResourceProcessable . }}
+                    {{ $image := .Fill "720x405 Center webp" }}
+                    <img src="{{ $image.RelPermalink }}" alt="{{ $title }}" width="720" height="405" loading="lazy" decoding="async">
+                  {{ else }}
+                    <img src="{{ .RelPermalink }}" alt="{{ $title }}" loading="lazy" decoding="async">
+                  {{ end }}
+                </a>
+              {{ end }}
+              <div class="legacy-project-body">
+                <h3><a href="{{ $link }}">{{ .Title }}</a></h3>
+                <p>{{ .Summary | plainify | truncate 180 }}</p>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+
+        <style>
+          {{ range $button := $buttons }}
+            {{ if reflect.IsMap $button }}
+              {{ $tag := index $button "tag" | default "*" }}
+              {{ $filterID := printf "%s-filter-%s" $uid (urlize $tag) }}
+              {{ if ne $tag "*" }}
+                #{{ $filterID }}:checked ~ .legacy-project-grid .legacy-project-card:not(.legacy-tag-{{ $tag | urlize }}) {
+                  display: none;
+                }
+              {{ end }}
+              #{{ $filterID }}:checked ~ .legacy-project-filters label[for="{{ $filterID }}"] {
+                background: var(--legacy-primary);
+                color: #fff;
+              }
+            {{ end }}
+          {{ end }}
+        </style>
+      </div>
+    </div>
+    <div class="legacy-projects-back-to-top">
+      <a href="#top" aria-label="Back to top">
+        {{ partial "functions/get_icon" (dict "name" "chevron-up" "attributes" "class='legacy-projects-back-to-top-icon'") }}
+      </a>
+    </div>
+  </div>
+</div>

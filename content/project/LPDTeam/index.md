@@ -6,9 +6,12 @@ tags:
 date: "2017-08-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: https://team-app.ele.me/
 
 image:
   caption: 
   focal_point: Smart
+
+links:
+- type: site
+  url: 'https://team-app.ele.me/'
 ---
