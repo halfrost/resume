@@ -1,5 +1,6 @@
 title: "Dezhi Yu"
-baseURL: "/"
+baseURL: "https://halfrost.me/"
+languageCode: en-us
 defaultContentLanguage: en
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false

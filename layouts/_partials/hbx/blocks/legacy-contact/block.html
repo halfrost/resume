@@ -36,13 +36,32 @@
           {{ if reflect.IsMap . }}
             {{ $map := . }}
             {{ with index $map "embed_url" }}
-              <div class="legacy-contact-map">
+              <div class="legacy-contact-map" data-map-src="{{ . | safeURL }}">
                 <iframe
                   title="{{ index $content "address" | default (index $map "title") }}"
-                  src="{{ . | safeURL }}"
+                  src="about:blank"
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
+              <script>
+                (() => {
+                  const map = document.currentScript.previousElementSibling;
+                  const frame = map?.querySelector("iframe");
+                  const load = () => {
+                    if (frame && frame.src === "about:blank") frame.src = map.dataset.mapSrc;
+                  };
+                  if (!("IntersectionObserver" in window)) {
+                    map?.addEventListener("click", load, { once: true });
+                    return;
+                  }
+                  const observer = new IntersectionObserver((entries) => {
+                    if (!entries.some((entry) => entry.isIntersecting)) return;
+                    observer.disconnect();
+                    load();
+                  }, { rootMargin: "100px" });
+                  if (map) observer.observe(map);
+                })();
+              </script>
             {{ end }}
           {{ end }}
         {{ end }}

@@ -24,15 +24,15 @@
         {{ end }}
 
         <div class="legacy-portrait-title">
-          <h2>{{ $profile.title }}</h2>
-          {{ with $profile.role }}<h3>{{ . | markdownify }}</h3>{{ end }}
+          <h1>{{ $profile.title }}</h1>
+          {{ with $profile.role }}<p class="legacy-profile-role">{{ . | markdownify }}</p>{{ end }}
           {{ range $profile.affiliations }}
             {{ if reflect.IsMap . }}
               {{ $name := index . "name" | default (index . "title") }}
               {{ $url := index . "url" }}
-              <h3>
+              <p class="legacy-profile-affiliation">
                 {{ if $url }}<a href="{{ $url }}" target="_blank" rel="noopener">{{ $name }}</a>{{ else }}{{ $name }}{{ end }}
-              </h3>
+              </p>
             {{ end }}
           {{ end }}
         </div>
@@ -57,7 +57,7 @@
       </aside>
 
       <div class="legacy-biography">
-        <h1>{{ index $headings "about" | default "Summary" }}</h1>
+        <h2>{{ index $headings "about" | default "Summary" }}</h2>
         {{ $bio := $profile.bio }}
         {{ with index $content "text" }}{{ if . }}{{ $bio = . }}{{ end }}{{ end }}
         <div class="legacy-bio-text">{{ $bio | emojify | $page.RenderString }}</div>

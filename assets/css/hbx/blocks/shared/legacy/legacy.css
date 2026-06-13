@@ -221,7 +221,7 @@ main {
   object-fit: cover;
 }
 
-.legacy-portrait-title h2 {
+.legacy-portrait-title h1 {
   margin: 20px 0 10px;
   color: #000;
   font-family: var(--hb-font-heading);
@@ -229,14 +229,15 @@ main {
   font-weight: 300;
 }
 
-.legacy-portrait-title h3 {
+.legacy-profile-role,
+.legacy-profile-affiliation {
   margin: 0 0 10px;
   color: rgba(0, 0, 0, 0.54);
   font-size: 1.25rem;
   font-weight: 300;
 }
 
-.legacy-portrait-title h3 a {
+.legacy-profile-affiliation a {
   color: var(--legacy-primary);
 }
 
@@ -268,7 +269,7 @@ main {
   height: 2rem;
 }
 
-.legacy-biography > h1,
+.legacy-biography > h2,
 .legacy-section-heading h2 {
   margin: 0 0 10px;
   color: #212529;
@@ -901,6 +902,12 @@ body.legacy-cite-modal-open {
   color: #f8f8f2;
 }
 
+.dark {
+  --legacy-text: #f8f8f2;
+  --legacy-muted: rgba(255, 255, 255, 0.68);
+  --legacy-even: #23252f;
+}
+
 .dark #site-header,
 .dark .legacy-card,
 .dark .legacy-project-card,
@@ -940,10 +947,14 @@ body.legacy-cite-modal-open {
   color: rgba(255, 255, 255, 0.54);
 }
 
-.dark .legacy-biography > h1,
+.dark .legacy-biography > h2,
 .dark .legacy-section-heading h2,
 .dark .legacy-details-grid h3,
-.dark .legacy-portrait-title h2,
+.dark .legacy-portrait-title h1,
+.dark .legacy-bio-text,
+.dark .legacy-interests,
+.dark .legacy-course,
+.dark .legacy-contact-list,
 .dark .legacy-project-body h3 a,
 .dark .legacy-service-item h3,
 .dark .legacy-service-item p,
@@ -954,6 +965,17 @@ body.legacy-cite-modal-open {
 .dark .legacy-skill,
 .dark .legacy-skill h3 {
   color: #f8f8f2;
+}
+
+.dark .legacy-profile-role,
+.dark .legacy-profile-affiliation,
+.dark .legacy-institution,
+.dark .legacy-card h3,
+.dark .legacy-company,
+.dark .legacy-meta,
+.dark .legacy-project-body p,
+.dark .legacy-service-venues {
+  color: rgba(255, 255, 255, 0.68);
 }
 
 .dark .legacy-stream-item h3 a {

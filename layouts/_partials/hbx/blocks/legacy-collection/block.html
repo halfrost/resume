@@ -65,9 +65,9 @@
             {{ with .Resources.GetMatch "{featured,cover,thumbnail}*" }}
               {{ if reflect.IsImageResourceProcessable . }}
                 {{ $thumb := .Fill "300x170 Center webp" }}
-                <a class="legacy-stream-image" href="{{ $link }}" tabindex="-1" aria-hidden="true">
+                <div class="legacy-stream-image" aria-hidden="true">
                   <img src="{{ $thumb.RelPermalink }}" alt="" width="300" height="170" loading="lazy" decoding="async">
-                </a>
+                </div>
               {{ end }}
             {{ end }}
           </article>
