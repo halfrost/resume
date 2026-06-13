@@ -3,6 +3,12 @@
   --legacy-text: #34495e;
   --legacy-muted: rgba(0, 0, 0, 0.58);
   --legacy-even: rgb(247, 247, 247);
+  --legacy-type-display: 2.25rem;
+  --legacy-type-subheading: 1.5rem;
+  --legacy-type-item: 1.125rem;
+  --legacy-type-body: 1rem;
+  --legacy-type-supporting: 0.875rem;
+  --legacy-type-meta: 0.8125rem;
 }
 
 html {
@@ -16,7 +22,7 @@ html {
 
 body {
   color: #212529;
-  font-size: 16px;
+  font-size: var(--legacy-type-body);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -41,7 +47,7 @@ a {
   height: 70px;
   margin: 0 auto;
   padding: 0 15px;
-  font-size: 1rem;
+  font-size: var(--legacy-type-body);
 }
 
 #site-header .navbar-brand {
@@ -51,7 +57,7 @@ a {
   align-items: center;
   color: #2b2b2b;
   font-family: var(--hb-font-body);
-  font-size: 1.2rem;
+  font-size: var(--legacy-type-item);
   font-weight: 700;
   line-height: 1;
   margin-right: 1rem;
@@ -207,7 +213,6 @@ main {
 }
 
 .legacy-profile {
-  font-size: 20px;
   padding: 30px 10px;
   text-align: center;
 }
@@ -225,16 +230,18 @@ main {
   margin: 20px 0 10px;
   color: #000;
   font-family: var(--hb-font-heading);
-  font-size: 1.75em;
-  font-weight: 300;
+  font-size: var(--legacy-type-display);
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .legacy-profile-role,
 .legacy-profile-affiliation {
   margin: 0 0 10px;
   color: rgba(0, 0, 0, 0.54);
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: var(--legacy-type-item);
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 .legacy-profile-affiliation a {
@@ -274,14 +281,14 @@ main {
   margin: 0 0 10px;
   color: #212529;
   font-family: var(--hb-font-heading);
-  font-size: 2.5rem;
-  font-weight: 500;
+  font-size: var(--legacy-type-display);
+  font-weight: 400;
   line-height: 1.2;
 }
 
 .legacy-bio-text {
   color: #212529;
-  font-size: 1rem;
+  font-size: var(--legacy-type-body);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -300,8 +307,8 @@ main {
   margin: 0 0 0.5rem;
   color: #212529;
   font-family: var(--hb-font-heading);
-  font-size: 1.75rem;
-  font-weight: 500;
+  font-size: var(--legacy-type-subheading);
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -311,7 +318,7 @@ main {
 }
 
 .legacy-interests li {
-  font-size: 0.9rem;
+  font-size: var(--legacy-type-supporting);
   line-height: 1.5;
 }
 
@@ -355,13 +362,13 @@ main {
 }
 
 .legacy-course {
-  font-size: 0.9rem;
+  font-size: var(--legacy-type-supporting);
   font-weight: 400;
 }
 
 .legacy-institution {
   color: rgba(0, 0, 0, 0.6);
-  font-size: 0.75rem;
+  font-size: var(--legacy-type-meta);
 }
 
 .legacy-section-heading p {
@@ -378,7 +385,7 @@ main {
   border: 1px solid var(--legacy-primary);
   border-radius: 0.2rem;
   color: var(--legacy-primary);
-  font-size: 0.9rem;
+  font-size: var(--legacy-type-supporting);
   line-height: 1.5;
 }
 
@@ -419,21 +426,25 @@ main {
   margin: 0 0 0.25rem;
   color: var(--legacy-muted);
   font-family: var(--hb-font-heading);
-  font-size: 0.9rem;
+  font-size: var(--legacy-type-item);
   font-weight: 700;
   line-height: 1.5;
+}
+
+.legacy-experience-card h3 {
+  color: #151515;
 }
 
 .legacy-company {
   margin: 0;
   color: var(--legacy-muted);
-  font-size: 0.9rem;
+  font-size: var(--legacy-type-supporting);
 }
 
 .legacy-meta {
   margin: 0.35rem 0 0.75rem;
   color: var(--legacy-muted);
-  font-size: 0.8rem;
+  font-size: var(--legacy-type-meta);
 }
 
 .legacy-divider::after {
@@ -445,7 +456,7 @@ main {
 .legacy-card-text p,
 .legacy-card-text li {
   color: #000;
-  font-size: 0.75rem;
+  font-size: var(--legacy-type-supporting);
 }
 
 .legacy-card-text ul {
@@ -502,7 +513,7 @@ main {
   background: #fff;
   color: var(--legacy-primary);
   cursor: pointer;
-  font-size: 0.75rem;
+  font-size: var(--legacy-type-meta);
   line-height: 1.5;
 }
 
@@ -521,7 +532,7 @@ main {
 .legacy-stream-item h3 {
   margin: 0 0 0.35rem;
   font-family: var(--hb-font-heading);
-  font-size: 1.25rem;
+  font-size: var(--legacy-type-item);
   font-weight: 700;
 }
 
@@ -548,7 +559,7 @@ main {
 
 .legacy-stream-summary {
   color: #000;
-  font-size: 0.9rem;
+  font-size: var(--legacy-type-supporting);
 }
 
 .legacy-publication-links {
@@ -584,7 +595,7 @@ main {
   background: #fff;
   color: var(--legacy-primary);
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: var(--legacy-type-supporting);
 }
 
 .legacy-project-filters label + label {
@@ -640,7 +651,7 @@ main {
 .legacy-project-body h3 {
   margin: 0 0 0.5rem;
   font-family: var(--hb-font-heading);
-  font-size: 0.9rem;
+  font-size: var(--legacy-type-item);
   font-weight: 700;
   line-height: 1.5;
   text-transform: uppercase;
@@ -653,7 +664,7 @@ main {
 .legacy-project-body p {
   margin: 0;
   color: var(--legacy-muted);
-  font-size: 0.75rem;
+  font-size: var(--legacy-type-supporting);
 }
 
 .legacy-skills-heading {
@@ -668,7 +679,7 @@ main {
 
 .legacy-skill {
   color: #555;
-  font-size: 0.8rem;
+  font-size: var(--legacy-type-supporting);
   line-height: 1.5;
   text-align: center;
 }
@@ -685,7 +696,7 @@ main {
   margin: 0 0 5px;
   color: #333;
   font-family: var(--hb-font-heading);
-  font-size: 1.25rem;
+  font-size: var(--legacy-type-item);
   font-weight: 400;
 }
 
@@ -701,7 +712,7 @@ main {
   margin: 0 0 0.35rem;
   color: #000;
   font-family: var(--hb-font-heading);
-  font-size: 1.25rem;
+  font-size: var(--legacy-type-item);
   font-weight: 700;
   line-height: 1.5;
 }
@@ -709,7 +720,7 @@ main {
 .legacy-service-item p {
   margin: 0 0 0.35rem;
   color: #000;
-  font-size: 0.9rem;
+  font-size: var(--legacy-type-supporting);
   line-height: 1.5;
 }
 
@@ -717,7 +728,7 @@ main {
   margin: 0.25rem 0 0;
   padding-left: 1.2rem;
   color: rgba(0, 0, 0, 0.72);
-  font-size: 0.9rem;
+  font-size: var(--legacy-type-supporting);
   line-height: 1.5;
 }
 
@@ -761,7 +772,7 @@ main {
   margin: 0;
   padding: 2rem 0;
   color: var(--legacy-muted);
-  font-size: 1rem;
+  font-size: var(--legacy-type-body);
   text-align: center;
 }
 
@@ -808,13 +819,13 @@ main {
   margin: 0;
   color: #212529;
   font-family: var(--hb-font-heading);
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: var(--legacy-type-item);
+  font-weight: 700;
 }
 
 .legacy-cite-modal-close {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 1.75rem;
+  font-size: var(--legacy-type-subheading);
   line-height: 1;
 }
 
@@ -825,7 +836,7 @@ main {
   overflow: auto;
   background: #f8f9fa;
   color: #212529;
-  font-size: 0.85rem;
+  font-size: var(--legacy-type-meta);
   white-space: pre-wrap;
 }
 
@@ -845,7 +856,7 @@ main {
   border-radius: 0.2rem;
   background: #fff;
   color: var(--legacy-primary);
-  font-size: 0.85rem;
+  font-size: var(--legacy-type-meta);
   line-height: 1.5;
 }
 
@@ -882,7 +893,7 @@ body.legacy-cite-modal-open {
 
 .legacy-statistics {
   margin: 0.5rem 0 0;
-  font-size: 0.9rem;
+  font-size: var(--legacy-type-supporting);
   text-align: center;
 }
 
@@ -909,6 +920,7 @@ body.legacy-cite-modal-open {
 }
 
 .dark {
+  --legacy-primary: #78a6ff;
   --legacy-text: #f8f8f2;
   --legacy-muted: rgba(255, 255, 255, 0.68);
   --legacy-even: #23252f;
@@ -982,6 +994,10 @@ body.legacy-cite-modal-open {
 .dark .legacy-project-body p,
 .dark .legacy-service-venues {
   color: rgba(255, 255, 255, 0.68);
+}
+
+.dark .legacy-experience-card h3 {
+  color: #fff;
 }
 
 .dark .legacy-stream-item h3 a {

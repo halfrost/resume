@@ -56,7 +56,11 @@ experience:
   image: /media/tiktok.png
   location: Mountain View, California, United States
   start: '2023-02-01'
-  summary: '-'
+  summary: |
+    - Lead the development of Model-as-a-Service infrastructure and high-performance LLM serving systems, integrating vLLM and SGLang across model runtimes, distributed execution, and production deployment workflows.
+    - Design model-system co-optimizations for scheduling, continuous batching, KV-cache and memory management, observability, fault isolation, and reliability to improve the efficiency and operability of large-scale inference.
+    - Co-authored KVDirect on distributed disaggregated LLM inference and developed CommBridge, a portable cross-GPU communication runtime spanning KV-cache transfer, MoE communication, and heterogeneous RDMA backends.
+    - Work across inference algorithms, runtime design, networking, and hardware utilization to make foundation-model experimentation faster and production serving more dependable.
 - role: Quantitative Algo Developer - Smart Contract (DeFi 2.0)
   org: Aperture Finance
   employment_type: Internship
@@ -64,8 +68,11 @@ experience:
   location: Mountain View, California, United States
   start: '2022-05-01'
   end: '2022-09-30'
-  summary: "- Led Solana Projects as a Tech Owner, designed and implemented Pseudo-Delta Neutral Hedging Strategy which uses Leveraged LP farming protocols in Solana, using Francium, Tulip. \n- Extracting risk factors conditioned on solana volatile asset characteristics with an autoencoder at daily frequency and create synthetic training data using GANs, using historical data for the past 5 years. \n- Denoise dataset using wavelets and the Kalman filter and combine e Zipline offline and on Quantopian to test individual and multiple alpha factors using NumPy, pandas, and TA-Lib. Utilized Python libraries backtrader and Zipline to conduct backtesting on ML-driven strategies in historical market environments, reducing the probability of putting financial resources at risk when deploying candidate smart contracts in real-time markets by 30%. \n- Developed smart contracts using Rust, which employ Alpha factors-generated signals to dynamically adjust long and short positions for optimizing portfolios,\
-    \ accumulated a net income of $2 million in one month on the Solana chain."
+  summary: |
+    - Served as technical owner for Solana quantitative-strategy projects and designed a pseudo-delta-neutral hedging strategy using leveraged liquidity-farming protocols.
+    - Built a research pipeline that combined autoencoder-based risk-factor extraction, GAN-generated synthetic data, wavelet denoising, and Kalman filtering over five years of historical market data.
+    - Evaluated individual and composite alpha factors through offline backtesting with Zipline and Backtrader, reducing estimated deployment risk for candidate strategies by 30%.
+    - Implemented Rust smart contracts that converted model-generated signals into dynamic long-short portfolio adjustments; the deployed strategy generated $2M in net income in one month.
 - role: Staff Engineer - Cloud Infrastructure | Tech Lead
   org: Binance
   employment_type: Full-time
@@ -73,7 +80,11 @@ experience:
   location: Singapore City, Singapore
   start: '2020-05-01'
   end: '2022-05-31'
-  summary: "- Led a team consisting of 8 engineers to implement from scratch and successfully launch the firm’s first Strategy Distribution Engine – Themis, a global smart strategy engine based on traffic flow and predicate conditions’ strategy.\n- Simulated ads data on the Strategy Distribution Engine to do offline data analysis and queried and fed production data to the system and preformed maximum 1K online A/B experiments simultaneously and release a maximum of 20K Strategy per day. \n- Themis ecosystem combines and compares online and offline data for enhanced resource allocation strategy with accumulated 200 million users, facilitating transaction volumes reaching $1000 million per week."
+  summary: |
+    - Led an eight-engineer team to design, build, and launch Themis, Binance's first global strategy-distribution platform for traffic allocation and predicate-based decisioning.
+    - Established the platform's offline simulation, production-data feedback, and experimentation workflows, supporting up to 1,000 concurrent A/B experiments and 20,000 strategy releases per day.
+    - Designed the online-offline evaluation loop used to improve resource-allocation decisions across products serving 200M users and approximately $1B in weekly transaction volume.
+    - Owned technical direction and delivery across the platform, deployment tooling, administration workflows, and client integration.
 - role: Cloud Infrastructure Staff Engineer | Tech Lead
   org: Alibaba Cloud
   employment_type: Full-time
@@ -81,13 +92,11 @@ experience:
   location: Shanghai, China
   start: '2017-01-01'
   end: '2020-05-31'
-  summary: '- Participated in Tmall Double Eleven online shopping promotion for 2 consecutive years; Led team consisting of 5 engineers.
-
-    - Designed and implemented a ads targeting system, which utilizes user''s historical purchase records and recent search history to recommend promotional deals based on customer profiling behavior data, dynamically adjusting the intensity of discounts in deals based on users'' recent engagement levels data, resulting in an annual revenue growth exceeding 48% and an overall purchase rate improvement of 8%, helped company create a new transaction record of 268.4 billion RMB a day in 2019.
-
-    - Optimized on-line and off-line recommendation model for advertisements, improved advertisement push, banners, and SMS performance by 25%; Wrote HiveQL and SQL to gather original data, preprocessed data set by data cleaning, categorical feature transformation and normalization; Enriched user-profile features and optimized user-profile update strategies to provide reliable features for machine learning models; Trained XGboost and LR model, increased AUC from 0.59 to 0.77. Did data resampling and undersampleing for imbalanced data, imputed missing values, evaluated model by recall and precision.
-
-    - Taco ecosystem successfully handles 1100 million+ push notifications per day, with delivery rate above 97% and delivery time of 0.72-1.2 seconds; daily peak value can reach 750k online connections with 30k-50k QPS.'
+  summary: |
+    - Led a five-engineer team responsible for high-scale personalization and messaging infrastructure during two Tmall Double 11 campaigns, including the 2019 event that processed RMB 268.4B in daily GMV.
+    - Designed a behavior-aware advertising and promotion-ranking system using purchase history, search activity, customer profiles, and engagement signals; the program was associated with 48% annual revenue growth and an 8% increase in purchase rate.
+    - Improved online and offline recommendation pipelines for push, banner, and SMS campaigns by 25%; expanded user-profile features and raised XGBoost/logistic-regression model AUC from 0.59 to 0.77.
+    - Architected the Taco distributed messaging ecosystem to process more than 1.1B notifications per day with over 97% delivery, 0.72-1.2 second latency, 750K peak connections, and 30K-50K QPS.
 - role: Infrastructure Team Lead
   org: Shanghai Function Internet Finance Information Service Co., Ltd.
   employment_type: Full-time
@@ -95,11 +104,10 @@ experience:
   location: Shanghai, China
   start: '2016-05-01'
   end: '2017-01-31'
-  summary: '- Led engineer team to designed and implement a FaaS infrastructure snapshot system using Java. Speed up the average response time by 65% and improved the service robustness by 81% via parallelization and local caching techniques for read-heavy operations with PB level daily caching volume.
-
-    - Migrate 12 backend docker service to AliCloud, a cloud kubernetes platform and refactored the infrastructure by using redis and mysql in AliCloud, which increased the stability of the company''s entire back-end infrastructure by 65%.
-
-    - Designed and implemented a internal system to intelligently match projects for investors, utilizing a recommendation system model, text abstraction model, and Text-to-Speech model, increasing the success rate of project bidding by 40%.'
+  summary: |
+    - Led the engineering team that built a Java-based infrastructure snapshot and caching system for read-heavy services, reducing average response time by 65% and improving robustness by 81% at petabyte-scale daily cache volume.
+    - Directed the migration of 12 containerized backend services to Alibaba Cloud Kubernetes and redesigned the Redis/MySQL data layer, improving measured platform stability by 65%.
+    - Designed an intelligent investor-project matching system combining recommendation, text summarization, and text-to-speech components, increasing successful project bids by 40%.
 - role: Infrastructure Team Lead
   org: PING AN
   employment_type: Full-time
@@ -107,8 +115,11 @@ experience:
   location: Shanghai, China
   start: '2015-11-01'
   end: '2016-04-30'
-  summary: "-\tDesigned and implemented the 1QB Wallet recommendation system, matching clients and products based on the keywords of previously searched items to boost sales, using RPC and HTTP framework in Java, improving the accuracy by 30%.\n-\tBuilding new Code Review platform from scratch; developed Java package deployment and remote backup distribution platform, including Jenkins integrated static code scanning on daily basis and CI/CD pipeline, increasing efficiency by 5 times..\n-\tDeveloped a trading system in Go, leveraging the Kafka Messaging System, to enable users' participation in flash deal ordering events, enabling millions of users to engage in millisecond-level promotional activities. In the first year since the release and launch of this system, it has contributed an incremental revenue of 10 Billion RMB in GMV to the company.\n-\tRefactored the task queue and task manager using Celery, RabbitMQ and MySQL to support larger-scale, distributed tasks; Queue latency reduced\
-    \ by 20%, Consume rate increased by 4x and Memory used decreased by 40%."
+  summary: |
+    - Designed the 1QB Wallet recommendation system to match customers with financial products using behavioral and search signals, improving recommendation accuracy by 30%.
+    - Built a Go and Kafka event-driven transaction system for millisecond-scale promotional ordering by millions of users; the platform contributed RMB 10B in incremental GMV during its first year.
+    - Re-architected distributed task processing with Celery, RabbitMQ, and MySQL, reducing queue latency by 20%, increasing throughput by 4x, and lowering memory consumption by 40%.
+    - Established code review, static analysis, package deployment, backup distribution, and CI/CD workflows, improving engineering delivery efficiency by 5x.
 - role: Research Engineer
   org: Quatanium Technology Co., Ltd.
   employment_type: Full-time
@@ -116,7 +127,10 @@ experience:
   location: Shanghai, China
   start: '2014-06-01'
   end: '2015-11-30'
-  summary: "-  Designed and implemented firm’s first Cluster Observability Platform from scratch. Built a log service based on logstash, reformat, and transfer logs from grouping system to Kibana log platform, handing million logs per day with very high stability and availability which annual availability rate reaches 99.999%; Created Grafana dashboards to report the counters of logs.\n-\tDesigned and implemented CI/CD pipelines with YAML and deployed Docker containers to AWS, making them automatically build, pack, and deploy the log service to production, serving an average of 200 integrations per day.\n-\tDesigned and implemented an alert service for error logs, which can report the errors and create fix tickets for DevOps engineers automatically, reducing fix waiting time by 80%."
+  summary: |
+    - Designed and built the company's first cluster observability platform, processing millions of logs per day through Logstash, Kibana, and Grafana with 99.999% annual availability.
+    - Developed containerized CI/CD pipelines for AWS that automated build, packaging, and production deployment for an average of 200 integrations per day.
+    - Built an automated error-detection and ticketing service for operations teams, reducing incident-response waiting time by 80%.
 skills:
 - name: Technical Skills
   items:
