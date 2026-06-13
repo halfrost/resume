@@ -20,35 +20,11 @@
             <article class="legacy-timeline-item">
               <span class="legacy-timeline-dot {{ if not $end }}is-current{{ end }}"></span>
               <div class="legacy-card legacy-experience-card">
-                {{ with index . "image" }}
-                  {{ $source := . }}
-                  {{ $assetPath := strings.TrimPrefix "/media/" $source }}
-                  {{ with resources.Get (printf "legacy-media/%s" $assetPath) }}
-                    {{ if reflect.IsImageResourceProcessable . }}
-                      {{ $imageSmall := .Resize "480x webp q82" }}
-                      {{ $imageMedium := .Resize "640x webp q82" }}
-                      {{ $imageLarge := .Resize "960x webp q82" }}
-                      <img
-                        class="legacy-experience-image"
-                        src="{{ $imageSmall.RelPermalink }}"
-                        srcset="{{ $imageSmall.RelPermalink }} 480w, {{ $imageMedium.RelPermalink }} 640w, {{ $imageLarge.RelPermalink }} 960w"
-                        sizes="(max-width: 767px) calc(100vw - 105px), 680px"
-                        width="{{ $imageLarge.Width }}"
-                        height="{{ $imageLarge.Height }}"
-                        loading="lazy"
-                        decoding="async"
-                        alt="{{ index $experience "org" }}">
-                    {{ else }}
-                      <img class="legacy-experience-image" src="{{ $source | relURL }}" loading="lazy" decoding="async" alt="{{ index $experience "org" }}">
-                    {{ end }}
-                  {{ else }}
-                    <img class="legacy-experience-image" src="{{ $source | relURL }}" loading="lazy" decoding="async" alt="{{ index $experience "org" }}">
-                  {{ end }}
-                {{ end }}
                 <h3>{{ index . "role" | markdownify }}</h3>
                 <p class="legacy-company">
                   {{ $url := index . "url" }}
                   {{ if $url }}<a href="{{ $url }}" target="_blank" rel="noopener">{{ index . "org" }}</a>{{ else }}{{ index . "org" }}{{ end }}
+                  {{ with index . "employment_type" }} <span aria-hidden="true">&middot;</span> {{ . }}{{ end }}
                 </p>
                 <p class="legacy-meta">
                   {{ with $start }}{{ (time.AsTime .) | time.Format $dateFormat }}{{ end }} -

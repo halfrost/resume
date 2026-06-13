@@ -402,11 +402,17 @@ main {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.legacy-experience-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0 0 1.875rem;
+.legacy-experience-card {
+  margin-bottom: 1rem;
+  padding: 1rem 1.25rem;
+}
+
+.legacy-timeline-item:last-child .legacy-experience-card {
+  margin-bottom: 0;
+}
+
+.legacy-experience-card .legacy-meta {
+  margin-bottom: 0.55rem;
 }
 
 .legacy-card h3 {
