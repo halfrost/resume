@@ -5,15 +5,15 @@ name:
   display: Dezhi Yu
   given: Dezhi
   family: Yu
-role: Staff Engineer
+role: Senior ML Engineer
 bio: |
-  I am a machine learning systems engineer working at the boundary between AI research and production infrastructure. My focus is the efficient and reliable serving of foundation models: turning rapidly evolving model architectures and inference techniques into systems that can be evaluated rigorously, deployed safely, and operated at scale.
+  I am a research-oriented machine learning systems engineer working on foundation model infrastructure, alignment, and evaluation. My work focuses on building efficient, reliable systems for large language models while studying the algorithms and data choices that make these models more useful, controllable, and cost-effective in real applications.
 
-  At TikTok, my recent work centers on Model-as-a-Service platforms and high-performance inference for large language models. I develop serving infrastructure with vLLM and SGLang across model runtime integration, scheduling and continuous batching, KV-cache and memory management, distributed execution, observability, and reliability. I approach these problems through workload characterization, profiling, controlled benchmarking, and system-level evaluation under latency, throughput, and cost constraints.
+  At TikTok, my recent work centers on Model-as-a-Service platforms and high-performance LLM inference. I develop serving infrastructure with vLLM and SGLang across model runtime integration, scheduling and continuous batching, KV-cache and memory management, distributed execution, observability, and reliability. This systems work is closely connected to my research on distributed disaggregated inference, preference optimization, instruction-tuning data selection, multimodal evaluation, and retrieval-augmented biomedical summarization.
 
-  My broader experience includes recommendation and targeting models, online experimentation, data-driven decision systems, and high-throughput distributed platforms serving large user populations. My research interests lie in model-system co-design: understanding how model architecture, inference algorithms, hardware utilization, scheduling, and distributed runtimes interact. My goal is to advance the efficiency and dependability of AI systems while making frontier models faster to experiment with, deploy, and serve.
+  My broader research spans reinforcement learning for robotics, healthcare sequence modeling, privacy-preserving machine learning, and motion planning. I am especially interested in model-system co-design: how model architecture, inference algorithms, data curation, hardware utilization, scheduling, and distributed runtimes interact. My goal is to advance frontier AI systems that are faster to experiment with, more rigorous to evaluate, and dependable enough to serve at scale.
 affiliations:
-- name: Tiktok Inc.
+- name: TikTok Inc.
   url: https://www.tiktok.com/
 links:
 - icon: at-symbol
@@ -30,11 +30,12 @@ links:
 - icon: hero/globe-alt
   url: https://halfrost.com
 interests:
-- Machine Learning Systems for Foundation Models
-- Large Language Model Inference
-- Model-System Co-design
-- Distributed Runtimes and Scheduling
-- Evaluation, Reliability, and Observability
+- Efficient LLM Inference and Serving Systems
+- Model-System Co-design for Foundation Models
+- Alignment, Preference Optimization, and Instruction Tuning
+- Multimodal Reasoning and Model Evaluation
+- Retrieval-Augmented and Biomedical NLP
+- Reinforcement Learning for Robotics
 education:
 - degree: Master of Information and Data Science, GPA 3.966/4.0
   institution: University of California, Berkeley, CA, United States of America
@@ -50,7 +51,7 @@ education:
   badge: /media/education/huzu.webp
 experience:
 - role: Staff Engineer - Cloud Infrastructure
-  org: Tiktok Inc
+  org: TikTok Inc
   image: /media/tiktok.png
   location: Mountain View, California, United States
   start: '2023-02-20'

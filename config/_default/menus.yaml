@@ -2,30 +2,18 @@ main:
   - name: Home
     url: /#about
     weight: 10
-  - name: Experience
-    url: /#experience
-    weight: 20
-  - name: Accomplishments
-    url: /#accomplishments
-    weight: 30
-  - name: Posts
-    url: /#posts
-    weight: 40
-  - name: Projects
-    url: /#projects
-    weight: 50
   - name: Publications
     url: /#publications
-    weight: 60
-  - name: Talks
-    url: /#talks
-    weight: 70
-  - name: Skills
-    url: /#skills
-    weight: 80
+    weight: 20
+  - name: Service
+    url: /#service
+    weight: 30
+  - name: Experience
+    url: /#experience
+    weight: 40
   - name: Contact
     url: /#contact
-    weight: 90
+    weight: 50
 
 main_right:
   - name: CV

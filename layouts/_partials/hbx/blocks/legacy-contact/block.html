@@ -32,6 +32,20 @@
             {{ end }}
           {{ end }}
         </ul>
+        {{ with index $content "map" }}
+          {{ if reflect.IsMap . }}
+            {{ $map := . }}
+            {{ with index $map "embed_url" }}
+              <div class="legacy-contact-map">
+                <iframe
+                  title="{{ index $content "address" | default (index $map "title") }}"
+                  src="{{ . | safeURL }}"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
       </div>
     </div>
   </div>

@@ -15,9 +15,10 @@ html {
 }
 
 body {
-  color: #000;
+  color: #212529;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 a {
@@ -70,8 +71,11 @@ a {
   min-width: 0;
   height: 100%;
   margin: 0;
+  padding: 0 !important;
+  padding-inline-start: 0 !important;
   gap: 0;
   align-items: center;
+  list-style: none;
   white-space: nowrap;
 }
 
@@ -178,6 +182,10 @@ main {
   padding-top: 50px;
 }
 
+.hbb-section:last-of-type .legacy-home-section {
+  padding-bottom: 40px;
+}
+
 .legacy-container {
   width: 100%;
   max-width: 1140px;
@@ -193,11 +201,13 @@ main {
 
 .legacy-about-grid,
 .legacy-section-grid {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  align-items: flex-start;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
   gap: 30px;
 }
 
 .legacy-profile {
+  font-size: 20px;
   padding: 30px 10px;
   text-align: center;
 }
@@ -211,23 +221,23 @@ main {
   object-fit: cover;
 }
 
-.legacy-portrait-title h1 {
+.legacy-portrait-title h2 {
   margin: 20px 0 10px;
   color: #000;
   font-family: var(--hb-font-heading);
-  font-size: 1.75rem;
+  font-size: 1.75em;
   font-weight: 300;
 }
 
-.legacy-portrait-title p {
+.legacy-portrait-title h3 {
   margin: 0 0 10px;
-  color: var(--legacy-muted);
-  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
-.legacy-portrait-title a {
-  color: inherit;
+.legacy-portrait-title h3 a {
+  color: var(--legacy-primary);
 }
 
 .legacy-network {
@@ -258,18 +268,21 @@ main {
   height: 2rem;
 }
 
-.legacy-biography > h2,
+.legacy-biography > h1,
 .legacy-section-heading h2 {
   margin: 0 0 10px;
-  color: #000;
+  color: #212529;
   font-family: var(--hb-font-heading);
-  font-size: 2.25rem;
-  font-weight: 400;
+  font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.2;
 }
 
 .legacy-bio-text {
-  line-height: 1.65;
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .legacy-bio-text p {
@@ -283,11 +296,12 @@ main {
 }
 
 .legacy-details-grid h3 {
-  margin: 0 0 1rem;
-  color: #000;
+  margin: 0 0 0.5rem;
+  color: #212529;
   font-family: var(--hb-font-heading);
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .legacy-interests {
@@ -297,6 +311,7 @@ main {
 
 .legacy-interests li {
   font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .legacy-education {
@@ -340,11 +355,12 @@ main {
 
 .legacy-course {
   font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .legacy-institution {
   color: rgba(0, 0, 0, 0.6);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 
 .legacy-section-heading p {
@@ -469,14 +485,18 @@ main {
 }
 
 .legacy-card-link,
-.legacy-item-links a {
+.legacy-item-links a,
+.legacy-item-links button {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.2rem 0.45rem;
   border: 1px solid var(--legacy-primary);
   border-radius: 0.2rem;
+  background: #fff;
   color: var(--legacy-primary);
+  cursor: pointer;
   font-size: 0.75rem;
+  line-height: 1.5;
 }
 
 .legacy-stream-item {
@@ -495,12 +515,37 @@ main {
   margin: 0 0 0.35rem;
   font-family: var(--hb-font-heading);
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 700;
+}
+
+.legacy-stream-item h3 a {
+  color: #151515;
+  transition: color 0.6s ease;
+}
+
+.legacy-stream-item h3 a:hover,
+.legacy-stream-item h3:hover a,
+.legacy-stream-item h3 a:focus {
+  color: var(--legacy-primary) !important;
+  text-decoration: none;
+}
+
+.legacy-item-links a:hover,
+.legacy-item-links a:focus,
+.legacy-item-links button:hover,
+.legacy-item-links button:focus {
+  background: var(--legacy-primary);
+  color: #fff;
+  text-decoration: none;
 }
 
 .legacy-stream-summary {
   color: #000;
   font-size: 0.9rem;
+}
+
+.legacy-publication-links {
+  margin-top: 0.35rem;
 }
 
 .legacy-stream-image {
@@ -641,6 +686,38 @@ main {
   margin: 0;
 }
 
+.legacy-service-item {
+  margin-bottom: 1.35rem;
+}
+
+.legacy-service-item h3 {
+  margin: 0 0 0.35rem;
+  color: #000;
+  font-family: var(--hb-font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.legacy-service-item p {
+  margin: 0 0 0.35rem;
+  color: #000;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.legacy-service-venues {
+  margin: 0.25rem 0 0;
+  padding-left: 1.2rem;
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.legacy-service-venues li {
+  margin: 0 0 0.2rem;
+}
+
 .legacy-contact-list {
   margin: 0;
   padding: 0;
@@ -660,12 +737,121 @@ main {
   color: var(--legacy-primary);
 }
 
+.legacy-contact-map {
+  margin-top: 1.5rem;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.legacy-contact-map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
 .legacy-site-footer {
-  margin: 4rem 0 0;
+  margin: 0;
   padding: 2rem 0;
   color: var(--legacy-muted);
   font-size: 1rem;
   text-align: center;
+}
+
+.legacy-cite-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.legacy-cite-modal.is-open {
+  display: flex;
+}
+
+.legacy-cite-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.legacy-cite-modal-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(720px, 100%);
+  max-height: calc(100vh - 2rem);
+  overflow: hidden;
+  border-radius: 0.3rem;
+  background: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.35);
+}
+
+.legacy-cite-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.legacy-cite-modal-header h3 {
+  margin: 0;
+  color: #212529;
+  font-family: var(--hb-font-heading);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.legacy-cite-modal-close {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.legacy-cite-modal-content {
+  max-height: 55vh;
+  margin: 0;
+  padding: 1.25rem;
+  overflow: auto;
+  background: #f8f9fa;
+  color: #212529;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+}
+
+.legacy-cite-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.legacy-cite-modal-copy,
+.legacy-cite-modal-dismiss {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--legacy-primary);
+  border-radius: 0.2rem;
+  background: #fff;
+  color: var(--legacy-primary);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.legacy-cite-modal-copy:hover,
+.legacy-cite-modal-copy:focus,
+.legacy-cite-modal-dismiss:hover,
+.legacy-cite-modal-dismiss:focus {
+  background: var(--legacy-primary);
+  color: #fff;
+}
+
+body.legacy-cite-modal-open {
+  overflow: hidden;
 }
 
 .legacy-footer-main {
@@ -754,11 +940,13 @@ main {
   color: rgba(255, 255, 255, 0.54);
 }
 
-.dark .legacy-biography > h2,
+.dark .legacy-biography > h1,
 .dark .legacy-section-heading h2,
 .dark .legacy-details-grid h3,
-.dark .legacy-portrait-title h1,
+.dark .legacy-portrait-title h2,
 .dark .legacy-project-body h3 a,
+.dark .legacy-service-item h3,
+.dark .legacy-service-item p,
 .dark .legacy-card-text,
 .dark .legacy-card-text p,
 .dark .legacy-card-text li,
@@ -766,6 +954,64 @@ main {
 .dark .legacy-skill,
 .dark .legacy-skill h3 {
   color: #f8f8f2;
+}
+
+.dark .legacy-stream-item h3 a {
+  color: #fff;
+}
+
+.dark .legacy-stream-item h3 a:hover,
+.dark .legacy-stream-item h3:hover a,
+.dark .legacy-stream-item h3 a:focus {
+  color: var(--legacy-primary) !important;
+}
+
+.dark .legacy-item-links a,
+.dark .legacy-item-links button {
+  background: #282a36;
+}
+
+.dark .legacy-item-links a:hover,
+.dark .legacy-item-links a:focus,
+.dark .legacy-item-links button:hover,
+.dark .legacy-item-links button:focus {
+  background: var(--legacy-primary);
+  color: #fff;
+}
+
+.dark .legacy-cite-modal-dialog {
+  background: #282a36;
+}
+
+.dark .legacy-cite-modal-header,
+.dark .legacy-cite-modal-actions {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark .legacy-cite-modal-header h3,
+.dark .legacy-cite-modal-content {
+  color: #f8f8f2;
+}
+
+.dark .legacy-cite-modal-close {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark .legacy-cite-modal-content {
+  background: #23252f;
+}
+
+.dark .legacy-cite-modal-copy,
+.dark .legacy-cite-modal-dismiss {
+  background: #282a36;
+}
+
+.dark .legacy-cite-modal-copy:hover,
+.dark .legacy-cite-modal-copy:focus,
+.dark .legacy-cite-modal-dismiss:hover,
+.dark .legacy-cite-modal-dismiss:focus {
+  background: var(--legacy-primary);
+  color: #fff;
 }
 
 .dark .legacy-timeline-dot {

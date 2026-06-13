@@ -14,6 +14,56 @@ sections:
         about: Summary
         education: Education
         interests: Interests
+  - block: legacy-collection
+    id: publications
+    content:
+      title: Selected Publications
+      filters:
+        folders:
+          - publication
+      count: 14
+      items:
+        - kvdirect-disaggregated-llm-inference
+        - efficient-cross-gpu-communication-disaggregated-llm-serving
+        - rose-reward-oriented-data-selection
+        - video-models-multimodal-reasoning
+        - laysummx-biolaysumm
+        - dpo-chatbot-finetuning
+        - bach-style-symbolic-music-generation
+        - dk-rrt-space-manipulators
+        - adamixup-membership-inference-defense
+        - warehouse-picking-packing-ml
+        - warehouse-robot-navigation-rl
+        - warehouse-obstacle-avoidance-drl
+        - medicare-readmission-lstm
+        - deep-adaptive-control-aerospace-manipulators
+  - block: legacy-service
+    id: service
+    content:
+      title: Academic Service
+      items:
+        - title: Program Committee & Reviewer
+          summary: "Program committee member and conference/workshop reviewer across machine learning, NLP, AI, data mining, and multimedia venues."
+          venues:
+            - ICLR 2026
+            - NeurIPS 2026
+            - ACL ARR 2025-2026
+            - AISTATS 2026
+            - AAAI
+            - IJCAI
+            - KDD Workshops
+            - NeurIPS 2024 and 2025 Workshops
+            - IEEE SSCI 2025
+            - IEEE MIPR 2025
+            - KSEM 2025
+        - title: Journal Reviewer
+          summary: "Journal reviewer for machine learning, imaging, multimedia systems, and internet technology venues."
+          venues:
+            - IEEE Transactions on Image Processing (TIP)
+            - IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
+            - Journal of Medical Imaging (JMI)
+            - Journal of Machine Learning for Biomedical Imaging
+            - ACM Transactions on Internet Technology (TOIT)
   - block: legacy-experience
     id: experience
     content:
@@ -21,82 +71,15 @@ sections:
       username: me
     design:
       date_format: "Jan 2006"
-  - block: legacy-awards
-    id: accomplishments
-    content:
-      title: Accomplishments
-      username: me
-    design:
-      date_format: "Jan 2006"
-  - block: legacy-collection
-    id: posts
-    content:
-      title: Recent Posts
-      cta:
-        text: See All Posts & Media
-        url: https://halfrost.com/
-      filters:
-        folders:
-          - post
-        exclude_featured: false
-      count: 5
-      order: desc
-  - block: legacy-portfolio
-    id: projects
-    content:
-      title: Projects
-      cta:
-        text: See All Projects
-        url: https://github.com/halfrost
-      filters:
-        folders:
-          - project
-      buttons:
-        - name: All
-          tag: "*"
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Algorithm
-          tag: Algorithm
-        - name: Mobile
-          tag: Mobile
-        - name: Other
-          tag: Other
-  - block: legacy-collection
-    id: publications
-    content:
-      title: Recent Publications
-      cta:
-        text: See All Publications
-        url: http://books.halfrost.com/
-      filters:
-        folders:
-          - publication
-      count: 5
-      order: desc
-  - block: legacy-collection
-    id: talks
-    content:
-      title: My Recent Talks
-      cta:
-        text: See All Talks
-        url: https://speakerdeck.com/halfrost/
-      filters:
-        folders:
-          - talk
-      count: 5
-      order: desc
-  - block: legacy-skills
-    id: skills
-    content:
-      title: Skills
-      username: me
   - block: legacy-contact
     id: contact
     content:
       title: Contact
       email: i@halfrost.com
-      address: Changqiao, Xuhui, Shanghai 200000, China
+      address: Santa Clara, California, United States
+      map:
+        title: Santa Clara, California, United States
+        embed_url: "https://maps.google.com/maps?hl=en&ll=37.3541,-121.9552&z=12&output=embed"
       social:
         - label: DM Me
           icon: brands/twitter

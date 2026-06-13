@@ -6,9 +6,19 @@
 {{ if eq (printf "%T" $folders) "string" }}{{ $folders = slice $folders }}{{ end }}
 {{ $count := int (index $content "count" | default 5) }}
 {{ $order := index $content "order" | default "desc" }}
-{{ $query := where site.RegularPages "Section" "in" $folders }}
-{{ $query = sort $query "Date" $order }}
-{{ if gt $count 0 }}{{ $query = first $count $query }}{{ end }}
+{{ $manualItems := index $content "items" | default (slice) }}
+{{ $query := slice }}
+{{ if gt (len $manualItems) 0 }}
+  {{ range $manualItems }}
+    {{ with site.GetPage (printf "publication/%s" .) }}
+      {{ $query = $query | append . }}
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ $query = where site.RegularPages "Section" "in" $folders }}
+  {{ $query = sort $query "Date" $order }}
+  {{ if gt $count 0 }}{{ $query = first $count $query }}{{ end }}
+{{ end }}
 
 <div class="legacy-home-section">
   <div class="legacy-container">
@@ -35,19 +45,19 @@
           <article class="legacy-stream-item">
             <div class="legacy-stream-copy">
               <h3><a href="{{ $link }}">{{ .Title }}</a></h3>
-              <div class="legacy-stream-summary">{{ .Summary | plainify | truncate 190 }}</div>
-              <p class="legacy-meta">{{ .Date | time.Format "Jan 2, 2006" }}</p>
-              <div class="legacy-item-links">
+              {{ $summary := .Summary }}
+              {{ with .Params.abstract }}{{ $summary = . }}{{ end }}
+              <div class="legacy-stream-summary">{{ $summary | plainify | truncate 340 }}</div>
+              <div class="legacy-item-links legacy-publication-links">
+                {{ with .Resources.GetMatch "cite.bib" }}
+                  <button type="button" class="legacy-cite-button js-cite-modal" data-filename="{{ .RelPermalink }}">
+                    <span>Cite</span>
+                  </button>
+                {{ end }}
                 {{ range .Params.links }}
-                  {{ $type := .type | default "" }}
-                  {{ if in (slice "pdf" "code" "slides" "video") $type }}
-                    {{ $url := .url }}
-                    {{ with ($item.Resources.GetMatch $url) }}
-                      {{ $url = .RelPermalink }}
-                    {{ else }}
-                      {{ $url = $url | relURL }}
-                    {{ end }}
-                    <a href="{{ $url }}" target="_blank" rel="noopener">{{ $type | humanize }}</a>
+                  {{ if .url }}
+                    {{ $label := .name | default (.type | default "Paper") }}
+                    <a href="{{ .url | safeURL }}" target="_blank" rel="noopener">{{ $label }}</a>
                   {{ end }}
                 {{ end }}
               </div>
