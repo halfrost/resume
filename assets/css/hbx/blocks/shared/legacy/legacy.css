@@ -297,6 +297,15 @@ main {
   margin: 0 0 1rem;
 }
 
+.legacy-bio-text p,
+.legacy-card-text p,
+.legacy-stream-summary,
+.legacy-project-body p,
+.legacy-service-item p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .legacy-details-grid {
   grid-template-columns: 5fr 7fr;
   gap: 30px;
