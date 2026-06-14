@@ -40,7 +40,7 @@ social:
     icon: phoenix-squadron
 education:
   courses:
-    - course: Master of Science in Computer Science, GPA 4.0/4.0
+    - course: Graduate Studies in Computer Science, GPA 4.0/4.0
       institution: Stanford University, CA, United States of America
       year: 
       schoolbadge: '/media/education/stanford.webp'
