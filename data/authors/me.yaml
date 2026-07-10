@@ -7,11 +7,11 @@ name:
   family: Yu
 role: Senior ML Engineer
 bio: |
-  I am a research-oriented machine learning systems engineer working on foundation model infrastructure, alignment, and evaluation. My work focuses on building efficient, reliable systems for large language models while studying the algorithms and data choices that make these models more useful, controllable, and cost-effective in real applications.
+  I am a research-oriented machine learning systems engineer working on foundation model infrastructure, closed-loop evaluation and optimization systems, and scalable AI platforms. My work focuses on building reliable Model-as-a-Service and Harness-as-a-Service platforms that connect data, training, inference, evaluation, and feedback loops into measurable, continuously improving AI products.
 
   My recent work centers on Model-as-a-Service platforms and high-performance LLM inference. I develop serving infrastructure with vLLM and SGLang across model runtime integration, scheduling and continuous batching, KV-cache and memory management, distributed execution, observability, and reliability. This systems work is closely connected to my research on distributed disaggregated inference, preference optimization, instruction-tuning data selection, multimodal evaluation.
 
-  My broader research spans reinforcement learning, privacy-preserving machine learning. I am especially interested in model-system co-design: how model architecture, inference algorithms, data curation, hardware utilization, scheduling, and distributed runtimes interact. My goal is to advance frontier AI systems that are faster to experiment with, more rigorous to evaluate, and dependable enough to serve at scale.
+  My broader research centers on reinforcement learning infrastructure and reinforcement learning optimization algorithms for scalable AI systems. I am interested in how policy optimization, reward modeling, preference learning, offline RL, simulation environments, distributed rollout systems, and automated evaluation harnesses can be engineered together to improve model behavior. My goal is to build frontier AI systems that learn from feedback efficiently, evaluate progress rigorously, and remain dependable when deployed at scale.
 affiliations:
 - name: TikTok Inc.
   url: https://www.tiktok.com/
@@ -31,11 +31,12 @@ links:
   url: https://halfrost.com
 interests:
 - Efficient LLM Inference and Serving Systems
-- Model-System Co-design for Foundation Models
-- Alignment, Preference Optimization, and Instruction Tuning
-- Multimodal Reasoning and Model Evaluation
-- Retrieval-Augmented and Biomedical NLP
-- Reinforcement Learning for Robotics
+- Model-as-a-Service and Harness-as-a-Service Platforms
+- Closed-Loop Evaluation and Optimization Systems
+- Reinforcement Learning Infrastructure
+- RL Optimization, Reward Modeling, and Preference Learning
+- Distributed Rollout, Evaluation, and Simulation Systems
+- Model-System Co-design for Scalable AI
 education:
 - degree: Master of Information and Data Science, GPA 3.966/4.0
   institution: University of California, Berkeley, CA, United States of America
