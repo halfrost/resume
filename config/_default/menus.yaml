@@ -17,7 +17,8 @@ main:
 
 main_right:
   - name: CV
-    url: /CV.pdf
+    url: ""
     weight: 10
     params:
       icon: academicons/cv
+      disabled: true

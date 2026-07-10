@@ -127,6 +127,18 @@
       {{ end }}
       {{ range site.Menus.main_right }}
       <li class="nav-item lg:hidden">
+        {{ if .Params.disabled }}
+        <span
+          class="nav-link"
+          title="{{ .Name }}"
+          aria-label="{{ .Name }}"
+          aria-disabled="true">
+          {{ with .Params.icon }}
+            {{ partial "functions/get_icon" (dict "name" . "attributes" "class='legacy-navbar-mobile-icon'") }}
+          {{ end }}
+          <span>{{ .Name }}</span>
+        </span>
+        {{ else }}
         <a
           class="nav-link"
           {{ if findRE `^http` .URL }}
@@ -138,6 +150,7 @@
           {{ end }}
           <span>{{ .Name }}</span>
         </a>
+        {{ end }}
       </li>
       {{ end }}
       {{ if site.Params.hugoblox.header.cta.enable }}
@@ -156,6 +169,17 @@
       {{ with site.Menus.main_right }}
       <div class="legacy-navbar-actions">
         {{ range . }}
+          {{ if .Params.disabled }}
+          <span
+            class="legacy-navbar-action"
+            title="{{ .Name }}"
+            aria-label="{{ .Name }}"
+            aria-disabled="true">
+            {{ with .Params.icon }}
+              {{ partial "functions/get_icon" (dict "name" . "attributes" "class='legacy-navbar-action-icon'") }}
+            {{ end }}
+          </span>
+          {{ else }}
           <a
             class="legacy-navbar-action"
             href="{{ .URL | relLangURL }}"
@@ -166,6 +190,7 @@
               {{ partial "functions/get_icon" (dict "name" . "attributes" "class='legacy-navbar-action-icon'") }}
             {{ end }}
           </a>
+          {{ end }}
         {{ end }}
       </div>
       {{ end }}
